@@ -1,12 +1,168 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
+<head>
+  <meta charset="utf-8">
+  <title>Пинк</title>
+</head>
 
-  </body>
+<body>
+  <!--Блок хедер и навигационный блок-меню (скрыто под кнопкой-бургером)-->
+  <header class="page-header">
+    <nav class="page-header__main-nav">
+      <a class="page-header__logo">
+        <img class="page-header__logo-name" src="http://via.placeholder.com/75x22" width="75" height="22" alt="Pink">
+      </a>
+      <button class="main-nav__button burger-button" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item--active">
+            <a>Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru/intensive/adaptive">Htmlacademy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+    <h1 class="visually-hidden">Информация для загрузки приложения</h1>
+    <!--Блок с предложением загрузить приложение-->
+    <section class="promo-download">
+      <h2 class="visually-hidden">Промо для загрузки приложения</h2>
+      <span class="promo-download__slogan">Взгляните на жизнь иначе!</span>
+      <img class="promo-download__photo" src="http://via.placeholder.com/320x314">
+      <a class=" promo-download__button download-button" href="https://www.apple.com/itunes/">Скачать приложение</a>
+      <div class="promo-download__wrapper">
+        <ul class="promo-download__list apps-list">
+          <li class="apps-list__item--mac">
+            <a href="https://www.apple.com/itunes/">Скачать для устройств на MacOS</a>
+          </li>
+          <li class="apps-list__item--android">
+            <a href="https://play.google.com/store?hl=ru">Скачать для устройств Android</a>
+          </li>
+          <li class="apps-list__item--microsoft">
+            <a href="https://www.microsoft.com/ru-ru/store/appsvnext/windows">Скачать для устройств Windows</a>
+          </li>
+        </ul>
+        <p class="promo-download__promo-options">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
+    </section>
+    <!--Блок с преимуществами приложения-->
+    <section class="promo-advantages">
+      <h2 class="visually-hidden">Преимущества приложения</h2>
+      <p class="promo-advantages__proposal">Устали от серости мегаполиса?</p>
+      <pclass="promo-advantages__proposal">Нам есть, что вам предложить!</p>
+        <div class="promo-advantages__wrapper">
+          <figure class="promo-advantages__features promo-feature">
+            <img class="promo-feature__promo-image" width="157" height="320" src="http://via.placeholder.com/157x320">
+            <figcaption>Поднимает настроение</figcaption>
+            <p>Приложение позволит вам победить осеннюю зандру и депрессию буквально в несколько кликов!</p>
+          </figure>
+          <figure class="promo-advantages__features promo-feature">
+            <img class="promo-feature__promo-image" width="157" height="320" src="http://via.placeholder.com/157x320">
+            <figcaption>Меняет мир вокруг</figcaption>
+            <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </figure>
+          <figure class="promo-advantages__features promo-feature">
+            <img class="promo-feature__promo-image" width="157" height="320" src="http://via.placeholder.com/157x320">
+            <figcaption>Заводит новых друзей</figcaption>
+            <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </figure>
+
+          <!-- здесь должно быть изображение и еще одна feature, но пока не видно на мобильном макете -->
+
+        </div>
+    </section>
+    <!--Блок с отзывами-->
+    <section class="reviews">
+      <h2 class="visually-hidden">Отзывы пользователей</h2>
+      <div class="reviews__wrapper slider">
+        <!--Судя по ТЗ, здесь предполагается 3 отзыва, в обзоре не видно инфо, я пока сделала 3 одинаковых-->
+        <div class="reviews__list slider__list">
+          <blockquote class="reviews__item slider__item">
+            <cite class="reviews__user-name">Николай Петров</cite>
+            <p class="reviews__user-comment">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился
+              со своей будущей женой в комментариях к выложенной фотографии</p>
+          </blockquote>
+          <blockquote class="reviews__item slider__item">
+            <cite class="reviews__user-name">Николай Петров</cite>
+            <p class="reviews__user-comment">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился
+              со своей будущей женой в комментариях к выложенной фотографии</p>
+          </blockquote>
+          <blockquote class="reviews__item slider__item">
+            <cite class="reviews__user-name">Николай Петров</cite>
+            <p class="reviews__user-comment">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился
+              со своей будущей женой в комментариях к выложенной фотографии</p>
+          </blockquote>
+        </div>
+        <p class="reviews__toggles slider__toggles">
+          <button class="slider__toggle--active" type="button"></button>
+          <button class="slider__toggle" type="button"></button>
+          <button class="slider__toggle" type="button"></button>
+        </p>
+      </div>
+    </section>
+    <!--Блок с тарифами-->
+    <section class="tariffs">
+      <h2 class="visually-hidden">Тарифы</h2>
+      <div class="tariffs__wrapper slider">
+        <!--Судя по ТЗ и превью мобильного макета, здесь предполагается несколько тарифов, я пока сделала 1 -->
+        <div class="tariffs__list slider__list">
+          <div class="tariffs__item slider__item">
+            <div class="tariffs__header">
+              <p class="tariffs__name">Стандарт</p>
+              <p class="tariffs__price">3.99 USD</p>
+            </div>
+            <ul class="tariffs__list content-list">
+              <li class="tariffs__item content-item">Розовый фильтр</li>
+              <li class="tariffs__item content-item">Смайлики</li>
+              <li class="tariffs__item content-item">Комментарии</li>
+            </ul>
+          </div>
+        </div>
+        <p class="tariffs__toggles slider__toggles">
+          <button class="slider__toggle" type="button"></button>
+          <button class="slider__toggle--active" type="button"></button>
+          <button class="slider__toggle" type="button"></button>
+        </p>
+      </div>
+    </section>
+  </main>
+  <!--Блок с футером-->
+  <footer class="main-footer">
+    <h2 class="visually-hidden">Контактная информация</h2>
+    <div class="main-footer__wrapper">
+      <p class="main-footer__invitation">Остались вопросы?</p>
+      <p class="main-footer__invitation">Свяжитесь с нами!</p>
+      <div class="main-footer__contacts-wrapper">
+        <div class="main-footer__contacts">
+          <p class="main-footer__text">Звоните:</p>
+          <a class="main-footer__info" href="#">+7 (812) 555-66-66</a>
+        </div>
+        <div class="main-footer__contacts">
+          <p class="main-footer__text">Пишите:</p>
+          <a class="main-footer__info" href="#">mail@htmlacademy.ru</a>
+        </div>
+        <div class="main-footer__contacts">
+          <p class="main-footer__text">Приезжайте в гости:</p>
+          <p class="main-footer__info"> ул. Большая Конюшенная, 19/8</p>
+        </div>
+      </div>
+      <!--Блок с картой-->
+      <section class="map">
+        <h2 class="visually-hidden">Схема проезда</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424177396!2d30.320889251426784!3d59.938796868959294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1523632868371"
+          width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </section>
+  </footer>
+</body>
+
 </html>
