@@ -21,7 +21,7 @@
           <li class="site-list__item">
             <a href="photo.html">Фотографии</a>
           </li>
-          <li class="site-list__item--active">
+          <li class="site-list__item site-list__item--active">
             <a>Конкурс</a>
           </li>
           <li class="site-list__item">
@@ -35,62 +35,91 @@
     <section class="introduction">
       <h2 class="introduction__header">Конкурс на самое безбашенное путешествие с Пинк </h2>
       <article class="introduction__article">
+        <h3 class="visually-hidden">Предложение участвовать в конкурсе</h3>
         <p class="introduction__article motive-text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту </p>
       </article>
     </section>
     <section class="form">
       <h2 class="visually-hidden">Указать фамилию, имя и отчество</h2>
       <form class="form__input-fields" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="form__name">
-          <label for="surname-field"></label>
-          <input type="text" name="surname" id="surname-field" placeholder="Укажите фамилию*">
-          <label for="name-field"></label>
-          <input type="text" name="name" id="name-field" placeholder="Укажите имя*">
-          <label for="middlename-field"></label>
-          <input type="text" name="middlename" id="middlename-field" placeholder="Ну и отчество тоже">
+        <fieldset class="form__blocks">
+          <ul class="form__list">
+            <li class="form__item">
+              <label for="surname-field">Фамилия:</label>
+              <input type="text" name="surname" id="surname-field" placeholder="Укажите фамилию*">
+            </li>
+            <li class="form__item">
+              <label for="name-field">Имя:</label>
+              <input type="text" name="name" id="name-field" placeholder="Укажите имя*">
+            </li>
+            <li class="form__item">
+              <label for="middlename-field">Отчество:</label>
+              <input type="text" name="middlename" id="middlename-field" placeholder="Ну и отчество тоже">
+            </li>
+          </ul>
         </fieldset>
 
-        <fieldset class="form__achievement">
+        <fieldset class="form__blocks form__blocks--achievements">
           <h2 class="visually-hidden">Указать ваши достижения</h2>
-
-          <input type="checkbox" name="shark" id="shark-achiev" checked>
-          <label for="shark-selfie">Сделал селфи с акулой</label>
-
-          <input type="checkbox" name="sunburn" id="sunburn-achiev" checked>
-          <label for="sunburn-achiev">Обгорел на пляже</label>
-
-          <input type="checkbox" name="chak" id="chak-achiev">
-          <label for="chak-achiev">Видел Чака Норриса</label>
-
-          <input type="checkbox" name="souvenir" id="souvenir-achiev">
-          <label for="souvenir-achiev">Накупил сувениров</label>
-
-          <input type="checkbox" name="tower" id="tower-achiev" checked>
-          <label for="tower-achiev">Удержал башню</label>
-
-          <input type="checkbox" name="hotel" id="hotel-achiev">
-          <label for="hotel-achiev">Разгромил отель</label>
+          <ul class="form__list">
+            <li class="form__item">
+              <input type="checkbox" name="shark" id="shark-achiev" checked>
+              <label for="shark-achiev">Сделал селфи с акулой</label>
+            </li>
+            <li class="form__item">
+              <input type="checkbox" name="sunburn" id="sunburn-achiev" checked>
+              <label for="sunburn-achiev">Обгорел на пляже</label>
+            </li>
+            <li class="form__item">
+              <input type="checkbox" name="chak" id="chak-achiev">
+              <label for="chak-achiev">Видел Чака Норриса</label>
+            </li>
+            <li class="form__item">
+              <input type="checkbox" name="souvenir" id="souvenir-achiev">
+              <label for="souvenir-achiev">Накупил сувениров</label>
+            </li>
+            <li class="form__item">
+              <input type="checkbox" name="tower" id="tower-achiev" checked>
+              <label for="tower-achiev">Удержал башню</label>
+            </li>
+            <li class="form__item">
+              <input type="checkbox" name="hotel" id="hotel-achiev">
+              <label for="hotel-achiev">Разгромил отель</label>
+            </li>
+          </ul>
         </fieldset>
 
-        <fieldset class="form__contacts">
-          <label for="telNo">Номер телефона</label>
-          <input type="tel" id="telNo" placeholder="Номер, пожалуйста">
-          <label for="email">Номер телефона</label>
-          <input type="email" id="email" placeholder="Введите почту*">
-        </fieldset>
-        <fieldset class="form__application">
-          <label>
-            <input type="radio" name="application" value="ios" checked> Pink для iOS
-          </label>
-          <label>
-            <input type="radio" name="application" value="android"> Pink для Android
-          </label>
-          <label>
-            <input type="radio" name="application" value="windows"> Pink для Windows
-          </label>
+        <fieldset class="form__blocks">
+          <ul class="form__list">
+            <li class="form__item">
+              <label for="telNo">Номер телефона</label>
+              <input type="tel" id="telNo" placeholder="Номер, пожалуйста">
+            </li>
+            <li class="form__item">
+              <label for="email">Номер телефона</label>
+              <input type="email" id="email" placeholder="Введите почту*">
+            </li>
+          </ul>
         </fieldset>
 
-        <fieldset class="form__emotions">
+        <fieldset class="form__blocks form__blocks--applications">
+          <ul class="form__list">
+            <li class="form__item">
+              <input type="radio" name="application" value="ios" id="radio-ios" checked>
+              <label for="radio-ios">Pink для iOS</label>
+            </li>
+            <li class="form__item">
+              <input type="radio" name="application" value="android" id="radio-android">
+              <label for="radio-android">Pink для Android</label>
+            </li>
+            <li class="form__item">
+              <input type="radio" name="application" value="windows" id="radio-windows">
+              <label for="radio-windows">Pink для Windows</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="form__blocks">
           <p>Опишите свои эмоции</p>
           <textarea name="comment" id="comment-field" rows="5"> Можно прям в красках, не стесняясь в выражениях</textarea>
         </fieldset>
@@ -103,14 +132,14 @@
   <footer class="regular-footer">
     <a class="regular-footer__logo" href="index.html">Pink</a>
     <div class="social-buttons">
-      <a class="social-buttons__item social-buttons__item-twitter" href="#">Twitter</a>
-      <a class="social-buttons__item social-buttons__item-fb" href="#">Facebook</a>
-      <a class="social-buttons__item social-buttons__item-youtube" href="#">Youtube</a>
+      <a class="social-buttons__item social-buttons__item--twitter" href="#">Twitter</a>
+      <a class="social-buttons__item social-buttons__item--fb" href="#">Facebook</a>
+      <a class="social-buttons__item social-buttons__item--youtube" href="#">Youtube</a>
     </div>
     <div class="regular-footer__copyright">
       <p class="regular-footer__copyright-text">Разработано</p>
       <a class="regular-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-        <img class="regular-footer__copyright-icon" width="27" height="34" src="http://via.placeholder.com/27x34">Htmlacademy</a>
+        <img class="regular-footer__copyright-icon" width="27" height="34" src="http://via.placeholder.com/27x34" alt="сайт htmlacademy.ru">Htmlacademy</a>
     </div>
   </footer>
 </body>

@@ -16,7 +16,7 @@
       <button class="main-nav__button burger-button" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item--active">
+          <li class="site-list__item site-list__item--active">
             <a>Главная</a>
           </li>
           <li class="site-list__item">
@@ -38,17 +38,17 @@
     <section class="promo-download">
       <h2 class="visually-hidden">Промо для загрузки приложения</h2>
       <span class="promo-download__slogan">Взгляните на жизнь иначе!</span>
-      <img class="promo-download__photo" src="http://via.placeholder.com/320x314">
+      <img class="promo-download__photo" src="http://via.placeholder.com/320x314" alt="Промо-фотография">
       <a class=" promo-download__button download-button" href="https://www.apple.com/itunes/">Скачать приложение</a>
       <div class="promo-download__wrapper">
         <ul class="promo-download__list apps-list">
-          <li class="apps-list__item--mac">
+          <li class="apps-list__item apps-list__item--mac">
             <a href="https://www.apple.com/itunes/">Скачать для устройств на MacOS</a>
           </li>
-          <li class="apps-list__item--android">
+          <li class="apps-list__item apps-list__item--android">
             <a href="https://play.google.com/store?hl=ru">Скачать для устройств Android</a>
           </li>
-          <li class="apps-list__item--microsoft">
+          <li class="apps-list__item apps-list__item--microsoft">
             <a href="https://www.microsoft.com/ru-ru/store/appsvnext/windows">Скачать для устройств Windows</a>
           </li>
         </ul>
@@ -59,45 +59,45 @@
     <section class="promo-advantages">
       <h2 class="visually-hidden">Преимущества приложения</h2>
       <p class="promo-advantages__proposal">Устали от серости мегаполиса?</p>
-      <pclass="promo-advantages__proposal">Нам есть, что вам предложить!</p>
-        <div class="promo-advantages__wrapper">
-          <figure class="promo-advantages__features promo-feature">
-            <img class="promo-feature__promo-image" width="157" height="320" src="http://via.placeholder.com/157x320">
-            <figcaption>Поднимает настроение</figcaption>
-            <p>Приложение позволит вам победить осеннюю зандру и депрессию буквально в несколько кликов!</p>
-          </figure>
-          <figure class="promo-advantages__features promo-feature">
-            <img class="promo-feature__promo-image" width="157" height="320" src="http://via.placeholder.com/157x320">
-            <figcaption>Меняет мир вокруг</figcaption>
-            <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </figure>
-          <figure class="promo-advantages__features promo-feature">
-            <img class="promo-feature__promo-image" width="157" height="320" src="http://via.placeholder.com/157x320">
-            <figcaption>Заводит новых друзей</figcaption>
-            <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          </figure>
-
+      <p class="promo-advantages__proposal">Нам есть, что вам предложить!></p>
+      <div class="promo-advantages__wrapper">
+        <ul class="promo-advantages__list">
+          <li class="promo-advantages__item">
+            <img class="promo-advantages__photo" width="157" height="320" src="http://via.placeholder.com/157x320" alt="Промо-фотография приложения">
+            <p class="promo-advantages__caption">Поднимает настроение</p>
+            <p class="promo-advantages__text">Приложение позволит вам победить осеннюю зандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="promo-advantages__item">
+            <img class="promo-advantages__photo" width="157" height="320" src="http://via.placeholder.com/157x320" alt="Промо-фотография приложения">
+            <p class="promo-advantages__caption">Меняет мир вокруг</p>
+            <p class="promo-advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="promo-advantages__item">
+            <img class="promo-advantages__photo" width="157" height="320" src="http://via.placeholder.com/157x320" alt="Промо-фотография приложения">
+            <p class="promo-advantages__caption">Заводит новых друзей</p>
+            <p class="promo-advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
           <!-- здесь должно быть изображение и еще одна feature, но пока не видно на мобильном макете -->
-
-        </div>
+        </ul>
+      </div>
     </section>
     <!--Блок с отзывами-->
     <section class="reviews">
       <h2 class="visually-hidden">Отзывы пользователей</h2>
       <div class="reviews__wrapper slider">
         <!--Судя по ТЗ, здесь предполагается 3 отзыва, в обзоре не видно инфо, я пока сделала 3 одинаковых-->
-        <div class="reviews__list slider__list">
-          <blockquote class="reviews__item slider__item">
+        <div class="reviews__list">
+          <blockquote class="reviews__item">
             <cite class="reviews__user-name">Николай Петров</cite>
             <p class="reviews__user-comment">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился
               со своей будущей женой в комментариях к выложенной фотографии</p>
           </blockquote>
-          <blockquote class="reviews__item slider__item">
+          <blockquote class="reviews__item">
             <cite class="reviews__user-name">Николай Петров</cite>
             <p class="reviews__user-comment">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился
               со своей будущей женой в комментариях к выложенной фотографии</p>
           </blockquote>
-          <blockquote class="reviews__item slider__item">
+          <blockquote class="reviews__item">
             <cite class="reviews__user-name">Николай Петров</cite>
             <p class="reviews__user-comment">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился
               со своей будущей женой в комментариях к выложенной фотографии</p>
@@ -162,6 +162,7 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424177396!2d30.320889251426784!3d59.938796868959294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1523632868371"
           width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
       </section>
+    </div>
   </footer>
 </body>
 

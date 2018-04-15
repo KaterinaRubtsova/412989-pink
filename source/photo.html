@@ -15,7 +15,7 @@
       <button class="main-nav__button burger-button" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item--active">
+          <li class="site-list__item site-list__item--active">
             <a href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
@@ -35,114 +35,130 @@
     <section class="introduction">
       <h2 class="introduction__header">Фотографии пользователей</h2>
       <article class="introduction__article">
+        <h3 class="visually-hidden">Предложение выкладывать фотографии через приложение</h3>
         <p class="introduction__article motive-text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       </article>
     </section>
-    <section class="panoramic">
-      <h2 class="visually-hidden">Фото пользователя (панорама)</h2>
-      <img class="panoramic__panoramic-picture" width="320" height="137" src="http://via.placeholder.com/320x137">
-      <div class="panoramic__photo-comments">
-        <p class="photo-comments__author-name">Анна</p>
-        <span class="photo-comments__publishing-time">(5 минут назад)</span>
-        <blockquote class="photo-comments__published-text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</blockquote>
-        <button class="photo-comments__button like-button" type="button">Поставить лайк</button>
-        <p class="photo-comments__text like-text">Нравится: 215 </p>
-      </div>
-    </section>
-    <section class="standart-photo">
-      <h2 class="visually-hidden">Фото пользователя</h2>
-      <img class="standart-photo__picture" width="280" height="180" src="http://via.placeholder.com/280x180">
-      <div class="standart-photo__photo-comments">
-        <p class="photo-comments__author-name">Левон</p>
-        <span class="photo-comments__publishing-time">(5 часов назад)</span>
-        <blockquote class="photo-comments__published-text">Вчера он на луну летал, сегодня в руки к нам попал</blockquote>
-        <button class="photo-comments__button like-button" type="button">Поставить лайк</button>
-        <p class="photo-comments__text like-text">Нравится: 356 </p>
-      </div>
-    </section>
-    <section class="standart-photo">
-      <h2 class="visually-hidden">Фото пользователя</h2>
-      <img class="standart-photo__picture" width="280" height="180" src="http://via.placeholder.com/280x180">
-      <div class="standart-photo__photo-comments">
-        <p class="photo-comments__author-name">Антон</p>
-        <span class="photo-comments__publishing-time">(12 часов назад)</span>
-        <blockquote class="photo-comments__published-text">Соседи будут рады!</blockquote>
-        <button class="photo-comments__button like-button" type="button">Поставить лайк</button>
-        <p class="photo-comments__text like-text">Нравится: 666 </p>
-      </div>
-    </section>
-    <section class="standart-photo">
-      <h2 class="visually-hidden">Фото пользователя</h2>
-      <img class="standart-photo__picture" width="280" height="180" src="http://via.placeholder.com/280x180">
-      <div class="standart-photo__photo-comments">
-        <p class="photo-comments__author-name">Борис</p>
-        <span class="photo-comments__publishing-time">(20 часов назад)</span>
-        <blockquote class="photo-comments__published-text">Здесь могла быть ваша цитата о высоком и вечном</blockquote>
-        <button class="photo-comments__button like-button" type="button">Поставить лайк</button>
-        <p class="photo-comments__text like-text"> Нравится: 215 </p>
-      </div>
-    </section>
-    <section class="standart-photo">
-      <h2 class="visually-hidden">Фото пользователя</h2>
-      <img class="standart-photo__picture" width="280" height="180" src="http://via.placeholder.com/280x180">
-      <div class="standart-photo__photo-comments">
-        <p class="photo-comments__author-name">Сергей</p>
-        <span class="photo-comments__publishing-time">(25 часов назад)</span>
-        <blockquote class="photo-comments__published-text">Самая кубанская в мире!</blockquote>
-        <button class="photo-comments__button like-button" type="button">Поставить лайк</button>
-        <p class="photo-comments__text like-text">Нравится: 4 </p>
-      </div>
-    </section>
-    <section class="standart-photo">
-      <h2 class="visually-hidden">Фото пользователя</h2>
-      <img class="standart-photo__picture" width="280" height="180" src="http://via.placeholder.com/280x180">
-      <div class="standart-photo__photo-comments">
-        <p class="photo-comments__author-name">Максим</p>
-        <span class="photo-comments__publishing-time">(40 часов назад)</span>
-        <blockquote class="photo-comments__published-text">Где снег-то?</blockquote>
-        <button class="photo-comments__button like-button" type="button">Поставить лайк</button>
-        <p class="photo-comments__text like-text">Нравится: 150 </p>
-      </div>
-    </section>
-    <section class="standart-photo">
-      <h2 class="visually-hidden">Фото пользователя</h2>
-      <img class="standart-photo__picture" width="280" height="180" src="http://via.placeholder.com/280x180">
-      <div class="standart-photo__photo-comments">
-        <p class="photo-comments__author-name">Надежда</p>
-        <span class="photo-comments__publishing-time">(45 часов назад)</span>
-        <blockquote class="photo-comments__published-text">Всем GM и взаимные лайки!</blockquote>
-        <button class="photo-comments__button like-button" type="button">Поставить лайк</button>
-        <p class="photo-comments__text like-text">Нравится: 2560 </p>
-      </div>
+    <section class="user-content">
+      <h2 class="visually-hidden">Фото пользователей</h2>
+      <article class="user-photo user-photo--panoramic">
+        <h3 class="visually-hidden">Пример фотографий пользователей</h3>
+        <img class="user-photo__panoramic-picture" width="320" height="137" src="http://via.placeholder.com/320x137" alt="Фото пользователя">
+        <div class="user-photo__photo-comments">
+          <p class="photo-comments__author-name">Анна
+            <span class="photo-comments__publishing-time">(5 минут назад)</span>
+          </p>
+          <blockquote class="photo-comments__published-text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</blockquote>
+          <p class="photo-comments__text like-text">
+            <button class="photo-comments__button like-button" type="button">Поставить лайк</button>Нравится: 215 </p>
+        </div>
+      </article>
+
+      <article class="user-photo">
+        <h3 class="visually-hidden">Пример фотографий пользователей</h3>
+        <img class="user-photo__picture" width="280" height="180" src="http://via.placeholder.com/280x180" alt="Фото пользователя">
+        <div class="user-photo__photo-comments">
+          <p class="photo-comments__author-name">Левон
+            <span class="photo-comments__publishing-time">(5 часов назад)</span>
+          </p>
+          <blockquote class="photo-comments__published-text">Вчера он на луну летал, сегодня в руки к нам попал</blockquote>
+          <p class="photo-comments__text like-text">
+            <button class="photo-comments__button like-button" type="button">Поставить лайк</button>Нравится: 356 </p>
+        </div>
+      </article>
+      <article class="user-photo">
+        <h3 class="visually-hidden">Пример фотографий пользователей</h3>
+        <img class="user-photo__picture" width="280" height="180" src="http://via.placeholder.com/280x180" alt="Фото пользователя">
+        <div class="user-photo__photo-comments">
+          <p class="photo-comments__author-name">Антон
+            <span class="photo-comments__publishing-time">(12 часов назад)</span>
+          </p>
+          <blockquote class="photo-comments__published-text">Соседи будут рады!</blockquote>
+          <p class="photo-comments__text like-text">
+            <button class="photo-comments__button like-button" type="button">Поставить лайк</button>Нравится: 666 </p>
+        </div>
+      </article>
+      <article class="user-photo">
+        <h3 class="visually-hidden">Пример фотографий пользователей</h3>
+        <img class="user-photo__picture" width="280" height="180" src="http://via.placeholder.com/280x180" alt="Фото пользователя">
+        <div class="user-photo__photo-comments">
+          <p class="photo-comments__author-name">Борис
+            <span class="photo-comments__publishing-time">(20 часов назад)</span>
+          </p>
+          <blockquote class="photo-comments__published-text">Здесь могла быть ваша цитата о высоком и вечном</blockquote>
+          <p class="photo-comments__text like-text">
+            <button class="photo-comments__button like-button" type="button">Поставить лайк</button>Нравится: 215 </p>
+        </div>
+      </article>
+      <article class="user-photo">
+        <h3 class="visually-hidden">Пример фотографий пользователей</h3>
+        <img class="user-photo__picture" width="280" height="180" src="http://via.placeholder.com/280x180" alt="Фото пользователя">
+        <div class="user-photo__photo-comments">
+          <p class="photo-comments__author-name">Сергей
+            <span class="photo-comments__publishing-time">(25 часов назад)</span>
+          </p>
+          <blockquote class="photo-comments__published-text">Самая кубанская в мире!</blockquote>
+          <p class="photo-comments__text like-text">
+            <button class="photo-comments__button like-button" type="button">Поставить лайк</button>Нравится: 4 </p>
+        </div>
+      </article>
+      <article class="user-photo">
+        <h3 class="visually-hidden">Пример фотографий пользователей</h3>
+        <img class="user-photo__picture" width="280" height="180" src="http://via.placeholder.com/280x180" alt="Фото пользователя">
+        <div class="user-photo__photo-comments">
+          <p class="photo-comments__author-name">Максим
+            <span class="photo-comments__publishing-time">(40 часов назад)</span>
+          </p>
+          <blockquote class="photo-comments__published-text">Где снег-то?</blockquote>
+          <p class="photo-comments__text like-text">
+            <button class="photo-comments__button like-button" type="button">Поставить лайк</button>Нравится: 150 </p>
+        </div>
+      </article>
+      <article class="user-photo">
+        <h3 class="visually-hidden">Пример фотографий пользователей</h3>
+        <img class="user-photo__picture" width="280" height="180" src="http://via.placeholder.com/280x180" alt="Фото пользователя">
+        <div class="user-photo__photo-comments">
+          <p class="photo-comments__author-name">Надежда
+            <span class="photo-comments__publishing-time">(45 часов назад)</span>
+          </p>
+          <blockquote class="photo-comments__published-text">Всем GM и взаимные лайки!</blockquote>
+          <p class="photo-comments__text like-text">
+            <button class="photo-comments__button like-button" type="button">Поставить лайк</button>Нравится: 2560 </p>
+        </div>
+      </article>
     </section>
     <section class="conclusion">
       <h2 class="visually-hidden">Просьба к пользователям выкладывать фото</h2>
       <p class="conclusion__article motive-text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
     </section>
     <section class="instrumental-desk">
-      <img class="instrumental-desk__original-photo" width="280" height="374" src="http://via.placeholder.com/280x374">
-      <div class="instrumental-desk__instruments wrapper">
-        <ul class="instrumental-desk__list instruments-list">
-          <li class="instrumental-desk__item instruments-list__item--current">Обрезать</li>
-          <li class="instrumental-desk__item instruments-list__item--fill">Заливка</li>
-          <li class="instrumental-desk__item instruments-list__item--contrast">Контраст</li>
-        </ul>
-        <a class="instrumental-desk__button publish-button" href="#">Запостить</a>
-        <a class="instrumental-desk__button cancel-button">Отмена</a>
-      </div>
+      <h2 class="visually-hidden">Панель инструментов для обработки фото</h2>
+      <form class="instrumental-desk__form" action="https://echo.htmlacademy.ru" method="post">
+        <img class="instrumental-desk__original-photo" width="280" height="374" src="http://via.placeholder.com/280x374" alt="Пример фото для обработки">
+        <div class="instrumental-desk__instruments wrapper">
+          <ul class="instrumental-desk__list instruments-list">
+            <li class="instrumental-desk__item instruments-list__item instruments-list__item--current">Обрезать</li>
+            <li class="instrumental-desk__item  instruments-list__item instruments-list__item--fill">Заливка</li>
+            <li class="instrumental-desk__item instruments-list__item instruments-list__item--contrast">Контраст</li>
+          </ul>
+          <button class="instrumental-desk__button publish-button" type="submit">Запостить</button>
+          <button class="instrumental-desk__button cancel-button" type="button">Отмена</button>
+          <div class="instrumental-desk__slider"></div>
+        </div>
+      </form>
     </section>
   </main>
   <footer class="regular-footer">
     <a class="regular-footer__logo" href="index.html">Pink</a>
     <div class="social-buttons">
-      <a class="social-buttons__item social-buttons__item-twitter" href="#">Twitter</a>
-      <a class="social-buttons__item social-buttons__item-fb" href="#">Facebook</a>
-      <a class="social-buttons__item social-buttons__item-youtube" href="#">Youtube</a>
+      <a class="social-buttons__item social-buttons__item--twitter" href="#">Twitter</a>
+      <a class="social-buttons__item social-buttons__item--fb" href="#">Facebook</a>
+      <a class="social-buttons__item social-buttons__item--youtube" href="#">Youtube</a>
     </div>
     <div class="regular-footer__copyright">
       <p class="regular-footer__copyright-text">Разработано</p>
       <a class="regular-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-        <img class="regular-footer__copyright-icon" width="27" height="34" src="http://via.placeholder.com/27x34">Htmlacademy</a>
+        <img class="regular-footer__copyright-icon" width="27" height="34" src="http://via.placeholder.com/27x34" alt="сайт htmlacademy.ru">Htmlacademy</a>
     </div>
   </footer>
 </body>
