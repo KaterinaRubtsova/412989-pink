@@ -1,5 +1,5 @@
 .form {
-  padding: 0px 20px;
+  padding: 0 20px;
 }
 
 .form__list {
@@ -15,7 +15,7 @@
   text-transform: uppercase;
 }
 
-.name-fields+input {
+.name-fields + input {
   font-size: $bold-font-size;
   font-weight: $regular-font-weight;
   color: $pink;
@@ -47,7 +47,7 @@
   text-transform: uppercase;
 }
 
-.data-fields+input {
+.data-fields + input {
   font-size: $bold-font-size;
   font-weight: $regular-font-weight;
   color: $black;
@@ -62,7 +62,7 @@
   background-color: $light-gray;
 }
 
-.form__blocks__intro+textarea {
+.form__blocks__intro + textarea {
   font-size: $bold-font-size;
   font-weight: $regular-font-weight;
   color: $black;
@@ -80,8 +80,6 @@
   height: 55px;
   width: 281px;
   padding: 18px 34px;
-  border-radius: 0;
-  border: none;
 }
 
 .form__notification {

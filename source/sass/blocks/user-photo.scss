@@ -1,9 +1,10 @@
 .user-photo__picture {
   margin: auto;
 }
+
 .user-photo__photo-comments {
   margin: 20px;
-  margin-top: 0px;
+  margin-top: 0;
   padding: 25px;
   background-color: $light-gray;
   text-align: center;
@@ -36,4 +37,3 @@
   color: $pink;
   text-transform: uppercase;
 }
-
