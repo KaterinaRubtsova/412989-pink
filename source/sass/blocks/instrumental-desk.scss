@@ -5,12 +5,29 @@
   list-style: none;
 }
 .publish-button {
-@extend %btn;
-background-color: $light-gray;
+  background-color: $light-gray;
+  text-decoration: none;
+  color: $pink;
+  line-height: 18px;
+  font-size: $bold-font-size;
+  font-weight: $bold-font-weight;
+  border: 3px solid $pink;
+  border-radius: 30px 30px;
+  height: 55px;
+  width: 281px;
+  padding: 18px 34px;
 }
 .cancel-button {
-  @extend %btn;
+  text-decoration: none;
   background-color: $light-gray;
-  border-color: $inactive-gray;
   color: $inactive-gray;
+  border-color: $inactive-gray;
+  line-height: 18px;
+  font-size: $bold-font-size;
+  font-weight: $bold-font-weight;
+  border: 3px solid $pink;
+  border-radius: 30px 30px;
+  height: 55px;
+  width: 281px;
+  padding: 18px 34px;
 }

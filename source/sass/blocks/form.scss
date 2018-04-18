@@ -1,52 +1,92 @@
 .form {
   padding: 0px 20px;
 }
+
 .form__list {
   list-style: none;
   text-align: center;
 }
+
 .name-fields {
-  @extend %pink-label;
-}
-.name-fields + input {
-  @extend %regular-black-text;
+  font-size: $regular-font-size;
+  font-weight: $regular-font-weight;
   color: $pink;
+  line-height: $big-line-height;
+  text-transform: uppercase;
+}
+
+.name-fields+input {
+  font-size: $bold-font-size;
+  font-weight: $regular-font-weight;
+  color: $pink;
+  line-height: $big-line-height;
 }
 
 .form__blocks__intro {
-  @extend %pink-label;
+  font-size: $regular-font-size;
+  font-weight: $regular-font-weight;
+  color: $pink;
+  line-height: $big-line-height;
+  text-transform: uppercase;
   text-align: center;
 }
 
 .form__blocks--achievements {
-  @extend %regular-black-text;
+  font-size: $bold-font-size;
+  font-weight: $regular-font-weight;
+  color: $black;
+  line-height: $big-line-height;
   background-color: $light-gray;
 }
 
 .data-fields {
-  @extend %pink-label;
+  font-size: $regular-font-size;
+  font-weight: $regular-font-weight;
+  color: $pink;
+  line-height: $big-line-height;
+  text-transform: uppercase;
 }
 
 .data-fields+input {
-  @extend %regular-black-text;
+  font-size: $bold-font-size;
+  font-weight: $regular-font-weight;
+  color: $black;
+  line-height: $big-line-height;
 }
 
 .form__blocks--applications {
-  @extend %regular-black-text;
+  font-size: $bold-font-size;
+  font-weight: $regular-font-weight;
+  color: $black;
+  line-height: $big-line-height;
   background-color: $light-gray;
 }
 
 .form__blocks__intro+textarea {
-  @extend %regular-black-text;
+  font-size: $bold-font-size;
+  font-weight: $regular-font-weight;
+  color: $black;
+  line-height: $big-line-height;
 }
 
 .form__submit-button {
-  @extend %btn;
+  text-decoration: none;
+  color: $white;
+  line-height: 18px;
+  font-size: $bold-font-size;
+  font-weight: $bold-font-weight;
   border-radius: 0;
   border: none;
-  color: $white;
+  height: 55px;
+  width: 281px;
+  padding: 18px 34px;
+  border-radius: 0;
+  border: none;
 }
 
 .form__notification {
-  @extend %regular-black-text;
+  font-size: $bold-font-size;
+  font-weight: $regular-font-weight;
+  color: $black;
+  line-height: $big-line-height;
 }
