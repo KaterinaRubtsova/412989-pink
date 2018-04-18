@@ -1,0 +1,90 @@
+.form {
+  padding: 0 20px;
+}
+
+.form__list {
+  list-style: none;
+  text-align: center;
+}
+
+.name-fields {
+  font-size: $regular-font-size;
+  font-weight: $regular-font-weight;
+  color: $pink;
+  line-height: $big-line-height;
+  text-transform: uppercase;
+}
+
+.name-fields + input {
+  font-size: $bold-font-size;
+  font-weight: $regular-font-weight;
+  color: $pink;
+  line-height: $big-line-height;
+}
+
+.form__blocks__intro {
+  font-size: $regular-font-size;
+  font-weight: $regular-font-weight;
+  color: $pink;
+  line-height: $big-line-height;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.form__blocks--achievements {
+  font-size: $bold-font-size;
+  font-weight: $regular-font-weight;
+  color: $black;
+  line-height: $big-line-height;
+  background-color: $light-gray;
+}
+
+.data-fields {
+  font-size: $regular-font-size;
+  font-weight: $regular-font-weight;
+  color: $pink;
+  line-height: $big-line-height;
+  text-transform: uppercase;
+}
+
+.data-fields + input {
+  font-size: $bold-font-size;
+  font-weight: $regular-font-weight;
+  color: $black;
+  line-height: $big-line-height;
+}
+
+.form__blocks--applications {
+  font-size: $bold-font-size;
+  font-weight: $regular-font-weight;
+  color: $black;
+  line-height: $big-line-height;
+  background-color: $light-gray;
+}
+
+.form__blocks__intro + textarea {
+  font-size: $bold-font-size;
+  font-weight: $regular-font-weight;
+  color: $black;
+  line-height: $big-line-height;
+}
+
+.form__submit-button {
+  text-decoration: none;
+  color: $white;
+  line-height: 18px;
+  font-size: $bold-font-size;
+  font-weight: $bold-font-weight;
+  border-radius: 0;
+  border: none;
+  height: 55px;
+  width: 281px;
+  padding: 18px 34px;
+}
+
+.form__notification {
+  font-size: $bold-font-size;
+  font-weight: $regular-font-weight;
+  color: $black;
+  line-height: $big-line-height;
+}

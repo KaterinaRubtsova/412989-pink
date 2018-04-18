@@ -1,0 +1,25 @@
+.main-footer {
+  padding: 50px;
+  text-align: center;
+}
+
+.main-footer__invitation {
+  font-size: $light-font-size;
+  font-weight: $light-font-weight;
+  color: $black;
+  line-height: $big-line-height;
+}
+
+.main-footer__text {
+  font-size: $bold-font-size;
+  font-weight: $bold-font-weight;
+  color: $black;
+  line-height: $big-line-height;
+}
+
+.main-footer__info {
+  font-size: $light-font-size;
+  font-weight: $light-font-weight;
+  color: $pink;
+  line-height: $big-line-height;
+}

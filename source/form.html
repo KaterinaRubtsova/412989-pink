@@ -3,10 +3,11 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Пинк</title>
+  <title>Конкурс</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="body">
   <header class="page-header">
     <nav class="page-header__main-nav">
       <a class="page-header__logo" href="index.html">
@@ -45,15 +46,15 @@
         <fieldset class="form__blocks">
           <ul class="form__list">
             <li class="form__item">
-              <label for="surname-field">Фамилия:</label>
+              <label class="name-fields" for="surname-field">Фамилия:</label>
               <input type="text" name="surname" id="surname-field" placeholder="Укажите фамилию*">
             </li>
             <li class="form__item">
-              <label for="name-field">Имя:</label>
+              <label class="name-fields" for="name-field">Имя:</label>
               <input type="text" name="name" id="name-field" placeholder="Укажите имя*">
             </li>
             <li class="form__item">
-              <label for="middlename-field">Отчество:</label>
+              <label class="name-fields" for="middlename-field">Отчество:</label>
               <input type="text" name="middlename" id="middlename-field" placeholder="Ну и отчество тоже">
             </li>
           </ul>
@@ -61,6 +62,7 @@
 
         <fieldset class="form__blocks form__blocks--achievements">
           <h2 class="visually-hidden">Указать ваши достижения</h2>
+          <p class="form__blocks__intro">Ваши безбашенные достижения в путешествии</p>
           <ul class="form__list">
             <li class="form__item">
               <input type="checkbox" name="shark" id="shark-achiev" checked>
@@ -92,17 +94,18 @@
         <fieldset class="form__blocks">
           <ul class="form__list">
             <li class="form__item">
-              <label for="telNo">Номер телефона</label>
+              <label class="data-fields" for="telNo">Номер телефона</label>
               <input type="tel" id="telNo" placeholder="Номер, пожалуйста">
             </li>
             <li class="form__item">
-              <label for="email">Номер телефона</label>
+              <label class="data-fields" for="email">Номер телефона</label>
               <input type="email" id="email" placeholder="Введите почту*">
             </li>
           </ul>
         </fieldset>
 
         <fieldset class="form__blocks form__blocks--applications">
+          <p class="form__blocks__intro">С каким приложением путешествовали?</p>
           <ul class="form__list">
             <li class="form__item">
               <input type="radio" name="application" value="ios" id="radio-ios" checked>
@@ -120,11 +123,11 @@
         </fieldset>
 
         <fieldset class="form__blocks">
-          <p>Опишите свои эмоции</p>
+          <p class="form__blocks__intro">Опишите свои эмоции</p>
           <textarea name="comment" id="comment-field" rows="5"> Можно прям в красках, не стесняясь в выражениях</textarea>
         </fieldset>
-        <input type="submit" value="Отправить форму">
-        <p class="form__notification">* - обязательные поля </p>
+        <input class="form__submit-button" type="submit" value="Отправить форму">
+        <p class="form__notification"> <span class="form__blocks__intro">*</span> - обязательные поля </p>
       </form>
     </section>
   </main>

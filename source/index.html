@@ -4,9 +4,10 @@
 <head>
   <meta charset="utf-8">
   <title>Пинк</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="body">
   <!--Блок хедер и навигационный блок-меню (скрыто под кнопкой-бургером)-->
   <header class="page-header">
     <nav class="page-header__main-nav">
@@ -39,7 +40,7 @@
       <h2 class="visually-hidden">Промо для загрузки приложения</h2>
       <span class="promo-download__slogan">Взгляните на жизнь иначе!</span>
       <img class="promo-download__photo" src="http://via.placeholder.com/320x314" alt="Промо-фотография">
-      <a class=" promo-download__button download-button" href="https://www.apple.com/itunes/">Скачать приложение</a>
+      <a class="promo-download__button download-button" href="https://www.apple.com/itunes/">Скачать приложение</a>
       <div class="promo-download__wrapper">
         <ul class="promo-download__list apps-list">
           <li class="apps-list__item apps-list__item--mac">
@@ -59,25 +60,25 @@
     <section class="promo-advantages">
       <h2 class="visually-hidden">Преимущества приложения</h2>
       <p class="promo-advantages__proposal">Устали от серости мегаполиса?</p>
-      <p class="promo-advantages__proposal">Нам есть, что вам предложить!></p>
+      <p class="promo-advantages__proposal">Нам есть, что вам предложить!</p>
       <div class="promo-advantages__wrapper">
         <ul class="promo-advantages__list">
           <li class="promo-advantages__item">
-            <img class="promo-advantages__photo" width="157" height="320" src="http://via.placeholder.com/157x320" alt="Промо-фотография приложения">
             <p class="promo-advantages__caption">Поднимает настроение</p>
             <p class="promo-advantages__text">Приложение позволит вам победить осеннюю зандру и депрессию буквально в несколько кликов!</p>
           </li>
           <li class="promo-advantages__item">
-            <img class="promo-advantages__photo" width="157" height="320" src="http://via.placeholder.com/157x320" alt="Промо-фотография приложения">
             <p class="promo-advantages__caption">Меняет мир вокруг</p>
             <p class="promo-advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </li>
           <li class="promo-advantages__item">
-            <img class="promo-advantages__photo" width="157" height="320" src="http://via.placeholder.com/157x320" alt="Промо-фотография приложения">
             <p class="promo-advantages__caption">Заводит новых друзей</p>
             <p class="promo-advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
-          <!-- здесь должно быть изображение и еще одна feature, но пока не видно на мобильном макете -->
+          <li class="promo-advantages__item promo-advantages__item--photo">
+            <img class="promo-advantages__photo" width="157" height="320" src="http://via.placeholder.com/157x320" alt="Промо-фотография приложения">
+            <!-- здесь должно быть изображение и еще одна feature, но пока не видно на мобильном макете. как лучше сгруппировать изображения? отдельными элементами списка? -->
+          </li>
         </ul>
       </div>
     </section>

@@ -1,0 +1,39 @@
+.user-photo__picture {
+  margin: auto;
+}
+
+.user-photo__photo-comments {
+  margin: 20px;
+  margin-top: 0;
+  padding: 25px;
+  background-color: $light-gray;
+  text-align: center;
+}
+
+.photo-comments__author-name {
+  font-size: $regular-font-size;
+  font-weight: $bold-font-weight;
+  color: $black;
+  line-height: $regular-line-height;
+}
+
+.photo-comments__publishing-time {
+  font-size: $regular-font-size;
+  font-weight: $light-font-weight;
+  color: $dark-gray;
+  line-height: $regular-line-height;
+  text-transform: uppercase;
+}
+
+.photo-comments__published-text {
+  font-size: $regular-font-size;
+  font-weight: $regular-font-weight;
+  color: $black;
+  line-height: $regular-line-height;
+}
+
+.photo-comments__text {
+  font-size: $small-font-size;
+  color: $pink;
+  text-transform: uppercase;
+}
