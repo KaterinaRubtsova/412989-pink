@@ -1,0 +1,24 @@
+.promo-download {
+  background-color: $dark-gray;
+  padding: 30px 20px;
+  text-align: center;
+}
+.promo-download__slogan {
+  font-weight: $light-font-weight;
+  font-size: $light-font-size;
+}
+.promo-download__promo-options {
+  font-weight: $regular-font-weight;
+  font-size: $regular-font-size;
+  color: $white;
+}
+.promo-download__list {
+  list-style: none;
+}
+.promo-download__button {
+  @extend %btn;
+  font-weight: $bold-font-weight;
+  font-size: $bold-font-size;
+  color: $white;
+  border-color: $white;
+}

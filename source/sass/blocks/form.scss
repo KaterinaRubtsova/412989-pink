@@ -1,0 +1,52 @@
+.form {
+  padding: 0px 20px;
+}
+.form__list {
+  list-style: none;
+  text-align: center;
+}
+.name-fields {
+  @extend %pink-label;
+}
+.name-fields + input {
+  @extend %regular-black-text;
+  color: $pink;
+}
+
+.form__blocks__intro {
+  @extend %pink-label;
+  text-align: center;
+}
+
+.form__blocks--achievements {
+  @extend %regular-black-text;
+  background-color: $light-gray;
+}
+
+.data-fields {
+  @extend %pink-label;
+}
+
+.data-fields+input {
+  @extend %regular-black-text;
+}
+
+.form__blocks--applications {
+  @extend %regular-black-text;
+  background-color: $light-gray;
+}
+
+.form__blocks__intro+textarea {
+  @extend %regular-black-text;
+}
+
+.form__submit-button {
+  @extend %btn;
+  border-radius: 0;
+  border: none;
+  color: $white;
+}
+
+.form__notification {
+  @extend %regular-black-text;
+}

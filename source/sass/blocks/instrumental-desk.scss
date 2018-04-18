@@ -1,0 +1,16 @@
+.instrumental-desk {
+  background-color: $light-gray;
+}
+.instrumental-desk__list {
+  list-style: none;
+}
+.publish-button {
+@extend %btn;
+background-color: $light-gray;
+}
+.cancel-button {
+  @extend %btn;
+  background-color: $light-gray;
+  border-color: $inactive-gray;
+  color: $inactive-gray;
+}

@@ -1,0 +1,9 @@
+.introduction__header {
+  font-size: $light-font-size;
+  font-weight: $light-font-weight;
+  color: $white;
+  line-height: $big-line-height;
+}
+.motive-text {
+  @extend %regular-black-text;
+}

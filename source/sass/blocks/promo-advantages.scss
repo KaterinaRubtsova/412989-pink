@@ -1,0 +1,35 @@
+.promo-advantages__proposal {
+  padding: 25px 60px;
+  background-color: $white;
+  font-weight: $light-font-weight;
+  font-size: $light-font-size;
+  color: $black;
+  line-height: $regular-line-height;
+  text-align: center;
+}
+.promo-advantages__list {
+  background-color: $light-gray;
+  list-style: none;
+  text-align: center;
+  padding: 130px 30px 0px 30px;
+}
+.promo-advantages__item {
+  margin-bottom: 42px;
+}
+.promo-advantages__item--photo {
+  width: 157px;
+  height: 320px;
+}
+
+.promo-advantages__caption {
+  font-weight: $bold-font-weight;
+  font-size: $bold-font-size;
+  color: $black;
+  line-height: $regular-line-height;
+}
+.promo-advantages__text {
+  font-weight: $regular-font-weight;
+  font-size: $regular-font-size;
+  color: $black;
+  line-height: $regular-line-height;
+}
