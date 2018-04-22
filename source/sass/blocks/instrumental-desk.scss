@@ -1,36 +1,99 @@
 .instrumental-desk {
-  background-color: $light-gray;
+  background-color: #f2f2f2;
 }
 
 .instrumental-desk__list {
+  display: flex;
   list-style: none;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 10px 100px;
+}
+
+.instrumental-desk__form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.instrumental-desk__original-photo {
+  margin: 0 auto;
+}
+
+.instruments-list__item--current {
+  background: url("../img/icon-editor-crop.svg") no-repeat;
+  width: 48px;
+  height: 48px;
+  background-position: center;
+}
+
+.instruments-list__item--fill {
+  background: url("../img/icon-editor-fill.svg") no-repeat;
+  width: 48px;
+  height: 48px;
+  background-position: center;
+}
+
+.instruments-list__item--contrast {
+  background: url("../img/icon-editor-contrast.svg") no-repeat;
+  width: 48px;
+  height: 48px;
+  background-position: center;
+}
+
+.instrumental-desk__button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .publish-button {
-  background-color: $light-gray;
+  background-color: #f2f2f2;
   text-decoration: none;
-  color: $pink;
+  color: #cd0c54;
   line-height: 18px;
-  font-size: $bold-font-size;
-  font-weight: $bold-font-weight;
-  border: 3px solid $pink;
+  font-size: 18px;
+  font-weight: 700;
+  border: 3px solid #cd0c54;
   border-radius: 30px 30px;
   height: 55px;
   width: 281px;
   padding: 18px 34px;
+  margin-bottom: 10px;
 }
 
 .cancel-button {
   text-decoration: none;
-  background-color: $light-gray;
-  color: $inactive-gray;
-  border-color: $inactive-gray;
+  background-color: #f2f2f2;
+  color: #dddee0;
+  border-color: #dddee0;
   line-height: 18px;
-  font-size: $bold-font-size;
-  font-weight: $bold-font-weight;
-  border: 3px solid $pink;
+  font-size: 18px;
+  font-weight: 700;
+  border: 3px solid #dddee0;
   border-radius: 30px 30px;
   height: 55px;
   width: 281px;
   padding: 18px 34px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .instrumental-desk__form {
+    flex-wrap: nowrap;
+  }
+
+  .instrumental-desk__list {
+    flex-direction: column;
+  }
+
+  .instrumental-desk__original-photo {
+    margin: 10px 100px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .instrumental-desk__button-wrapper {
+    flex-direction: row;
+  }
 }

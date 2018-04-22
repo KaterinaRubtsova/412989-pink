@@ -1,26 +1,4 @@
-//переменные для основных фоновых цветов
-$transparent-gray: rgb(25, 36, 47);
-$dark-gray: rgb(23, 33, 45);
-$pink: rgb(210, 40, 86);
-$white: rgb(255, 255, 255);
-$light-gray: rgb(242, 242, 242);
-$inactive-gray: rgb(221, 222, 224);
-$black: rgb(0, 0, 0);
-$green: rgb(38, 172, 109);
 //переменные для шрифта (size)
-$basic-font:    opensans, sans-serif;
-$small-font-size: 12px;
-$regular-font-size: 14px;
-$light-font-size: 24px;
-$bold-font-size: 18px;
-// переменные для font-weight шрифта
-$regular-font-weight: 400;
-$bold-font-weight: 700;
-$light-font-weight: 300;
-//высота строки текста
-$regular-line-height: 24px;
-$big-line-height: 30px;
-$small-line-height: 5px;
-
-//переменные для изображений
-$background-image: url("../img/bg-back-mobile@1x.jpg");
+$basic-font: "Open Sans", "Arial", sans-serif;
+$tablet-width: 660px;
+$desktop-width: 1200px;

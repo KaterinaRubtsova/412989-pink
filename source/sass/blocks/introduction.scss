@@ -1,13 +1,26 @@
 .introduction__header {
-  font-size: $light-font-size;
-  font-weight: $light-font-weight;
-  color: $white;
-  line-height: $big-line-height;
+  height: 250px;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-top: 100px;
+  font-size: 24px;
+  font-weight: 300;
+  color: #ffffff;
+  line-height: 30px;
+  text-align: center;
 }
 
 .motive-text {
-  font-size: $bold-font-size;
-  font-weight: $regular-font-weight;
-  color: $black;
-  line-height: $big-line-height;
+  margin: 50px auto;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 30px;
+  text-align: center;
+}
+
+.form__blocks {
+  background-color: #ffffff;
+  padding-bottom: 27px;
+  padding-top: 50px;
 }

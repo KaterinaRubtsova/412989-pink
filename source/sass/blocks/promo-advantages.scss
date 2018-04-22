@@ -1,39 +1,215 @@
-.promo-advantages__proposal {
-  padding: 25px 60px;
-  background-color: $white;
-  font-weight: $light-font-weight;
-  font-size: $light-font-size;
-  color: $black;
-  line-height: $regular-line-height;
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.promo-invitation {
+  padding: 20px;
+  font-size: 24px;
+  font-weight: 300;
+  background-color: #ffffff;
+  color: #000000;
+  line-height: 24px;
+  text-align: center; //добавить фигурное изображение
+}
+
+.promo-invitation__wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.promo-invitation__proposal--first-line {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 24px;
   text-align: center;
 }
 
-.promo-advantages__list {
-  padding: 130px 30px 0 30px;
-  background-color: $light-gray;
-  list-style: none;
+.promo-invitation__proposal--second-line {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 24px;
   text-align: center;
 }
 
-.promo-advantages__item {
-  margin-bottom: 42px;
+.promo-features {
+  padding: 50px 0 125px;
+  text-align: center;
+  background: url("../img/iphone-screen-mobile@1x.png") no-repeat;
+  background-position: center 440px;
+  background-color: #f2f2f2;
 }
 
-.promo-advantages__item--photo {
-  width: 157px;
-  height: 320px;
+.promo-features__wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-.promo-advantages__caption {
-  font-weight: $bold-font-weight;
-  font-size: $bold-font-size;
-  color: $black;
-  line-height: $regular-line-height;
+.promo-features__item {
+  margin-bottom: 40px;
 }
 
-.promo-advantages__text {
-  font-weight: $regular-font-weight;
-  font-size: $regular-font-size;
-  color: $black;
-  line-height: $regular-line-height;
+.special-promo {
+  display: none;
+}
+
+.reviews__wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.reviews__item {
+  text-align: center;
+  padding: 45px 0;
+}
+
+.reviews__user-info {
+  display: none;
+}
+
+.reviews__toggles {
+  text-align: center;
+}
+
+.tariffs {
+  background-color: #f2f2f2;
+}
+
+.tariffs__toggles {
+  text-align: center;
+}
+
+.tariffs__item {
+  margin: 0;
+  padding: 20px;
+  text-align: left;
+}
+// для планшета
+@media (min-width: $tablet-width) {
+  .promo-invitation__proposal--first-line {
+    font-size: 40px;
+    line-height: 44px;
+    text-align: center;
+  }
+
+  .promo-invitation__proposal--second-line {
+    padding: 0 130px;
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  .promo-features {
+    background: url("../img/iphone-screen-mobile@1x.png") no-repeat;
+    background-position: top 10px left 50px;
+    background-size: 280px auto;
+    background-color: #f2f2f2;
+  }
+
+  .promo-features__wrapper {
+    margin: 0 auto;
+    padding: 0 40px;
+    text-align: left;
+    padding-left: 400px;
+  }
+
+  .promo-features__item {
+    margin-bottom: 40px;
+  }
+
+  .special-promo {
+    display: block;
+    background-color: #ffffff;
+  }
+
+  .special-promo__wrapper {
+    margin: 0 auto;
+    padding: 40px;
+    text-align: left;
+    padding-left: 400px;
+  }
+
+  .reviews__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews__user-name {
+    order: 2;
+  }
+
+  .reviews__user-info {
+    order: 3;
+    display: block;
+  }
+
+  .reviews__user-comment {
+    order: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo-invitation__proposal--first-line {
+    font-size: 50px;
+  }
+
+  .promo-invitation__proposal--second-line {
+    padding: 0 300px;
+    font-size: 50px;
+    line-height: 55px;
+  }
+
+  .promo-features {
+    width: 100%;
+    background-color: #f2f2f2;
+    background-image: none;
+  }
+
+  .promo-features__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 0;
+  }
+
+  .promo-features__item {
+    padding: 440px 30px 0;
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 300px;
+    text-align: center;
+    background-position: left 15px top 40px;
+  }
+
+  .promo-features__item--first {
+    background: url("../img/iphone-screen-mobile@1x.png") no-repeat;
+    background-size: contain;
+  }
+
+  .promo-features__item--second {
+    background: url("../img/iphone-screen-mobile@1x.png") no-repeat;
+    background-size: contain;
+  }
+
+  .promo-features__item--third {
+    background: url("../img/iphone-screen-mobile@1x.png") no-repeat;
+    background-size: contain;
+  }
+
+  .special-promo {
+    background-color: #f2f2f2;
+  }
+
+  .reviews__item {
+    //должно дополняться изображением цитаты
+    padding: 0 188px;
+  }
 }

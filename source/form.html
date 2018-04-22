@@ -4,25 +4,32 @@
 <head>
   <meta charset="utf-8">
   <title>Конкурс</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="body">
+<body>
+  <!--Блок хедер и навигационный блок-меню (скрыто под кнопкой-бургером)-->
   <header class="page-header">
     <nav class="page-header__main-nav">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-name" src="http://via.placeholder.com/75x22" width="75" height="22" alt="Pink">
-      </a>
-      <button class="main-nav__button burger-button" type="button">Открыть меню</button>
+      <!--попробую обернуть лого и кнопку в отдельный див-->
+      <div class="main-nav__initial-navigation">
+        <a class="main-nav__logo">
+          <!--<img class="page-header__logo-name" src="http://via.placeholder.com/75x22" width="75" height="22" alt="Pink">-->
+        </a>
+        <button class="main-nav__button burger-button" type="button">Открыть меню</button>
+      </div>
+      <!-- далее размещено скрытое меню -->
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--active">
             <a href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
             <a href="photo.html">Фотографии</a>
           </li>
-          <li class="site-list__item site-list__item--active">
+          <li class="site-list__item">
             <a>Конкурс</a>
           </li>
           <li class="site-list__item">
@@ -31,19 +38,19 @@
         </ul>
       </div>
     </nav>
+    <h2 class="introduction__header">Конкурс на самое безбашенное путешествие с Пинк </h2>
   </header>
   <main class="page-form">
-    <section class="introduction">
-      <h2 class="introduction__header">Конкурс на самое безбашенное путешествие с Пинк </h2>
-      <article class="introduction__article">
-        <h3 class="visually-hidden">Предложение участвовать в конкурсе</h3>
-        <p class="introduction__article motive-text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту </p>
-      </article>
-    </section>
+
+    <article class="introduction__article">
+      <h3 class="visually-hidden">Предложение участвовать в конкурсе</h3>
+      <p class="introduction__article motive-text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту </p>
+    </article>
+
     <section class="form">
       <h2 class="visually-hidden">Указать фамилию, имя и отчество</h2>
       <form class="form__input-fields" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="form__blocks">
+        <fieldset class="form__blocks form__blocks--name">
           <ul class="form__list">
             <li class="form__item">
               <label class="name-fields" for="surname-field">Фамилия:</label>
@@ -63,7 +70,7 @@
         <fieldset class="form__blocks form__blocks--achievements">
           <h2 class="visually-hidden">Указать ваши достижения</h2>
           <p class="form__blocks__intro">Ваши безбашенные достижения в путешествии</p>
-          <ul class="form__list">
+          <ul class="form__list form__list--achievements">
             <li class="form__item">
               <input type="checkbox" name="shark" id="shark-achiev" checked>
               <label for="shark-achiev">Сделал селфи с акулой</label>
@@ -91,7 +98,7 @@
           </ul>
         </fieldset>
 
-        <fieldset class="form__blocks">
+        <fieldset class="form__blocks form__blocks--contacts">
           <ul class="form__list">
             <li class="form__item">
               <label class="data-fields" for="telNo">Номер телефона</label>
@@ -122,27 +129,40 @@
           </ul>
         </fieldset>
 
-        <fieldset class="form__blocks">
+        <fieldset class="form__blocks form__blocks--emotions">
           <p class="form__blocks__intro">Опишите свои эмоции</p>
           <textarea name="comment" id="comment-field" rows="5"> Можно прям в красках, не стесняясь в выражениях</textarea>
         </fieldset>
-        <input class="form__submit-button" type="submit" value="Отправить форму">
-        <p class="form__notification"> <span class="form__blocks__intro">*</span> - обязательные поля </p>
+        <div class="submit-wrapper">
+          <input class="form__submit-button" type="submit" value="Отправить форму">
+          <p class="form__notification">
+            <span class="form__blocks__intro">*</span> - обязательные поля </p>
+        </div>
       </form>
     </section>
   </main>
 
   <footer class="regular-footer">
-    <a class="regular-footer__logo" href="index.html">Pink</a>
-    <div class="social-buttons">
-      <a class="social-buttons__item social-buttons__item--twitter" href="#">Twitter</a>
-      <a class="social-buttons__item social-buttons__item--fb" href="#">Facebook</a>
-      <a class="social-buttons__item social-buttons__item--youtube" href="#">Youtube</a>
-    </div>
-    <div class="regular-footer__copyright">
-      <p class="regular-footer__copyright-text">Разработано</p>
-      <a class="regular-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-        <img class="regular-footer__copyright-icon" width="27" height="34" src="http://via.placeholder.com/27x34" alt="сайт htmlacademy.ru">Htmlacademy</a>
+    <div class="regular-footer__social-wrapper">
+      <a class="regular-footer__logo hide-text" href="index.html">Pink</a>
+      <div class="regular-footer__social-buttons">
+        <ul class="regular-social-buttons__list">
+          <li class="regular-social-buttons__item social-buttons__item--twitter">
+            <a class="hide-text" href="#">Twitter</a>
+          </li>
+          <li class="regular-social-buttons__item social-buttons__item--fb">
+            <a class="hide-text" href="#">Facebook</a>
+          </li>
+          <li class="regular-social-buttons__item social-buttons__item--youtube">
+            <a class="hide-text" href="#">Youtube</a>
+          </li>
+        </ul>
+      </div>
+      <div class="regular-footer__copyright">
+        <p class="regular-footer__copyright-text">Разработано</p>
+        <a class="regular-footer__copyright-link hide-text" href="https://htmlacademy.ru/intensive/adaptive">Htmlacademy
+        </a>
+      </div>
     </div>
   </footer>
 </body>

@@ -1,80 +1,100 @@
-.form {
-  padding: 0 20px;
-}
-
 .form__list {
   list-style: none;
-  text-align: center;
+  text-align: left;
+}
+
+.form__item {
+  padding-bottom: 20px;
 }
 
 .name-fields {
-  font-size: $regular-font-size;
-  font-weight: $regular-font-weight;
-  color: $pink;
-  line-height: $big-line-height;
+  display: block;
+  padding: 10px 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: #cd0c54;
+  line-height: 30px;
   text-transform: uppercase;
+  text-align: left;
 }
 
 .name-fields + input {
-  font-size: $bold-font-size;
-  font-weight: $regular-font-weight;
-  color: $pink;
-  line-height: $big-line-height;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #cd0c54;
+  line-height: 30px;
+}
+
+.form__blocks {
+  border: none;
 }
 
 .form__blocks__intro {
-  font-size: $regular-font-size;
-  font-weight: $regular-font-weight;
-  color: $pink;
-  line-height: $big-line-height;
+  font-size: 14px;
+  font-weight: 400;
+  color: #cd0c54;
+  line-height: 30px;
   text-transform: uppercase;
   text-align: center;
 }
 
 .form__blocks--achievements {
-  font-size: $bold-font-size;
-  font-weight: $regular-font-weight;
-  color: $black;
-  line-height: $big-line-height;
-  background-color: $light-gray;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 30px;
+  background-color: #f2f2f2;
+  text-align: left;
 }
 
 .data-fields {
-  font-size: $regular-font-size;
-  font-weight: $regular-font-weight;
-  color: $pink;
-  line-height: $big-line-height;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #cd0c54;
+  line-height: 30px;
   text-transform: uppercase;
+  padding: 10px 0;
+  text-align: left;
 }
 
 .data-fields + input {
-  font-size: $bold-font-size;
-  font-weight: $regular-font-weight;
-  color: $black;
-  line-height: $big-line-height;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 30px;
 }
 
 .form__blocks--applications {
-  font-size: $bold-font-size;
-  font-weight: $regular-font-weight;
-  color: $black;
-  line-height: $big-line-height;
-  background-color: $light-gray;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 30px;
+  background-color: #f2f2f2;
 }
 
 .form__blocks__intro + textarea {
-  font-size: $bold-font-size;
-  font-weight: $regular-font-weight;
-  color: $black;
-  line-height: $big-line-height;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 30px;
 }
 
 .form__submit-button {
   text-decoration: none;
-  color: $white;
+  color: #ffffff;
   line-height: 18px;
-  font-size: $bold-font-size;
-  font-weight: $bold-font-weight;
+  font-size: 18px;
+  font-weight: 700;
   border-radius: 0;
   border: none;
   height: 55px;
@@ -83,8 +103,84 @@
 }
 
 .form__notification {
-  font-size: $bold-font-size;
-  font-weight: $regular-font-weight;
-  color: $black;
-  line-height: $big-line-height;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__blocks--achievements {
+    background-color: #ffffff;
+  }
+
+  .form__blocks--applications {
+    background-color: #ffffff;
+  }
+
+  .submit-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__input-fields {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__blocks--name {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0 70px;
+    order: 1;
+    width: 400px;
+  }
+
+  .form__blocks--applications {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0 70px;
+    order: 2;
+    width: 400px;
+  }
+
+  .form__blocks--contacts {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0 70px;
+    order: 3;
+    width: 800px;
+  }
+
+  .form__blocks--achievements {
+    display: flex;
+    padding: 20px;
+    margin: 0 70px;
+    order: 4;
+  }
+
+  .form__list--achievements {
+    display: flex;
+  }
+
+  .form__blocks--emotions {
+    width: 100%;
+    order: 5;
+  }
+
+  .submit-wrapper {
+    width: 100%;
+    justify-content: space-between;
+    order: 6;
+  }
 }

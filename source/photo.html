@@ -4,16 +4,23 @@
 <head>
   <meta charset="utf-8">
   <title>Фотографии пользователей</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="body">
+<body>
+  <!--Блок хедер и навигационный блок-меню (скрыто под кнопкой-бургером)-->
   <header class="page-header">
     <nav class="page-header__main-nav">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-name" src="http://via.placeholder.com/75x22" width="75" height="22" alt="Pink">
-      </a>
-      <button class="main-nav__button burger-button" type="button">Открыть меню</button>
+      <!--попробую обернуть лого и кнопку в отдельный див-->
+      <div class="main-nav__initial-navigation">
+        <a class="main-nav__logo">
+          <!--<img class="page-header__logo-name" src="http://via.placeholder.com/75x22" width="75" height="22" alt="Pink">-->
+        </a>
+        <button class="main-nav__button burger-button" type="button">Открыть меню</button>
+      </div>
+      <!-- далее размещено скрытое меню -->
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
@@ -31,10 +38,10 @@
         </ul>
       </div>
     </nav>
+    <h2 class="introduction__header">Фотографии пользователей</h2>
   </header>
   <main class="page-photo">
     <section class="introduction">
-      <h2 class="introduction__header">Фотографии пользователей</h2>
       <article class="introduction__article">
         <h3 class="visually-hidden">Предложение выкладывать фотографии через приложение</h3>
         <p class="introduction__article motive-text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
@@ -44,89 +51,92 @@
       <h2 class="visually-hidden">Фото пользователей</h2>
       <article class="user-photo user-photo--panoramic">
         <h3 class="visually-hidden">Пример фотографий пользователей</h3>
-        <img class="user-photo__panoramic-picture" width="320" height="137" src="http://via.placeholder.com/320x137" alt="Фото пользователя">
-        <div class="user-photo__photo-comments">
+        <div class="user-photo__panoramic-wrapper">
+          <img class="user-photo__panoramic-picture" width="320" height="137" src="img/panorama-mobile@1x.jpg" alt="Фото пользователя">
+        </div>
+        <div class="user-photo__photo-comments user-photo__photo-comments--panoramic">
           <p class="photo-comments__author-name">Анна
             <span class="photo-comments__publishing-time">(5 минут назад)</span>
           </p>
-          <blockquote class="photo-comments__published-text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</blockquote>
+          <p class="photo-comments__published-text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
           <p class="photo-comments__text like-text">
             <button class="photo-comments__button like-button" type="button">Поставить лайк</button>Нравится: 215 </p>
         </div>
       </article>
-
-      <article class="user-photo">
-        <h3 class="visually-hidden">Пример фотографий пользователей</h3>
-        <img class="user-photo__picture" width="280" height="180" src="http://via.placeholder.com/280x180" alt="Фото пользователя">
-        <div class="user-photo__photo-comments">
-          <p class="photo-comments__author-name">Левон
-            <span class="photo-comments__publishing-time">(5 часов назад)</span>
-          </p>
-          <blockquote class="photo-comments__published-text">Вчера он на луну летал, сегодня в руки к нам попал</blockquote>
-          <p class="photo-comments__text like-text">
-            <button class="photo-comments__button like-button" type="button">Поставить лайк</button>Нравится: 356 </p>
-        </div>
-      </article>
-      <article class="user-photo">
-        <h3 class="visually-hidden">Пример фотографий пользователей</h3>
-        <img class="user-photo__picture" width="280" height="180" src="http://via.placeholder.com/280x180" alt="Фото пользователя">
-        <div class="user-photo__photo-comments">
-          <p class="photo-comments__author-name">Антон
-            <span class="photo-comments__publishing-time">(12 часов назад)</span>
-          </p>
-          <blockquote class="photo-comments__published-text">Соседи будут рады!</blockquote>
-          <p class="photo-comments__text like-text">
-            <button class="photo-comments__button like-button" type="button">Поставить лайк</button>Нравится: 666 </p>
-        </div>
-      </article>
-      <article class="user-photo">
-        <h3 class="visually-hidden">Пример фотографий пользователей</h3>
-        <img class="user-photo__picture" width="280" height="180" src="http://via.placeholder.com/280x180" alt="Фото пользователя">
-        <div class="user-photo__photo-comments">
-          <p class="photo-comments__author-name">Борис
-            <span class="photo-comments__publishing-time">(20 часов назад)</span>
-          </p>
-          <blockquote class="photo-comments__published-text">Здесь могла быть ваша цитата о высоком и вечном</blockquote>
-          <p class="photo-comments__text like-text">
-            <button class="photo-comments__button like-button" type="button">Поставить лайк</button>Нравится: 215 </p>
-        </div>
-      </article>
-      <article class="user-photo">
-        <h3 class="visually-hidden">Пример фотографий пользователей</h3>
-        <img class="user-photo__picture" width="280" height="180" src="http://via.placeholder.com/280x180" alt="Фото пользователя">
-        <div class="user-photo__photo-comments">
-          <p class="photo-comments__author-name">Сергей
-            <span class="photo-comments__publishing-time">(25 часов назад)</span>
-          </p>
-          <blockquote class="photo-comments__published-text">Самая кубанская в мире!</blockquote>
-          <p class="photo-comments__text like-text">
-            <button class="photo-comments__button like-button" type="button">Поставить лайк</button>Нравится: 4 </p>
-        </div>
-      </article>
-      <article class="user-photo">
-        <h3 class="visually-hidden">Пример фотографий пользователей</h3>
-        <img class="user-photo__picture" width="280" height="180" src="http://via.placeholder.com/280x180" alt="Фото пользователя">
-        <div class="user-photo__photo-comments">
-          <p class="photo-comments__author-name">Максим
-            <span class="photo-comments__publishing-time">(40 часов назад)</span>
-          </p>
-          <blockquote class="photo-comments__published-text">Где снег-то?</blockquote>
-          <p class="photo-comments__text like-text">
-            <button class="photo-comments__button like-button" type="button">Поставить лайк</button>Нравится: 150 </p>
-        </div>
-      </article>
-      <article class="user-photo">
-        <h3 class="visually-hidden">Пример фотографий пользователей</h3>
-        <img class="user-photo__picture" width="280" height="180" src="http://via.placeholder.com/280x180" alt="Фото пользователя">
-        <div class="user-photo__photo-comments">
-          <p class="photo-comments__author-name">Надежда
-            <span class="photo-comments__publishing-time">(45 часов назад)</span>
-          </p>
-          <blockquote class="photo-comments__published-text">Всем GM и взаимные лайки!</blockquote>
-          <p class="photo-comments__text like-text">
-            <button class="photo-comments__button like-button" type="button">Поставить лайк</button>Нравится: 2560 </p>
-        </div>
-      </article>
+      <div class="user-photo__wrapper">
+        <article class="user-photo">
+          <h3 class="visually-hidden">Пример фотографий пользователей</h3>
+          <img class="user-photo__picture" width="280" height="180" src="img/photo-car-mobile@1x.jpg" alt="Фото пользователя">
+          <div class="user-photo__photo-comments">
+            <p class="photo-comments__author-name">Левон
+              <span class="photo-comments__publishing-time">(5 часов назад)</span>
+            </p>
+            <p class="photo-comments__published-text">Вчера он на луну летал, сегодня в руки к нам попал</p>
+            <p class="photo-comments__text like-text">
+              <button class="photo-comments__button like-button" type="button">Поставить лайк</button>Нравится: 356 </p>
+          </div>
+        </article>
+        <article class="user-photo">
+          <h3 class="visually-hidden">Пример фотографий пользователей</h3>
+          <img class="user-photo__picture" width="280" height="180" src="img/photo-drumset-mobile@1x.jpg" alt="Фото пользователя">
+          <div class="user-photo__photo-comments">
+            <p class="photo-comments__author-name">Антон
+              <span class="photo-comments__publishing-time">(12 часов назад)</span>
+            </p>
+            <p class="photo-comments__published-text">Соседи будут рады!</p>
+            <p class="photo-comments__text like-text">
+              <button class="photo-comments__button like-button" type="button">Поставить лайк</button>Нравится: 666 </p>
+          </div>
+        </article>
+        <article class="user-photo">
+          <h3 class="visually-hidden">Пример фотографий пользователей</h3>
+          <img class="user-photo__picture" width="280" height="180" src="img/photo-window-mobile@1x.jpg" alt="Фото пользователя">
+          <div class="user-photo__photo-comments">
+            <p class="photo-comments__author-name">Борис
+              <span class="photo-comments__publishing-time">(20 часов назад)</span>
+            </p>
+            <p class="photo-comments__published-text">Здесь могла быть ваша цитата о высоком и вечном</p>
+            <p class="photo-comments__text like-text">
+              <button class="photo-comments__button like-button" type="button">Поставить лайк</button>Нравится: 215 </p>
+          </div>
+        </article>
+        <article class="user-photo">
+          <h3 class="visually-hidden">Пример фотографий пользователей</h3>
+          <img class="user-photo__picture" width="280" height="180" src="img/photo-fair-mobile@1x.jpg" alt="Фото пользователя">
+          <div class="user-photo__photo-comments">
+            <p class="photo-comments__author-name">Сергей
+              <span class="photo-comments__publishing-time">(25 часов назад)</span>
+            </p>
+            <p class="photo-comments__published-text">Самая кубанская в мире!</p>
+            <p class="photo-comments__text like-text">
+              <button class="photo-comments__button like-button" type="button">Поставить лайк</button>Нравится: 4 </p>
+          </div>
+        </article>
+        <article class="user-photo">
+          <h3 class="visually-hidden">Пример фотографий пользователей</h3>
+          <img class="user-photo__picture" width="280" height="180" src="img/photo-pov-mobile@1x.jpg" alt="Фото пользователя">
+          <div class="user-photo__photo-comments">
+            <p class="photo-comments__author-name">Максим
+              <span class="photo-comments__publishing-time">(40 часов назад)</span>
+            </p>
+            <p class="photo-comments__published-text">Где снег-то?</p>
+            <p class="photo-comments__text like-text">
+              <button class="photo-comments__button like-button" type="button">Поставить лайк</button>Нравится: 150 </p>
+          </div>
+        </article>
+        <article class="user-photo">
+          <h3 class="visually-hidden">Пример фотографий пользователей</h3>
+          <img class="user-photo__picture" width="280" height="180" src="img/photo-wing-mobile@1x.jpg" alt="Фото пользователя">
+          <div class="user-photo__photo-comments">
+            <p class="photo-comments__author-name">Надежда
+              <span class="photo-comments__publishing-time">(45 часов назад)</span>
+            </p>
+            <p class="photo-comments__published-text">Всем GM и взаимные лайки!</p>
+            <p class="photo-comments__text like-text">
+              <button class="photo-comments__button like-button" type="button">Поставить лайк</button>Нравится: 2560 </p>
+          </div>
+        </article>
+      </div>
     </section>
     <section class="conclusion">
       <h2 class="visually-hidden">Просьба к пользователям выкладывать фото</h2>
@@ -135,31 +145,43 @@
     <section class="instrumental-desk">
       <h2 class="visually-hidden">Панель инструментов для обработки фото</h2>
       <form class="instrumental-desk__form" action="https://echo.htmlacademy.ru" method="post">
-        <img class="instrumental-desk__original-photo" width="280" height="374" src="http://via.placeholder.com/280x374" alt="Пример фото для обработки">
+        <img class="instrumental-desk__original-photo" width="280" height="374" src="img/photo-road-mobile@1x.jpg" alt="Пример фото для обработки">
         <div class="instrumental-desk__instruments wrapper">
           <ul class="instrumental-desk__list instruments-list">
-            <li class="instrumental-desk__item instruments-list__item instruments-list__item--current">Обрезать</li>
-            <li class="instrumental-desk__item  instruments-list__item instruments-list__item--fill">Заливка</li>
-            <li class="instrumental-desk__item instruments-list__item instruments-list__item--contrast">Контраст</li>
+            <li class="instrumental-desk__item instruments-list__item instruments-list__item--current hide-text">Обрезать</li>
+            <li class="instrumental-desk__item  instruments-list__item instruments-list__item--fill hide-text">Заливка</li>
+            <li class="instrumental-desk__item instruments-list__item instruments-list__item--contrast hide-text">Контраст</li>
           </ul>
-          <button class="instrumental-desk__button publish-button" type="submit">Запостить</button>
-          <button class="instrumental-desk__button cancel-button" type="button">Отмена</button>
+          <div class="instrumental-desk__button-wrapper">
+            <button class="instrumental-desk__button publish-button" type="submit">Запостить</button>
+            <button class="instrumental-desk__button cancel-button" type="button">Отмена</button>
+          </div>
           <div class="instrumental-desk__slider"></div>
         </div>
       </form>
     </section>
   </main>
   <footer class="regular-footer">
-    <a class="regular-footer__logo" href="index.html">Pink</a>
-    <div class="social-buttons">
-      <a class="social-buttons__item social-buttons__item--twitter" href="#">Twitter</a>
-      <a class="social-buttons__item social-buttons__item--fb" href="#">Facebook</a>
-      <a class="social-buttons__item social-buttons__item--youtube" href="#">Youtube</a>
-    </div>
-    <div class="regular-footer__copyright">
-      <p class="regular-footer__copyright-text">Разработано</p>
-      <a class="regular-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-        <img class="regular-footer__copyright-icon" width="27" height="34" src="http://via.placeholder.com/27x34" alt="сайт htmlacademy.ru">Htmlacademy</a>
+    <div class="regular-footer__social-wrapper">
+      <a class="regular-footer__logo hide-text" href="index.html">Pink</a>
+      <div class="regular-footer__social-buttons">
+        <ul class="regular-social-buttons__list">
+          <li class="regular-social-buttons__item social-buttons__item--twitter">
+            <a class="hide-text" href="#">Twitter</a>
+          </li>
+          <li class="regular-social-buttons__item social-buttons__item--fb">
+            <a class="hide-text" href="#">Facebook</a>
+          </li>
+          <li class="regular-social-buttons__item social-buttons__item--youtube">
+            <a class="hide-text" href="#">Youtube</a>
+          </li>
+        </ul>
+      </div>
+      <div class="regular-footer__copyright">
+        <p class="regular-footer__copyright-text">Разработано</p>
+        <a class="regular-footer__copyright-link hide-text" href="https://htmlacademy.ru/intensive/adaptive">Htmlacademy
+        </a>
+      </div>
     </div>
   </footer>
 </body>

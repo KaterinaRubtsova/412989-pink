@@ -1,15 +1,13 @@
 @import "variables.scss";
 // index.html
-@import "blocks/main.scss";
+@import "blocks/basic.scss";
 @import "blocks/page-header.scss";
 @import "blocks/page-main.scss";
-@import "blocks/promo-download.scss";
 @import "blocks/promo-advantages.scss";
 @import "blocks/reviews.scss";
 @import "blocks/tariffs.scss";
 @import "blocks/main-footer.scss";
 // photo.html
-@import "blocks/page-photo.scss";
 @import "blocks/introduction.scss";
 @import "blocks/user-photo.scss";
 @import "blocks/conclusion.scss";
