@@ -1,8 +1,12 @@
 @import "variables.scss";
+@import "fonts.scss";
 // index.html
-@import "blocks/basic.scss";
+@import "blocks/scaffolding.scss";
 @import "blocks/page-header.scss";
 @import "blocks/page-main.scss";
+@import "blocks/promo-invitation.scss";
+@import "blocks/promo-features.scss";
+@import "blocks/special-promo.scss";
 @import "blocks/promo-advantages.scss";
 @import "blocks/reviews.scss";
 @import "blocks/tariffs.scss";

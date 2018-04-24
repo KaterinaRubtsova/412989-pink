@@ -13,6 +13,8 @@
 .instrumental-desk__form {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .instrumental-desk__original-photo {
@@ -40,8 +42,15 @@
   background-position: center;
 }
 
+.instrumental-desk__instruments {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
 .instrumental-desk__button-wrapper {
   display: flex;
+  margin: 0 auto;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
@@ -95,5 +104,15 @@
 @media (min-width: $desktop-width) {
   .instrumental-desk__button-wrapper {
     flex-direction: row;
+  }
+
+  .publish-button {
+    height: 55px;
+    width: 170px;
+  }
+
+  .cancel-button {
+    height: 55px;
+    width: 170px;
   }
 }

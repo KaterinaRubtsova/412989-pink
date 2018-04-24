@@ -1,16 +1,28 @@
 .user-photo__panoramic-wrapper {
-  margin: 0;
+  margin: 0 auto;
+  min-width: 320px;
+}
+
+.user-photo {
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 20px;
+}
+
+.user-photo__wrapper {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
 }
 
 .user-photo__picture {
-  margin: 0 auto;
-  padding: 0;
-  width: 280px;
+  width: 300px;
   height: 180px;
 }
 
 .user-photo__photo-comments {
-  width: 240px;
+  width: 260px;
   margin: 0;
   padding: 20px;
   background-color: #f2f2f2;
@@ -53,29 +65,23 @@
   }
 
   .user-photo__photo-comments--panoramic {
-    width: 570px;
+    width: 940px;
     margin: 0 auto;
   }
 
   .user-photo__wrapper {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 20px;
+    flex-direction: row;
   }
 
   .user-photo {
+    margin: 0 auto;
     padding-bottom: 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .user-photo__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 20px;
-    padding: 0 150px;
-  }
-
   .user-photo {
     margin: 0 auto;
     padding-bottom: 20px;

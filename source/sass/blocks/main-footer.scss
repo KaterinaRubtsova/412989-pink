@@ -1,26 +1,11 @@
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .main-footer {
   text-align: center;
 }
 
 .main-footer__wrapper {
   display: flex;
+  margin: 0 auto;
   flex-direction: column;
-  justify-content: center;
-  min-width: 320px;
 }
 
 .main-footer__invitation {
@@ -34,6 +19,13 @@ input[type="radio"].visually-hidden {
   color: #000000;
   line-height: 30px;
   text-align: center;
+}
+
+.main-footer__contacts-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .main-footer__contacts {
@@ -66,7 +58,7 @@ input[type="radio"].visually-hidden {
   height: 40px;
 }
 
-.main-social-buttons__list {
+.social-buttons__list {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -76,30 +68,19 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
 }
 
-.main-social-buttons__item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 46px;
-  height: 47px;
-  margin-right: 10px;
-  border: 3px solid #f2f2f2;
-  border-radius: 50%;
+.social-buttons__twitter {
+  width: 55px;
+  height: 55px;
+  border: 3px solid red;
 }
 
-.social-buttons__item--twitter {
-  background: url("../img/icon-twitter.svg") no-repeat;
-  background-position: center;
-}
+.twitter-icon {
+  width: 55px;
+  height: 55px;
 
-.social-buttons__item--fb {
-  background: url("../img/icon-facebook.svg") no-repeat;
-  background-position: center;
-}
-
-.social-buttons__item--youtube {
-  background: url("../img/icon-youtube.svg") no-repeat;
-  background-position: center;
+  polygon {
+    fill: #cd0c54;
+  }
 }
 
 .main-footer__copyright {
@@ -117,10 +98,9 @@ input[type="radio"].visually-hidden {
 }
 
 .main-footer__copyright-link {
-  background: url("../img/logo-htmlacademy.svg") no-repeat;
+  border: 3px solid #000000;
   width: 27px;
   height: 34px;
-  background-position: center;
 }
 // для планшета
 @media (min-width: $tablet-width) {

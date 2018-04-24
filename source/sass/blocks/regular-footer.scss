@@ -32,23 +32,8 @@
   width: 46px;
   height: 47px;
   margin-right: 10px;
-  border: 3px solid #f2f2f2;
+  border: 3px solid #000000;
   border-radius: 50%;
-}
-
-.social-buttons__item--twitter {
-  background: url("../img/icon-twitter.svg") no-repeat;
-  background-position: center;
-}
-
-.social-buttons__item--fb {
-  background: url("../img/icon-facebook.svg") no-repeat;
-  background-position: center;
-}
-
-.social-buttons__item--youtube {
-  background: url("../img/icon-youtube.svg") no-repeat;
-  background-position: center;
 }
 
 .regular-footer__copyright {
@@ -66,10 +51,9 @@
 }
 
 .regular-footer__copyright-link {
-  background: url("../img/logo-htmlacademy.svg") no-repeat;
   width: 27px;
   height: 34px;
-  background-position: center;
+  border: 3px solid #000000;
 }
 
 @media (min-width: $tablet-width) {
