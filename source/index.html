@@ -4,167 +4,233 @@
 <head>
   <meta charset="utf-8">
   <title>Пинк</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="body">
-  <!--Блок хедер и навигационный блок-меню (скрыто под кнопкой-бургером)-->
+<body>
+  <!--Хедер, навигационная секция (лого, кнопка-бургер) и промо-секция, в пейдж-хедер закладывается бэкграунд-имейдж -->
   <header class="page-header">
     <nav class="page-header__main-nav">
-      <a class="page-header__logo">
-        <img class="page-header__logo-name" src="http://via.placeholder.com/75x22" width="75" height="22" alt="Pink">
-      </a>
-      <button class="main-nav__button burger-button" type="button">Открыть меню</button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a>Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">Htmlacademy</a>
-          </li>
-        </ul>
+      <div class="container">
+        <div class="page-header__wrapper">
+          <a class="main-nav__logo">
+            <!--<img class="page-header__logo-name" src="http://via.placeholder.com/75x22" width="75" height="22" alt="Pink">-->
+          </a>
+          <button class="main-nav__button burger-button" type="button">Открыть меню</button>
+          <!-- далее размещено скрытое меню -->
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive">Htmlacademy</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
-  </header>
-  <main class="page-main">
-    <h1 class="visually-hidden">Информация для загрузки приложения</h1>
-    <!--Блок с предложением загрузить приложение-->
+
+    <!--Блок с предложением загрузить приложение, сюда же можно добавить изображение с телефоном (?)-->
     <section class="promo-download">
       <h2 class="visually-hidden">Промо для загрузки приложения</h2>
-      <span class="promo-download__slogan">Взгляните на жизнь иначе!</span>
-      <img class="promo-download__photo" src="http://via.placeholder.com/320x314" alt="Промо-фотография">
-      <a class="promo-download__button download-button" href="https://www.apple.com/itunes/">Скачать приложение</a>
-      <div class="promo-download__wrapper">
-        <ul class="promo-download__list apps-list">
-          <li class="apps-list__item apps-list__item--mac">
-            <a href="https://www.apple.com/itunes/">Скачать для устройств на MacOS</a>
-          </li>
-          <li class="apps-list__item apps-list__item--android">
-            <a href="https://play.google.com/store?hl=ru">Скачать для устройств Android</a>
-          </li>
-          <li class="apps-list__item apps-list__item--microsoft">
-            <a href="https://www.microsoft.com/ru-ru/store/appsvnext/windows">Скачать для устройств Windows</a>
-          </li>
-        </ul>
-        <p class="promo-download__promo-options">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      <div class="container">
+        <div class="promo-download__section">
+          <div class="promo-download__block">
+            <span class="promo-download__slogan">Взгляните на жизнь иначе!</span>
+            <a class="promo-download__button download-button" href="https://www.apple.com/itunes/">Скачать приложение</a>
+            <div class="promo-download__wrapper">
+              <ul class="promo-download__list apps-list">
+                <li class="apps-list__item apps-list__item--mac">
+                  <a class="hide-text" href="https://www.apple.com/itunes/">Скачать для устройств на MacOS</a>
+                </li>
+                <li class="apps-list__item apps-list__item--android">
+                  <a class="hide-text" href="https://play.google.com/store?hl=ru">Скачать для устройств Android</a>
+                </li>
+                <li class="apps-list__item apps-list__item--microsoft">
+                  <a class="hide-text" href="https://www.microsoft.com/ru-ru/store/appsvnext/windows">Скачать для устройств Windows</a>
+                </li>
+              </ul>
+            </div>
+            <p class="promo-download__promo-options">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
+        </div>
       </div>
     </section>
-    <!--Блок с преимуществами приложения-->
-    <section class="promo-advantages">
+  </header>
+  <!--Блок с преимуществами приложения-->
+  <main class="page-main">
+    <div class="promo-invitation">
       <h2 class="visually-hidden">Преимущества приложения</h2>
-      <p class="promo-advantages__proposal">Устали от серости мегаполиса?</p>
-      <p class="promo-advantages__proposal">Нам есть, что вам предложить!</p>
-      <div class="promo-advantages__wrapper">
-        <ul class="promo-advantages__list">
-          <li class="promo-advantages__item">
-            <p class="promo-advantages__caption">Поднимает настроение</p>
-            <p class="promo-advantages__text">Приложение позволит вам победить осеннюю зандру и депрессию буквально в несколько кликов!</p>
-          </li>
-          <li class="promo-advantages__item">
-            <p class="promo-advantages__caption">Меняет мир вокруг</p>
-            <p class="promo-advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </li>
-          <li class="promo-advantages__item">
-            <p class="promo-advantages__caption">Заводит новых друзей</p>
-            <p class="promo-advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          </li>
-          <li class="promo-advantages__item promo-advantages__item--photo">
-            <img class="promo-advantages__photo" width="157" height="320" src="http://via.placeholder.com/157x320" alt="Промо-фотография приложения">
-            <!-- здесь должно быть изображение и еще одна feature, но пока не видно на мобильном макете. как лучше сгруппировать изображения? отдельными элементами списка? -->
-          </li>
-        </ul>
+      <div class="container">
+        <div class="promo-invitation__wrapper">
+          <p class="promo-invitation__proposal promo-invitation__proposal--first-line">Устали от серости мегаполиса?</p>
+          <p class="promo-invitation__proposal promo-invitation__proposal--second-line">Нам есть, что вам предложить!</p>
+        </div>
       </div>
-    </section>
+    </div>
+    <div class="promo-features">
+      <div class="container">
+        <div class="promo-features__wrapper">
+          <div class="promo-features__text">
+            <section class="promo-features__item promo-features__item--first">
+              <h2 class="promo-features__caption">Поднимает настроение</h2>
+              <p class="promo-features__text">Приложение позволит вам победить осеннюю зандру и депрессию буквально в несколько кликов!</p>
+            </section>
+            <section class="promo-features__item promo-features__item--second">
+              <h2 class="promo-features__caption">Меняет мир вокруг</h2>
+              <p class="promo-features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </section>
+            <section class="promo-features__item promo-features__item--third">
+              <h2 class="promo-features__caption">Заводит новых друзей</h2>
+              <p class="promo-features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </section>
+          </div>
+          <div class="promo-features__images">
+            <!--здесь должен быть раздел с pictures-->
+            <img class="promo-features__picture promo-features__picture--big" src="http://via.placeholder.com/300x300">
+            <img class="promo-features__picture promo-features__picture--big" src="http://via.placeholder.com/300x300">
+            <img class="promo-features__picture promo-features__picture--regular" src="http://via.placeholder.com/300x300">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="special-promo">
+      <div class="container">
+        <div class="special-promo__wrapper">
+          <h2 class="special-promo__caption">Эффект на 24 часа!</h2>
+          <p class="special-promo__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится
+            целые сутки!
+          </p>
+          <a class="special-promo__link" href="#">Узнать больше об исследовании</a>
+        </div>
+      </div>
+    </div>
     <!--Блок с отзывами-->
     <section class="reviews">
       <h2 class="visually-hidden">Отзывы пользователей</h2>
-      <div class="reviews__wrapper slider">
-        <!--Судя по ТЗ, здесь предполагается 3 отзыва, в обзоре не видно инфо, я пока сделала 3 одинаковых-->
-        <div class="reviews__list">
-          <blockquote class="reviews__item">
-            <cite class="reviews__user-name">Николай Петров</cite>
-            <p class="reviews__user-comment">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился
-              со своей будущей женой в комментариях к выложенной фотографии</p>
-          </blockquote>
-          <blockquote class="reviews__item">
-            <cite class="reviews__user-name">Николай Петров</cite>
-            <p class="reviews__user-comment">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился
-              со своей будущей женой в комментариях к выложенной фотографии</p>
-          </blockquote>
-          <blockquote class="reviews__item">
-            <cite class="reviews__user-name">Николай Петров</cite>
-            <p class="reviews__user-comment">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился
-              со своей будущей женой в комментариях к выложенной фотографии</p>
-          </blockquote>
+      <div class="container">
+        <div class="reviews__wrapper slider">
+          <div class="reviews__list">
+            <section class="reviews__item">
+              <h2 class="reviews__user-name">Николай Петров</h2>
+              <span class="reviews__user-info">25 лет, водитель трамвая</span>
+              <p class="reviews__user-comment">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился
+                со своей будущей женой в комментариях к выложенной фотографии</p>
+            </section>
+            <p class="reviews__toggles slider__toggles">
+              <button class="slider__toggle--active" type="button"></button>
+              <button class="slider__toggle" type="button"></button>
+              <button class="slider__toggle" type="button"></button>
+            </p>
+          </div>
         </div>
-        <p class="reviews__toggles slider__toggles">
-          <button class="slider__toggle--active" type="button"></button>
-          <button class="slider__toggle" type="button"></button>
-          <button class="slider__toggle" type="button"></button>
-        </p>
       </div>
     </section>
     <!--Блок с тарифами-->
     <section class="tariffs">
       <h2 class="visually-hidden">Тарифы</h2>
-      <div class="tariffs__wrapper slider">
-        <!--Судя по ТЗ и превью мобильного макета, здесь предполагается несколько тарифов, я пока сделала 1 -->
-        <div class="tariffs__list slider__list">
-          <div class="tariffs__item slider__item">
-            <div class="tariffs__header">
-              <p class="tariffs__name">Стандарт</p>
-              <p class="tariffs__price">3.99 USD</p>
+      <div class="container">
+        <div class="tariffs__wrapper slider">
+          <!--Судя по ТЗ и превью мобильного макета, здесь предполагается несколько тарифов, я пока сделала 1 -->
+          <div class="tariffs__list slider">
+            <div class="tariffs__main">
+              <div class="tariffs__header">
+                <p class="tariffs__name">Стандарт</p>
+                <p class="tariffs__price">3.99 USD</p>
+              </div>
+              <ul class="tariffs__list content-list">
+                <li class="tariffs__item">Розовый фильтр</li>
+                <li class="tariffs__item">Смайлики</li>
+                <li class="tariffs__item">Комментарии</li>
+              </ul>
             </div>
-            <ul class="tariffs__list content-list">
-              <li class="tariffs__item content-item">Розовый фильтр</li>
-              <li class="tariffs__item content-item">Смайлики</li>
-              <li class="tariffs__item content-item">Комментарии</li>
-            </ul>
           </div>
+          <p class="tariffs__toggles slider__toggles">
+            <button class="slider__toggle" type="button"></button>
+            <button class="slider__toggle--active" type="button"></button>
+            <button class="slider__toggle" type="button"></button>
+          </p>
         </div>
-        <p class="tariffs__toggles slider__toggles">
-          <button class="slider__toggle" type="button"></button>
-          <button class="slider__toggle--active" type="button"></button>
-          <button class="slider__toggle" type="button"></button>
-        </p>
       </div>
     </section>
   </main>
   <!--Блок с футером-->
   <footer class="main-footer">
     <h2 class="visually-hidden">Контактная информация</h2>
-    <div class="main-footer__wrapper">
-      <p class="main-footer__invitation">Остались вопросы?</p>
-      <p class="main-footer__invitation">Свяжитесь с нами!</p>
-      <div class="main-footer__contacts-wrapper">
-        <div class="main-footer__contacts">
-          <p class="main-footer__text">Звоните:</p>
-          <a class="main-footer__info" href="#">+7 (812) 555-66-66</a>
-        </div>
-        <div class="main-footer__contacts">
-          <p class="main-footer__text">Пишите:</p>
-          <a class="main-footer__info" href="#">mail@htmlacademy.ru</a>
-        </div>
-        <div class="main-footer__contacts">
-          <p class="main-footer__text">Приезжайте в гости:</p>
-          <p class="main-footer__info"> ул. Большая Конюшенная, 19/8</p>
+    <div class="container">
+      <div class="main-footer__wrapper">
+        <p class="main-footer__invitation">Остались вопросы? Свяжитесь с нами!</p>
+        <div class="main-footer__contacts-wrapper">
+          <div class="main-footer__contacts main-footer__contacts--tel">
+            <p class="main-footer__text">Звоните:</p>
+            <a class="main-footer__info" href="#">+7 (812) 555-66-66</a>
+          </div>
+          <div class="main-footer__contacts main-footer__contacts--e-mail">
+            <p class="main-footer__text">Пишите:</p>
+            <a class="main-footer__info" href="#">mail@htmlacademy.ru</a>
+          </div>
+          <div class="main-footer__contacts main-footer__contacts--address">
+            <p class="main-footer__text">Приезжайте в гости:</p>
+            <p class="main-footer__info"> ул. Большая Конюшенная, 19/8</p>
+          </div>
         </div>
       </div>
-      <!--Блок с картой-->
-      <section class="map">
-        <h2 class="visually-hidden">Схема проезда</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424177396!2d30.320889251426784!3d59.938796868959294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1523632868371"
-          width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-      </section>
     </div>
+
+    <!--Блок с картой-->
+    <div class="map">
+      <h2 class="visually-hidden">Схема проезда</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424177396!2d30.320889251426784!3d59.938796868959294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1523632868371"
+        width="100%" height="445" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <div class="container">
+      <div class="main-footer__social-wrapper">
+        <a class="main-footer__logo hide-text" href="index.html">Pink</a>
+        <div class="main-footer__social-buttons">
+          <ul class="main-social-buttons__list social-buttons__list">
+            <li class="social-buttons__item">
+              <a class="hide-text social-buttons__twitter" href="https://twitter.com/">Twitter
+                <svg class="twitter-icon" version="1.0" id="Layer_1" width="55" height="55" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663"
+                  xml:space="preserve">
+                  <g id="W6EeEF_1_">
+                    <g>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li class="social-buttons__item social-buttons__item--fb">
+              <a class="hide-text" href="#">
+                <!--вставить svg-->Facebook</a>
+            </li>
+            <li class="social-buttons__item social-buttons__item--youtube">
+              <a class="hide-text" href="#">
+                <!--вставить svg-->Youtube</a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__copyright">
+          <p class="main-footer__copyright-text">Разработано</p>
+          <a class="main-footer__copyright-link hide-text" href="https://htmlacademy.ru/intensive/adaptive">
+            <!--вставить svg-->Htmlacademy
+          </a>
+        </div>
+      </div>
+    </div>
+
   </footer>
+
 </body>
 
 </html>

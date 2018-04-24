@@ -1,5 +1,192 @@
+// мобильная версия
 .page-header {
-  padding: 20px;
-  background-color: $transparent-gray;
-  background-image: $background-image;
+  min-height: 462px;
+  background-color: #15202d;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.page-header__main-nav {
+  min-height: 66px;
+  background-color: rgba(21, 32, 45, 0.7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav__logo {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  width: 75px;
+  height: 22px;
+  background: url("../img/logo-pink-white-mobile.svg") no-repeat;
+}
+
+.main-nav__button {
+  display: block;
+  cursor: pointer;
+  font-size: 0;
+  width: 50px;
+  height: 24px;
+  background: url("../img/icon-menu-burger.svg") no-repeat;
+}
+
+.main-nav__list {
+  display: none; //насколько корректно будет так указывать?
+}
+
+.promo-download {
+  padding-top: 150px;
+  background: url("../img/iphone-hand-mobile@1x.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.promo-download__section {
+  display: flex;
+  justify-content: space-between; // не могу понять, как сдвинуть блок вниз на мобильной версии
+}
+
+.promo-download__block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #15202d;
+}
+
+.promo-download__slogan {
+  display: none;
+}
+
+.promo-download__button {
+  display: block;
+  width: 260px;
+  height: 20px;
+  padding: 18px 20px;
+  margin-top: 20px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 18px;
+  text-align: center;
+  border: 3px solid #ffffff;
+  border-radius: 30px 30px;
+}
+
+.promo-download__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 250px;
+}
+
+.apps-list__item--mac {
+  background: url("../img/logo-apple.svg") no-repeat;
+  background-position: center;
+  width: 55px;
+  height: 55px;
+}
+
+.apps-list__item--android {
+  background: url("../img/logo-android.svg") no-repeat;
+  background-position: center;
+  width: 55px;
+  height: 55px;
+}
+
+.apps-list__item--microsoft {
+  background: url("../img/logo-microsoft.svg") no-repeat;
+  background-position: center;
+  width: 55px;
+  height: 55px;
+}
+
+.hide-text {
+  display: inline-block;
+  vertical-align: middle;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 0;
+}
+
+.promo-download__promo-options {
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+}
+// для планшета
+
+@media (min-width: $tablet-width) {
+  .page-header__main-nav {
+    height: 110px;
+  }
+
+  .page-header__wrapper {
+    min-width: 660px;
+  }
+
+  .main-nav__initial-navigation {
+    padding: 20px;
+  }
+
+  .main-nav__logo {
+    width: 145px;
+    height: 40px;
+    background: url("../img/logo-pink-blue-mobile.svg") no-repeat;
+  }
+
+  .promo-download__block {
+    margin-left: 20px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+  }
+
+  .promo-download__slogan {
+    display: block;
+    width: 200px;
+    padding: 0;
+    font-size: 40px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+    line-height: 44px;
+    align-self: center;
+  }
+}
+// для десктопа
+@media (min-width: $desktop-width) {
+  .main-nav__button {
+    display: none;
+  }
+
+  .main-nav__list {
+    margin: 0;
+    padding: 0;
+    margin-left: 40px;
+    margin-right: 40px;
+    min-width: 630px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 5px;
+    list-style: none;
+  }
 }

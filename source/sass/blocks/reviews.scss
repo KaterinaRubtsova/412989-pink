@@ -1,16 +1,16 @@
 .reviews__user-name {
-  font-size: $bold-font-size;
-  font-weight: $bold-font-weight;
-  color: $black;
-  line-height: $big-line-height;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+  line-height: 30px;
   font-style: normal;
   text-align: center;
 }
 
 .reviews__user-comment {
-  font-size: $regular-font-size;
-  font-weight: $regular-font-weight;
-  color: $black;
-  line-height: $big-line-height;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 30px;
   text-align: center;
 }

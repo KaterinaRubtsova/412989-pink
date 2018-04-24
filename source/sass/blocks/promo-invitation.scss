@@ -1,0 +1,54 @@
+.promo-invitation {
+  padding: 20px;
+  font-size: 24px;
+  font-weight: 300;
+  background-color: #ffffff;
+  color: #000000;
+  line-height: 24px;
+  text-align: center; //добавить фигурное изображение нижнего треугольника
+}
+
+.promo-invitation__wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.promo-invitation__proposal--first-line {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: center;
+}
+
+.promo-invitation__proposal--second-line {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .promo-invitation__proposal--first-line {
+    font-size: 40px;
+    line-height: 44px;
+    text-align: center;
+  }
+
+  .promo-invitation__proposal--second-line {
+    padding: 0 130px;
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo-invitation__proposal--first-line {
+    font-size: 50px;
+  }
+
+  .promo-invitation__proposal--second-line {
+    padding: 0 240px;
+    font-size: 50px;
+    line-height: 55px;
+  }
+}

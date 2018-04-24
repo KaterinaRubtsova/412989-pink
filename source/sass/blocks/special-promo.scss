@@ -1,0 +1,23 @@
+.special-promo {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .special-promo {
+    display: block;
+    background-color: #ffffff;
+  }
+
+  .special-promo__wrapper {
+    margin: 0 auto;
+    padding: 40px;
+    text-align: left;
+    padding-left: 400px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .special-promo {
+    background-color: #f2f2f2;
+  }
+}

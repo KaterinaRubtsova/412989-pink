@@ -1,25 +1,25 @@
 .tariffs {
-  background-color: $light-gray;
+  background-color: #f2f2f2;
   text-transform: uppercase;
 }
 
 .tariffs__header {
-  background-color: $dark-gray;
+  background-color: #17212b;
 }
 
 .tariffs__name {
-  font-size: $bold-font-size;
-  font-weight: $bold-font-weight;
-  color: $white;
-  line-height: $big-line-height;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 30px;
 }
 
 .tariffs__price {
-  font-size: $light-font-size;
-  font-weight: $light-font-weight;
-  color: $white;
-  line-height: $big-line-height;
-  border-bottom: 3px solid $light-gray;
+  font-size: 24px;
+  font-weight: 300;
+  color: #ffffff;
+  line-height: 30px;
+  border-bottom: 3px solid #f2f2f2;
 }
 
 .tariffs__list {
@@ -28,10 +28,10 @@
 }
 
 .tariffs__item {
-  font-size: $regular-font-size;
-  font-weight: $regular-font-weight;
-  color: $black;
-  line-height: $big-line-height;
-  background-color: $white;
-  border-bottom: 3px solid $light-gray;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 30px;
+  background-color: #ffffff;
+  border-bottom: 3px solid #f2f2f2;
 }

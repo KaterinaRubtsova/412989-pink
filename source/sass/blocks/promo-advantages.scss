@@ -1,39 +1,58 @@
-.promo-advantages__proposal {
-  padding: 25px 60px;
-  background-color: $white;
-  font-weight: $light-font-weight;
-  font-size: $light-font-size;
-  color: $black;
-  line-height: $regular-line-height;
+.reviews__wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.reviews__item {
+  text-align: center;
+  padding: 45px 0;
+}
+
+.reviews__user-info {
+  display: none;
+}
+
+.reviews__toggles {
   text-align: center;
 }
 
-.promo-advantages__list {
-  padding: 130px 30px 0 30px;
-  background-color: $light-gray;
-  list-style: none;
+.tariffs {
+  background-color: #f2f2f2;
+}
+
+.tariffs__toggles {
   text-align: center;
 }
 
-.promo-advantages__item {
-  margin-bottom: 42px;
+.tariffs__item {
+  margin: 0;
+  padding: 20px;
+  text-align: left;
+}
+// для планшета
+@media (min-width: $tablet-width) {
+  .reviews__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews__user-name {
+    order: 2;
+  }
+
+  .reviews__user-info {
+    order: 3;
+    display: block;
+  }
+
+  .reviews__user-comment {
+    order: 1;
+  }
 }
 
-.promo-advantages__item--photo {
-  width: 157px;
-  height: 320px;
-}
-
-.promo-advantages__caption {
-  font-weight: $bold-font-weight;
-  font-size: $bold-font-size;
-  color: $black;
-  line-height: $regular-line-height;
-}
-
-.promo-advantages__text {
-  font-weight: $regular-font-weight;
-  font-size: $regular-font-size;
-  color: $black;
-  line-height: $regular-line-height;
+@media (min-width: $desktop-width) {
+  .reviews__item {
+    //должно дополняться изображением цитаты
+    padding: 0 188px;
+  }
 }
