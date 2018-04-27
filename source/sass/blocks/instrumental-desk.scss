@@ -3,43 +3,78 @@
 }
 
 .instrumental-desk__list {
-  display: flex;
-  list-style: none;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  padding: 10px 100px;
+  display: none;
 }
 
 .instrumental-desk__form {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 40px;
+  flex-direction: column;
+  justify-content: center;
   padding-bottom: 40px;
+  margin: 0 auto;
 }
 
 .instrumental-desk__original-photo {
   margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 
-.instruments-list__item--current {
-  background: url("../img/icon-editor-crop.svg") no-repeat;
-  width: 48px;
-  height: 48px;
-  background-position: center;
+.instrumental-desk__instruments-buttons {
+  max-width: 280px;
+  align-self: center;
 }
 
-.instruments-list__item--fill {
-  background: url("../img/icon-editor-fill.svg") no-repeat;
-  width: 48px;
-  height: 48px;
-  background-position: center;
+.crop-icon {
+  width: 55px;
+  height: 55px;
+  fill: #cd0c54;
+  padding-right: 30px;
 }
 
-.instruments-list__item--contrast {
-  background: url("../img/icon-editor-contrast.svg") no-repeat;
-  width: 48px;
-  height: 48px;
-  background-position: center;
+.fill-icon {
+  width: 55px;
+  height: 55px;
+  fill: #b5b9be;
+  padding-right: 30px;
+}
+
+.contrast-icon {
+  width: 55px;
+  height: 55px;
+  fill: #b5b9be; // почему не работает?
+}
+
+.instrumental-desk__instruments-slider--mobile {
+  position: relative;
+  margin-bottom: 40px;
+  margin-top: 30px;
+  width: 280px;
+  align-self: center;
+}
+
+.slider-scale-mobile {
+  height: 2px;
+  background-color: #000000;
+}
+
+.slider-button-mobile {
+  position: absolute;
+  top: -8px;
+  left: 200px;
+  width: 12px;
+  height: 12px;
+  background: #f2f2f2;
+  border: 2px solid #cd0c54;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+}
+
+.slider-button-mobile:hover,
+.slider-button-mobile:focus {
+  background: #cd0c54;
 }
 
 .instrumental-desk__instruments {
@@ -68,7 +103,17 @@
   height: 55px;
   width: 281px;
   padding: 18px 34px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.publish-button:hover {
+  color: #ffffff;
+  background-color: #d22856;
+}
+
+.publish-button:active {
+  color: #d94b71;
+  background-color: #d22856;
 }
 
 .cancel-button {
@@ -87,17 +132,112 @@
   margin-bottom: 10px;
 }
 
+.cancel-button:hover {
+  color: #b5b9be;
+  border-color: #b5b9be;
+}
+
+.cancel-button:active {
+  color: #f2f2f2;
+  background-color: #b5b9be;
+}
+
 @media (min-width: $tablet-width) {
+  .instrumental-desk__instruments-buttons {
+    display: none;
+  }
+
+  .instrumental-desk__instruments-slider--mobile {
+    display: none;
+  }
+
   .instrumental-desk__form {
     flex-wrap: nowrap;
+    flex-direction: row;
   }
 
   .instrumental-desk__list {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 40px;
     flex-direction: column;
+    min-width: 300px;
   }
 
   .instrumental-desk__original-photo {
     margin: 10px 100px;
+  }
+
+  .instrumental-desk__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .instrumental-desk__instruments-slider {
+    position: relative;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    width: 180px;
+    align-self: center;
+  }
+
+  .slider-scale {
+    height: 2px;
+    background-color: #000000;
+  }
+
+  .slider-button {
+    position: relative;
+    background: #f2f2f2;
+    border: 2px solid #cd0c54;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    width: 12px;
+    height: 12px;
+  }
+
+  .instrumental-desk__slider--crop .slider-button {
+    top: -10px;
+    left: 230px;
+  }
+
+  .instrumental-desk__slider--fill .slider-button {
+    top: -10px;
+    left: 30px;
+  }
+
+  .instrumental-desk__slider--contrast .slider-button {
+    top: -10px;
+    left: 150px;
+  }
+
+  .slider-button:hover,
+  .slider-button:focus {
+    background: #cd0c54;
+  }
+
+  .crop-icon {
+    width: 30px;
+    height: 30px;
+    fill: #cd0c54;
+    padding-right: 25px;
+  }
+
+  .fill-icon {
+    width: 35px;
+    height: 35px;
+    fill: #cd0c54;
+    padding-right: 25px;
+  }
+
+  .contrast-icon {
+    width: 30px;
+    height: 30px;
+    fill: #cd0c54; // почему не работает?
   }
 }
 
@@ -107,12 +247,13 @@
   }
 
   .publish-button {
-    height: 55px;
     width: 170px;
+    margin-bottom: 10px;
+    margin-right: 10px;
   }
 
   .cancel-button {
-    height: 55px;
     width: 170px;
+    margin-bottom: 10px;
   }
 }

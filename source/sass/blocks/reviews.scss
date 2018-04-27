@@ -14,3 +14,37 @@
   line-height: 30px;
   text-align: center;
 }
+
+.reviews__toggles-list {
+  margin: 0 auto;
+  padding: 20px;
+  width: 65px;
+  height: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reviews__toggles-item {
+  background: #bec2c7;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  height: 14px;
+}
+
+.reviews__toggles-item--active {
+  background: #f2f2f2;
+  border: 4px solid #000000;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  height: 19px;
+}
+
+@media (min-width: $desktop-width) {
+  .reviews__toggles-list {
+    display: none;
+  }
+}

@@ -14,6 +14,21 @@
     text-align: left;
     padding-left: 400px;
   }
+
+  .special-promo__link {
+    text-decoration: underline;
+    color: #cd0c54;
+  }
+
+  .special-promo__link:hover {
+    color: #000000;
+    text-decoration: underline;
+  }
+
+  .special-promo__link:active {
+    text-decoration: none;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $desktop-width) {

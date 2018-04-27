@@ -45,6 +45,17 @@
   font-weight: 300;
   color: #cd0c54;
   line-height: 30px;
+  text-decoration: none;
+}
+
+.main-footer__info:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.main-footer__info:active {
+  text-decoration: none;
+  opacity: 0.3;
 }
 
 .main-footer__social-wrapper {
@@ -52,35 +63,82 @@
 }
 
 .main-footer__logo {
-  background: url("../img/logo-pink-blue-mobile.svg") no-repeat;
-  background-position: center;
+  width: 150px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-footer__logo:hover { //почему не работает?
+  color: #cd0c54;
+}
+
+.footer-pink-icon {
   width: 150px;
   height: 40px;
 }
 
+.footer-pink-icon:hover { //почему не работает?
+  fill: #cd0c54;
+}
+
+.footer-pink-icon:active {
+  fill-opacity: 0.3;
+}
+
 .social-buttons__list {
+  padding: 0;
+  margin: 0 auto;
+  width: 150px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 48px;
+  flex-wrap: wrap;
   list-style: none;
-  padding: 0;
-  margin: 0 auto;
 }
 
-.social-buttons__twitter {
-  width: 55px;
-  height: 55px;
-  border: 3px solid red;
+.social-buttons__media {
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #f2f2f2;
+  border-radius: 50%;
+  padding: 10px 10px;
+}
+
+.social-buttons__media:hover {
+  border-color: #000000;
+}
+
+.social-buttons__media:active {
+  border-color: #f2f2f2;
+}
+
+.twitter-icon:active,
+.fb-icon:active,
+.youtube-icon:active {
+  fill-opacity: 0.3;
 }
 
 .twitter-icon {
-  width: 55px;
-  height: 55px;
+  width: 18px;
+  height: 18px;
+  fill: #cd0c54;
+}
 
-  polygon {
-    fill: #cd0c54;
-  }
+.fb-icon {
+  width: 18px;
+  height: 18px;
+  fill: #cd0c54;
+}
+
+.youtube-icon {
+  width: 18px;
+  height: 18px;
+  fill: #cd0c54;
 }
 
 .main-footer__copyright {
@@ -98,9 +156,26 @@
 }
 
 .main-footer__copyright-link {
-  border: 3px solid #000000;
-  width: 27px;
-  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 29px;
+  height: 39px;
+}
+
+.academy-icon {
+  width: 29px;
+  height: 39px;
+  padding-left: 10px;
+  fill: #cd0c54;
+}
+
+.academy-icon:hover {
+  fill: #000000;
+}
+
+.academy-icon:active {
+  fill: #f2f2f2;
 }
 // для планшета
 @media (min-width: $tablet-width) {
@@ -130,6 +205,7 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
+    margin: 0 20px;
   }
 }
 

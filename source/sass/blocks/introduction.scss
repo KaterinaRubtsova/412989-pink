@@ -1,26 +1,43 @@
 .introduction__header {
-  height: 250px;
+  display: block;
+  min-height: 50px;
+  width: 175px;
   margin: 0 auto;
-  padding: 0 20px;
-  padding-top: 100px;
+  padding-top: 37px;
   font-size: 24px;
   font-weight: 300;
   color: #ffffff;
-  line-height: 30px;
+  line-height: 28px;
   text-align: center;
 }
 
-.motive-text {
-  margin: 50px auto;
-  font-size: 18px;
-  font-weight: 400;
-  color: #000000;
-  line-height: 30px;
-  text-align: center;
-}
+@media (min-width: $desktop-width) {
+  .introduction__header {
+    display: block;
+    min-height: 50px;
+    width: auto;
+    margin: 0 auto;
+    padding: 100px 100px 120px 100px;
+    padding-top: 70px;
+    font-size: 50px;
+    font-weight: 300;
+    color: #ffffff;
+    line-height: 50px;
+    text-align: center;
+  }
 
-.form__blocks {
-  background-color: #ffffff;
-  padding-bottom: 27px;
-  padding-top: 50px;
+  .motive-text {
+    margin: 90px 80px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .form__blocks {
+    background-color: #ffffff;
+    padding-bottom: 27px;
+    padding-top: 50px;
+  }
 }

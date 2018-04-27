@@ -1,0 +1,48 @@
+.main-nav__list {
+  display: none; //насколько корректно будет так указывать?
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__logo {
+    margin-right: 200px;
+  }
+
+  .main-nav__list {
+    width: 620px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 5px;
+    list-style: none;
+  }
+
+  .site-list__item {
+    padding-right: 80px;
+  }
+
+  .site-list__item a {
+    text-decoration: none;
+  }
+
+  .site-list__item a:visited {
+    color: #ffffff;
+  }
+
+  .site-list__item--active a {
+    text-decoration: none;
+    border-bottom: 3px solid #ffffff;
+    color: #ffffff;
+  }
+
+  .site-list__item a:hover {
+    color: #cd0c54;
+  }
+
+  .site-list__item a:active {
+    color: #6b7861;
+  }
+}

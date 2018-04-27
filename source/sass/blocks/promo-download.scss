@@ -1,0 +1,119 @@
+.promo-download {
+  padding-top: 150px;
+  background: url("../img/iphone-hand-mobile@1x.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.promo-download__section {
+  display: flex;
+  justify-content: space-between; // не могу понять, как сдвинуть блок вниз на мобильной версии
+}
+
+.promo-download__block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #15202d;
+}
+
+.promo-download__slogan {
+  display: none;
+}
+
+.promo-download__button {
+  display: block;
+  width: 260px;
+  height: 20px;
+  padding: 18px 20px;
+  margin-top: 20px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 18px;
+  text-align: center;
+  border: 3px solid #ffffff;
+  border-radius: 30px 30px;
+}
+
+.promo-download__button:hover {
+  background-color: #ffffff;
+  color: #cd0c54;
+}
+
+.promo-download__button:active {
+  background-color: #ffffff;
+  color: rgba(210, 40, 86, 0.3);
+}
+
+.promo-download__list {
+  width: 250px;
+  margin: 0;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.mac-icon {
+  width: 46px;
+  height: 56px;
+}
+
+.android-icon {
+  width: 42px;
+  height: 47px;
+}
+
+.microsoft-icon {
+  width: 43px;
+  height: 41px;
+}
+
+.promo-download__promo-options {
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .promo-download__block {
+    margin-left: 20px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+  }
+
+  .promo-download__list {
+    padding: 40px 0;
+  }
+
+  .promo-download__slogan {
+    display: block;
+    width: 200px;
+    padding: 0;
+    font-size: 40px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+    line-height: 44px;
+    align-self: center;
+  }
+
+  .promo-download__promo-options {
+    font-weight: 300;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo-download__list {
+    padding: 70px 0;
+  }
+}
