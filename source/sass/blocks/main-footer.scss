@@ -23,8 +23,8 @@
 
 .main-footer__contacts-wrapper {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  flex-wrap: nowrap;
+  align-items: flex-start;
   justify-content: center;
 }
 
@@ -34,6 +34,9 @@
 }
 
 .main-footer__text {
+  display: block;
+  margin: 0;
+  padding: 0;
   font-size: 18px;
   font-weight: 700;
   color: #000000;
@@ -70,27 +73,32 @@
   justify-content: center;
 }
 
-.main-footer__logo:hover { //почему не работает?
-  color: #cd0c54;
-}
-
-.footer-pink-icon {
+.footer-pink-logo {
   width: 150px;
   height: 40px;
 }
 
-.footer-pink-icon:hover { //почему не работает?
-  fill: #cd0c54;
+.blue-colored-logo {
+  fill: #283645;
 }
 
-.footer-pink-icon:active {
+.pink-colored-logo {
+  fill: #d22856;
+}
+
+.blue-colored-logo:hover {
+  fill: #d22856;
+}
+
+.footer-pink-logo:active {
   fill-opacity: 0.3;
 }
+
 
 .social-buttons__list {
   padding: 0;
   margin: 0 auto;
-  width: 150px;
+  min-width: 180px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -99,14 +107,14 @@
 }
 
 .social-buttons__media {
-  width: 18px;
-  height: 18px;
+  width: 15px;
+  height: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 3px solid #f2f2f2;
   border-radius: 50%;
-  padding: 10px 10px;
+  padding: 13px 13px;
 }
 
 .social-buttons__media:hover {
@@ -114,7 +122,7 @@
 }
 
 .social-buttons__media:active {
-  border-color: #f2f2f2;
+  border-color: rgba(000, 000, 000, 0.3);
 }
 
 .twitter-icon:active,
@@ -126,19 +134,19 @@
 .twitter-icon {
   width: 18px;
   height: 18px;
-  fill: #cd0c54;
+  fill: #d22856;
 }
 
 .fb-icon {
   width: 18px;
   height: 18px;
-  fill: #cd0c54;
+  fill: #d22856;
 }
 
 .youtube-icon {
   width: 18px;
   height: 18px;
-  fill: #cd0c54;
+  fill: #d22856;
 }
 
 .main-footer__copyright {
@@ -167,7 +175,7 @@
   width: 29px;
   height: 39px;
   padding-left: 10px;
-  fill: #cd0c54;
+  fill: #d22856;
 }
 
 .academy-icon:hover {
@@ -175,7 +183,7 @@
 }
 
 .academy-icon:active {
-  fill: #f2f2f2;
+  fill: rgba(000, 000, 000, 0.3);
 }
 // для планшета
 @media (min-width: $tablet-width) {
@@ -186,11 +194,18 @@
     line-height: 40px;
   }
 
+  .main-footer__contacts-wrapper {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
   .main-footer__contacts {
-    display: inline-block;
+    display: block;
+    margin: 0;
+    padding: 0 20px;
     width: 250px;
     margin-top: 40px;
-    padding: 0 20px;
   }
 
   .main-footer__wrapper {
@@ -210,10 +225,21 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-footer__wrapper {
+    padding: 0;
+  }
+
   .main-footer__invitation {
-    width: auto;
-    padding: 0 330px;
+    display: block;
+    min-width: 600px;
+    margin: 0;
+    padding: 70px 0 0;
     font-size: 50px;
+    line-height: 58px;
+  }
+
+  .main-footer__text {
+    padding: 16px 0;
   }
 
   .main-footer__contacts--tel {
@@ -221,10 +247,10 @@
   }
 
   .main-footer__contacts--e-mail {
-    order: 2;
+    order: 3;
   }
 
   .main-footer__contacts--address {
-    order: 3;
+    order: 2;
   }
 }

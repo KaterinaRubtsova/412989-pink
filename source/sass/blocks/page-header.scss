@@ -1,6 +1,6 @@
 // мобильная версия
 .page-header--main {
-  min-height: 800px;
+  min-height: 900px;
   background-color: #15202d;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -15,82 +15,4 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-
-.main-nav {
-  min-height: 66px;
-  margin: 0 auto;
-  background-color: rgba(21, 32, 45, 0.7);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.main-nav__wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.main-nav__logo {
-  text-decoration: none;
-  cursor: pointer;
-  width: 75px;
-  height: 22px;
-  background: url("../img/logo-pink-white-mobile.svg") no-repeat;
-}
-
-.main-nav__button {
-  position: absolute;
-  top: 20px;
-  right: 0;
-  margin-right: 20px;
-  z-index: 2;
-  display: block;
-  cursor: pointer;
-  border: none;
-  font-size: 0;
-  width: 50px;
-  height: 24px;
-  background-color: transparent;
-  outline: none;
-}
-
-.main-nav__button:active {
-  opacity: 0.3;
-}
-
-.main-nav__button svg:hover { //почему так не работает?
-  fill: pink;
-}
-// для планшета
-@media (min-width: $tablet-width) {
-  .main-nav {
-    height: 110px;
-  }
-
-  .page-header__wrapper {
-    min-width: 660px;
-  }
-
-  .main-nav__initial-navigation {
-    padding: 20px;
-  }
-
-  .main-nav__logo {
-    width: 145px;
-    height: 40px;
-    background: url("../img/logo-pink-blue-mobile.svg") no-repeat;
-  }
-}
-
-// для десктопа
-@media (min-width: $desktop-width) {
-  .main-nav__logo {
-    width: 150px;
-  }
-
-  .main-nav__button {
-    display: none;
-  }
 }

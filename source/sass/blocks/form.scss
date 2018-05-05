@@ -35,10 +35,10 @@
   padding: 10px;
   font-size: 18px;
   font-weight: 400;
-  color: #cd0c54;
+  color: #d22856;
   line-height: 30px;
   outline: none;
-  border: 2px solid #f2f2f2;
+  border: 2px solid #e5e5e5;
 }
 
 .name-fields + input:hover {
@@ -46,13 +46,13 @@
 }
 
 .name-fields + input:focus {
-  border: 2px solid #cd0c54;
+  border: 2px solid #d22856;
 }
 
 .form__blocks__intro {
   font-size: 14px;
   font-weight: 400;
-  color: #cd0c54;
+  color: #d22856;
   line-height: 30px;
   text-transform: uppercase;
   text-align: center;
@@ -67,18 +67,24 @@
   text-align: left;
 }
 
+.form__item--achievements {
+  position: relative;
+}
+
 .form__blocks--achievements label {
-  margin-left: 60px;
+  padding-left: 60px;
 }
 
 .checkbox + label::before {
   content: "";
-  position: absolute; //как здесь корректнее спозиционировать?
+  position: absolute;
   width: 25px;
   height: 25px;
   cursor: pointer;
-  border: 3px solid #f2f2f2;
+  border: 3px solid #e5e5e5;
+  background-color: #ffffff;
   padding: 5px;
+  left: 0;
 }
 
 .checkbox:hover + label::before,
@@ -95,12 +101,13 @@
   background-repeat: no-repeat;
   background-position: center;
   padding: 5px;
-  border: 3px solid #f2f2f2;
+  border: 3px solid #e5e5e5;
+  background-color: #ffffff;
 }
 
 .checkbox:focus + label::before,
 .checkbox:checked:focus + label::before {
-  border: 3px solid #cd0c54;
+  border: 3px solid #d22856;
   // как изменить цвет галочки?
 }
 
@@ -124,7 +131,7 @@
   color: #000000;
   line-height: 30px;
   outline: none;
-  border: 2px solid #f2f2f2;
+  border: 2px solid #e5e5e5;
 }
 
 .data-fields + input:hover {
@@ -132,7 +139,7 @@
 }
 
 .data-fields + input:focus {
-  border: 2px solid #cd0c54;
+  border: 2px solid #d22856;
 }
 
 .form__blocks__intro--contacts {
@@ -145,6 +152,22 @@
   color: #000000;
   line-height: 30px;
   background-color: #f2f2f2;
+}
+
+.radio + label::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 35px;
+  height: 35px;
+  margin-right: 32px;
+  background: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+}
+
+.radio:checked + label::before {
+  background: radial-gradient(at center, #d22856 30%, #ffffff 30%);
 }
 
 .form__blocks__intro--emotions + textarea {
@@ -164,7 +187,7 @@
 }
 
 .form__blocks--emotions textarea:focus {
-  border: 2px solid #cd0c54;
+  border: 2px solid #d22856;
 }
 
 .submit-wrapper {
@@ -276,15 +299,40 @@
     margin: 0;
     padding: 0;
     padding-left: 60px;
-    padding-right: 60px;
+    padding-right: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 
   .form__item--contacts {
+    position: relative;
     display: flex;
     flex-direction: column-reverse;
+  }
+
+  .form__item--tel::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    vertical-align: middle;
+    width: 58px;
+    height: 50px;
+    background: #f2f2f2 url("../img/icon-no.svg") no-repeat center; // пока нет картинки с телефоном
+    top: 2px;
+    right: 2px;
+  }
+
+  .form__item--email::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    vertical-align: middle;
+    width: 58px;
+    height: 50px;
+    background: #f2f2f2 url("../img/icon-no.svg") no-repeat center; // пока нет картинки с телефоном
+    top: 2px;
+    right: 2px;
   }
 
   .fieldset-wrapper--achievements {
@@ -327,7 +375,7 @@
     margin-top: 40px;
     box-sizing: border-box;
     outline: none;
-    border: 2px solid #f2f2f2;
+    border: 2px solid #e5e5e5;
   }
 
   .form__blocks--emotions textarea:hover {
@@ -335,7 +383,7 @@
   }
 
   .form__blocks--emotions textarea:focus {
-    border: 2px solid #cd0c54;
+    border: 2px solid #d22856;
   }
 
   .submit-wrapper {
@@ -394,11 +442,23 @@
   }
 
   .form__list--contacts {
+    padding-left: 60px;
+    padding-right: 20px;
     flex-direction: row;
   }
 
   .form__blocks__intro--contacts {
     margin-top: -65px;
+  }
+
+  .form__item--tel {
+    min-width: 375px;
+    margin-right: 60px;
+  }
+
+  .form__item--email {
+    min-width: 375px;
+    margin-right: 20px;
   }
 
   .fieldset-wrapper--achievements {
@@ -418,7 +478,7 @@
   }
 
   .form__item--achievements {
-    min-width: 250px;
+    min-width: 290px;
   }
 
   .form__item--shark-achiev {
