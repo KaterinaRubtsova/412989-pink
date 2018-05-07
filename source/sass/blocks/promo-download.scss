@@ -1,0 +1,202 @@
+.promo-download {
+  padding-top: 150px;
+  background: url("../img/iphone-hand-mobile@1x.png") no-repeat;
+  background-size: 540px auto;
+  background-position: top 100px left 580px;
+}
+
+.promo-download__section {
+  display: flex;
+  justify-content: space-between; // не могу понять, как сдвинуть блок вниз на мобильной версии
+}
+
+.promo-download__block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #15202d;
+}
+
+.promo-download__slogan {
+  display: none;
+}
+
+.promo-download__button {
+  display: block;
+  width: 260px;
+  height: 20px;
+  padding: 14px 19px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 18px;
+  text-align: center;
+  border: 3px solid #ffffff;
+  border-radius: 30px 30px;
+}
+
+.promo-download__button:hover {
+  background-color: #ffffff;
+  color: #cd0c54;
+}
+
+.promo-download__button:active {
+  background-color: #ffffff;
+  color: rgba(210, 40, 86, 0.3);
+}
+
+.promo-download__list {
+  width: 212px;
+  margin: 0;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.mac-icon {
+  width: 46px;
+  height: 56px;
+}
+
+.android-icon {
+  width: 42px;
+  height: 47px;
+}
+
+.microsoft-icon {
+  width: 43px;
+  height: 41px;
+}
+
+.promo-download__promo-options {
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .promo-download {
+    padding-top: 115px;
+    background: url("../img/iphone-hand-mobile@1x.png") no-repeat;
+    background-size: 440px auto;
+    background-position: bottom 0 left 200px;
+  }
+
+  .promo-download__block {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    margin: 0 20px;
+  }
+
+  .promo-download__section {
+    padding-bottom: 103px;
+  }
+
+  .promo-download__list {
+    padding: 40px 0;
+  }
+
+  .promo-download__slogan {
+    display: block;
+    width: 230px;
+    padding: 0;
+    margin-top: 230px;
+    font-size: 40px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+    line-height: 50px;
+    align-self: center;
+  }
+
+  .promo-download__button {
+    display: block;
+    width: 260px;
+    height: 20px;
+    padding: 14px 19px;
+    margin-top: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 18px;
+    text-align: center;
+    border: 3px solid #ffffff;
+    border-radius: 30px 30px;
+  }
+
+  .promo-download__promo-options {
+    display: block;
+    padding-top: 0;
+    margin: 0;
+    font-weight: 300;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo-download {
+    padding-top: 150px;
+    background: url("../img/iphone-hand-mobile@1x.png") no-repeat;
+    background-size: 540px auto;
+    background-position: top 90px left 580px;
+  }
+
+  .promo-download__block {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    margin: 0;
+  }
+
+  .promo-download__section {
+    padding-bottom: 120px;
+  }
+
+  .promo-download__list {
+    padding: 70px 0 48px 0;
+  }
+
+  .promo-download__slogan {
+    margin-top: -35px;
+    padding: 0;
+    font-size: 48px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+    line-height: 58px;
+    align-self: center;
+  }
+
+  .promo-download__button {
+    display: block;
+    width: 260px;
+    height: 20px;
+    padding: 14px 19px;
+    margin-top: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 18px;
+    text-align: center;
+    border: 3px solid #ffffff;
+    border-radius: 30px 30px;
+  }
+
+  .promo-download__promo-options {
+    font-weight: 300;
+    font-size: 18px;
+  }
+}

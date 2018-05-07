@@ -1,15 +1,18 @@
+@import "_normalize.scss";
 @import "variables.scss";
 @import "fonts.scss";
 // index.html
 @import "blocks/scaffolding.scss";
 @import "blocks/page-header.scss";
+@import "blocks/main-nav__list.scss";
+@import "blocks/promo-download.scss";
 @import "blocks/page-main.scss";
 @import "blocks/promo-invitation.scss";
 @import "blocks/promo-features.scss";
 @import "blocks/special-promo.scss";
 @import "blocks/promo-advantages.scss";
 @import "blocks/reviews.scss";
-@import "blocks/tariffs.scss";
+@import "blocks/price.scss";
 @import "blocks/main-footer.scss";
 // photo.html
 @import "blocks/introduction.scss";
@@ -18,5 +21,4 @@
 @import "blocks/instrumental-desk.scss";
 @import "blocks/regular-footer.scss";
 // form.html
-@import "blocks/page-form.scss";
 @import "blocks/form.scss";

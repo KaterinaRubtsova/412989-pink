@@ -1,4 +1,15 @@
+// ДЛЯ МОБИЛЬНОЙ ВЕРСИИ
+.page-form {
+  background-color: #ffffff;
+}
+
+.form__blocks {
+  border: none;
+}
+
 .form__list {
+  margin: 0;
+  padding: 0;
   list-style: none;
   text-align: left;
 }
@@ -24,18 +35,24 @@
   padding: 10px;
   font-size: 18px;
   font-weight: 400;
-  color: #cd0c54;
+  color: #d22856;
   line-height: 30px;
+  outline: none;
+  border: 2px solid #e5e5e5;
 }
 
-.form__blocks {
-  border: none;
+.name-fields + input:hover {
+  border: 2px solid #000000;
+}
+
+.name-fields + input:focus {
+  border: 2px solid #d22856;
 }
 
 .form__blocks__intro {
   font-size: 14px;
   font-weight: 400;
-  color: #cd0c54;
+  color: #d22856;
   line-height: 30px;
   text-transform: uppercase;
   text-align: center;
@@ -48,6 +65,50 @@
   line-height: 30px;
   background-color: #f2f2f2;
   text-align: left;
+}
+
+.form__item--achievements {
+  position: relative;
+}
+
+.form__blocks--achievements label {
+  padding-left: 60px;
+}
+
+.checkbox + label::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  border: 3px solid #e5e5e5;
+  background-color: #ffffff;
+  padding: 5px;
+  left: 0;
+}
+
+.checkbox:hover + label::before,
+.checkbox:checked:hover + label::before {
+  border: 3px solid #000000;
+}
+
+.checkbox:checked + label::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 5px;
+  border: 3px solid #e5e5e5;
+  background-color: #ffffff;
+}
+
+.checkbox:focus + label::before,
+.checkbox:checked:focus + label::before {
+  border: 3px solid #d22856;
+  // как изменить цвет галочки?
 }
 
 .data-fields {
@@ -69,6 +130,20 @@
   font-weight: 400;
   color: #000000;
   line-height: 30px;
+  outline: none;
+  border: 2px solid #e5e5e5;
+}
+
+.data-fields + input:hover {
+  border: 2px solid #000000;
+}
+
+.data-fields + input:focus {
+  border: 2px solid #d22856;
+}
+
+.form__blocks__intro--contacts {
+  display: none;
 }
 
 .form__blocks--applications {
@@ -79,7 +154,23 @@
   background-color: #f2f2f2;
 }
 
-.form__blocks__intro + textarea {
+.radio + label::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 35px;
+  height: 35px;
+  margin-right: 32px;
+  background: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+}
+
+.radio:checked + label::before {
+  background: radial-gradient(at center, #d22856 30%, #ffffff 30%);
+}
+
+.form__blocks__intro--emotions + textarea {
   width: 100%;
   box-sizing: border-box;
   padding: 10px;
@@ -87,6 +178,16 @@
   font-weight: 400;
   color: #000000;
   line-height: 30px;
+  outline: none;
+  border: 2px solid #f2f2f2;
+}
+
+.form__blocks--emotions textarea:hover {
+  border: 2px solid #000000;
+}
+
+.form__blocks--emotions textarea:focus {
+  border: 2px solid #d22856;
 }
 
 .submit-wrapper {
@@ -97,6 +198,7 @@
 }
 
 .form__submit-button {
+  background-color: #26ac6d;
   text-decoration: none;
   color: #ffffff;
   line-height: 18px;
@@ -107,6 +209,21 @@
   height: 55px;
   width: 281px;
   padding: 18px 34px;
+  outline: none;
+}
+
+.form__submit-button:hover {
+  background-color: #1c9b5e;
+}
+
+.form__submit-button:active {
+  color: #2aab6c;
+  background-color: #1c9b5e;
+}
+
+.form__submit-button:disabled {
+  color: #ffffff;
+  background-color: #f2f2f2;
 }
 
 .form__notification {
@@ -115,33 +232,158 @@
   color: #000000;
   line-height: 30px;
 }
-
+// ДЛЯ ПЛАНШЕТНОЙ ВЕРСИИ
 @media (min-width: $tablet-width) {
   .form__input-fields {
     display: flex;
     flex-direction: column;
   }
 
+  .fieldset-wrapper {
+    margin: 0 20px 60px 20px;
+    border: 2px solid #f2f2f2;
+  }
+
   .form__blocks--name {
+    margin: 0;
+    padding: 20px;
+    width: 620px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
     order: 1;
   }
 
-  .form__blocks--applications {
+  .form__blocks--name .form__item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .name-fields {
+    margin-right: 20px;
+  }
+
+  .fieldset-wrapper--applications {
+    min-width: 300px;
     order: 2;
+  }
+
+  .form__blocks--applications {
     background-color: #ffffff;
   }
 
-  .form__blocks--contacts {
+  .form__blocks__intro--applications {
+    display: block;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: -15px;
+    padding-bottom: 20px;
+    background-color: #ffffff;
+  }
+
+  .fieldset-wrapper--contacts {
     order: 3;
+  }
+
+  .form__blocks__intro--contacts {
+    display: block;
+    width: 250px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: -25px;
+    background-color: #ffffff;
+  }
+
+  .form__list--contacts {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 60px;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .form__item--contacts {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .form__item--tel::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    vertical-align: middle;
+    width: 58px;
+    height: 50px;
+    background: #f2f2f2 url("../img/icon-no.svg") no-repeat center; // пока нет картинки с телефоном
+    top: 2px;
+    right: 2px;
+  }
+
+  .form__item--email::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    vertical-align: middle;
+    width: 58px;
+    height: 50px;
+    background: #f2f2f2 url("../img/icon-no.svg") no-repeat center; // пока нет картинки с телефоном
+    top: 2px;
+    right: 2px;
+  }
+
+  .fieldset-wrapper--achievements {
+    order: 4;
   }
 
   .form__blocks--achievements {
     background-color: #ffffff;
-    order: 4;
+  }
+
+  .form__blocks__intro--achievements {
+    display: block;
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: -20px;
+    background-color: #ffffff;
+  }
+
+  .fieldset-wrapper--emotions {
+    order: 5;
+  }
+
+  .form__blocks__intro--emotions {
+    display: block;
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: -20px;
+    background-color: #ffffff;
   }
 
   .form__blocks--emotions {
-    order: 5;
+    margin: 0 auto;
+    max-width: 820px;
+  }
+
+  .form__blocks--emotions textarea {
+    max-width: 820px;
+    margin-top: 40px;
+    box-sizing: border-box;
+    outline: none;
+    border: 2px solid #e5e5e5;
+  }
+
+  .form__blocks--emotions textarea:hover {
+    border: 2px solid #000000;
+  }
+
+  .form__blocks--emotions textarea:focus {
+    border: 2px solid #d22856;
   }
 
   .submit-wrapper {
@@ -153,8 +395,14 @@
     order: 6;
   }
 }
-
+// ДЕСКТОПНАЯ ВЕРСИЯ
 @media (min-width: $desktop-width) {
+  .fieldset-wrapper {
+    margin: 0;
+    margin-bottom: 60px;
+    border: 2px solid #f2f2f2;
+  }
+
   .form__input-fields {
     display: flex;
     flex-wrap: wrap;
@@ -165,9 +413,20 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    padding: 20px;
+    margin-right: 50px;
     order: 1;
     width: 400px;
+  }
+
+  .form__blocks__intro--applications {
+    width: 350px;
+    margin-top: -35px;
+    padding-bottom: 20px;
+    background-color: #ffffff;
+  }
+
+  .fieldset-wrapper--applications {
+    order: 2;
   }
 
   .form__blocks--applications {
@@ -175,28 +434,39 @@
     justify-content: space-between;
     flex-direction: column;
     padding: 20px;
-    order: 2;
     width: 400px;
   }
 
-  .form__blocks--contacts {
-    padding: 20px;
+  .fieldset-wrapper--contacts {
     order: 3;
-    width: 800px;
   }
 
   .form__list--contacts {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
+    padding-left: 60px;
+    padding-right: 20px;
+    flex-direction: row;
   }
 
-  .form__blocks--achievements {
-    display: flex;
-    padding: 20px;
+  .form__blocks__intro--contacts {
+    margin-top: -65px;
+  }
+
+  .form__item--tel {
+    min-width: 375px;
+    margin-right: 60px;
+  }
+
+  .form__item--email {
+    min-width: 375px;
+    margin-right: 20px;
+  }
+
+  .fieldset-wrapper--achievements {
     order: 4;
+  }
+
+  .form__blocks__intro--achievements {
+    margin-top: -65px;
   }
 
   .form__list--achievements {
@@ -208,7 +478,7 @@
   }
 
   .form__item--achievements {
-    min-width: 250px;
+    min-width: 290px;
   }
 
   .form__item--shark-achiev {
@@ -235,9 +505,13 @@
     order: 3;
   }
 
-  .form__blocks--emotions {
-    width: 100%;
+  .fieldset-wrapper--emotions {
     order: 5;
+    width: 100%;
+  }
+
+  .form__blocks__intro--emotions {
+    margin-top: -65px;
   }
 
   .submit-wrapper {

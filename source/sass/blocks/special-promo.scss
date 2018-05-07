@@ -12,12 +12,68 @@
     margin: 0 auto;
     padding: 40px;
     text-align: left;
-    padding-left: 400px;
+    padding-left: 330px;
+  }
+
+  .special-promo__caption {
+    display: block;
+    margin: 0;
+    padding: 0;
+    min-width: 100px;
+    font-size: 30px;
+    line-height: 28px;
+  }
+
+  .special-promo__text {
+    display: block;
+    padding: 0;
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .special-promo__link {
+    text-decoration: underline;
+    color: #cd0c54;
+  }
+
+  .special-promo__link:hover {
+    color: #000000;
+    text-decoration: underline;
+  }
+
+  .special-promo__link:active {
+    text-decoration: none;
+    opacity: 0.3;
   }
 }
 
 @media (min-width: $desktop-width) {
   .special-promo {
     background-color: #f2f2f2;
+    margin-bottom: 50px;
+  }
+
+  .special-promo__wrapper {
+    padding-top: 75px;
+    padding-bottom: 113px;
+    padding-left: 366px;
+  }
+
+  .special-promo__caption {
+    font-size: 30px;
+    line-height: 28px;
+  }
+
+  .special-promo__text {
+    display: block;
+    padding: 0;
+    margin: 0 0 35px 0;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .special-promo__link {
+    font-size: 18px;
   }
 }

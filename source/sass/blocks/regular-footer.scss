@@ -9,31 +9,72 @@
 }
 
 .regular-footer__logo {
-  background: url("../img/logo-pink-blue-mobile.svg") no-repeat;
-  background-position: center;
+  width: 150px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-pink-logo {
   width: 150px;
   height: 40px;
 }
 
-.regular-social-buttons__list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 48px;
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
+.blue-colored-logo {
+  fill: #283645;
 }
 
-.regular-social-buttons__item {
+.pink-colored-logo {
+  fill: #d22856;
+}
+
+.blue-colored-logo:hover {
+  fill: #d22856;
+}
+
+.footer-pink-logo:active {
+  fill-opacity: 0.3; // насколько корректно здесь использовать свойство fill-opacity?
+}
+
+.social-buttons__list {
+  padding: 0;
+  margin: 0;
+  min-width: 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.social-buttons__media {
+  width: 15px;
+  height: 15px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 46px;
-  height: 47px;
-  margin-right: 10px;
-  border: 3px solid #000000;
+  justify-content: center;
+  border: 3px solid #f2f2f2;
   border-radius: 50%;
+  padding: 13px 13px;
+}
+
+.twitter-icon {
+  width: 18px;
+  height: 18px;
+  fill: #cd0c54;
+}
+
+.fb-icon {
+  width: 18px;
+  height: 18px;
+  fill: #cd0c54;
+}
+
+.youtube-icon {
+  width: 18px;
+  height: 18px;
+  fill: #cd0c54;
 }
 
 .regular-footer__copyright {
@@ -51,9 +92,18 @@
 }
 
 .regular-footer__copyright-link {
-  width: 27px;
-  height: 34px;
-  border: 3px solid #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 29px;
+  height: 39px;
+}
+
+.academy-icon {
+  width: 29px;
+  height: 39px;
+  padding-left: 10px;
+  fill: #cd0c54;
 }
 
 @media (min-width: $tablet-width) {
