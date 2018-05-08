@@ -23,7 +23,7 @@
 
 .main-footer__contacts-wrapper {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
 }
@@ -59,6 +59,19 @@
 .main-footer__info:active {
   text-decoration: none;
   opacity: 0.3;
+}
+
+.map {
+  position: relative;
+}
+
+.map-triangle {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: -1px;
+  left: 0;
+  right: 0;
 }
 
 .main-footer__social-wrapper {

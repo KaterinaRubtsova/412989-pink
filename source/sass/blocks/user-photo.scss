@@ -1,20 +1,43 @@
 .user-photo__panoramic-wrapper {
   margin: 0 auto;
-  min-width: 320px;
+  width: auto;
 }
 
-.user-photo__panoramic-picture {
+.user-photo__panoramic-wrapper picture::before {
+  content: "Панорама дня";
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+  width: 140px;
+  height: 37px;
+  background: #d22856;
+  font-size: 13px;
+  line-height: 35px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.user-photo__panoramic-picture { // нужно ли дополнительно прописывать в css?
   width: 100%;
-  height: 137px;
+  height: auto;
 }
 
 .user-photo__photo-comments {
+  display: flex;
+  flex-direction: column;
   width: 260px;
   height: 158px;
   margin: 0 auto;
   padding: 20px;
   background-color: #f2f2f2;
   text-align: left;
+}
+
+.user-photo__photo-comments--panoramic {
+  display: flex;
+  flex-direction: column;
 }
 
 .user-photo {
@@ -66,7 +89,28 @@
   text-transform: uppercase;
 }
 
+.photo-comments__like {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.like-button {
+  margin-left: 10px;
+  fill: #d22856;
+}
+
 @media (min-width: $tablet-width) {
+  .user-photo__panoramic-wrapper picture::before {
+    content: "Панорама дня";
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    bottom: -56px;
+    width: 140px;
+    height: 37px;
+  }
+
   .user-photo__panoramic-picture {
     width: 100%;
     height: auto;
@@ -75,6 +119,19 @@
   .user-photo__photo-comments--panoramic {
     min-width: 660px;
     margin: 0 auto;
+  }
+
+  .photo-comments__author-name--panoramic {
+    order: 2;
+  }
+
+  .photo-comments__published-text--panoramic {
+    order: 3;
+  }
+
+  .photo-comments__like--panoramic {
+    order: 1;
+    align-self: flex-end;
   }
 
   .user-photo__wrapper {

@@ -83,9 +83,9 @@
 @media (min-width: $tablet-width) {
   .promo-download {
     padding-top: 115px;
-    background: url("../img/iphone-hand-mobile@1x.png") no-repeat;
-    background-size: 440px auto;
-    background-position: bottom 0 left 200px;
+    background: url("../img/iphone-hand-tablet@1x.png") no-repeat;
+    //background-size: 700px auto;
+    background-position: bottom 0 left 60px;
   }
 
   .promo-download__block {
@@ -146,9 +146,9 @@
 @media (min-width: $desktop-width) {
   .promo-download {
     padding-top: 150px;
-    background: url("../img/iphone-hand-mobile@1x.png") no-repeat;
-    background-size: 540px auto;
-    background-position: top 90px left 580px;
+    background: url("../img/iphone-hand-desktop@1x.png") no-repeat;
+    //background-size: 570px auto;
+    background-position: top 100px left 280px;
   }
 
   .promo-download__block {
