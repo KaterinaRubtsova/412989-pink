@@ -9,10 +9,33 @@
   }
 
   .special-promo__wrapper {
+    position: relative;
     margin: 0 auto;
     padding: 40px;
     text-align: left;
     padding-left: 330px;
+    background: url("../img/icon-timer.svg") no-repeat;
+    background-size: 301px;
+    background-position: left 20px top 0;
+  }
+
+  .special-promo__wrapper::before {
+    content: "24";
+    position: absolute;
+    top: 76px;
+    left: 48px;
+    display: block;
+    padding-top: 24px;
+    width: 220px;
+    height: 196px;
+    text-align: center;
+    color: #d22856;
+    background-color: #ffffff;
+    border: 13px solid #d22856;
+    border-radius: 50%;
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 160px;
   }
 
   .special-promo__caption {
@@ -55,8 +78,8 @@
   }
 
   .special-promo__wrapper {
+    min-height: 320px;
     padding-top: 75px;
-    padding-bottom: 113px;
     padding-left: 366px;
   }
 

@@ -97,6 +97,15 @@
 
   .promo-features__picture--big {
     display: block;
+    width: 320px;
+    justify-content: center;
+  }
+
+  .promo-features__picture--regular {
+    display: block;
+    width: 320px;
+    height: auto;
+    justify-content: center;
   }
 
   .promo-features__caption {

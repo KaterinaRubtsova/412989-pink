@@ -1,3 +1,10 @@
+.reviews {
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: bottom center; // не могу понять, как спозиционировать
+}
+
 .reviews__user-name {
   font-size: 18px;
   font-weight: 700;
@@ -70,6 +77,8 @@
 @media (min-width: $desktop-width) {
   .reviews__wrapper {
     padding: 120px 40px 140px;
+    background: url("../img/icon-quotes.svg") no-repeat;
+    background-position: center top 40px;
   }
 
   .reviews__item {
@@ -92,5 +101,44 @@
 
   .reviews__toggles-list {
     display: none;
+  }
+
+  .reviews__arrows {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+  }
+
+  .arrow {
+    position: absolute;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #bec2c7;
+    transform: rotate(45deg);
+    cursor: pointer;
+
+    &:hover {
+      border-color: #7e868f;
+    }
+
+    &:active {
+      border-color: #f2f2f2;
+    }
+  }
+
+  .arrow--left {
+    top: 100px;
+    margin-left: -80px;
+    border-top: none;
+    border-right: none;
+  }
+
+  .arrow--right {
+    left: 900px;
+    top: -180px;
+    border-bottom: none;
+    border-left: none;
   }
 }
