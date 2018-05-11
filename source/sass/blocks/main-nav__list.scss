@@ -1,10 +1,11 @@
 .main-nav {
   position: relative;
   min-width: 320px;
-  min-height: 68px;
+  min-height: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px 0;
 }
 
 .main-nav--transparent {
@@ -20,34 +21,39 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-width: 320px;
+  flex-direction: column;
 }
 
-.main-nav__logo {
+.main-nav__logo--mobile {
+  margin-right: 207px;
+  margin-bottom: 7px;
   text-decoration: none;
   cursor: pointer;
   width: 70px;
   height: 22px;
   fill: #ffffff;
-  margin: 20px;
+
+  &:hover {
+    fill: #d22856;
+  }
+
+  &:active {
+    fill: rgba(210, 40, 86, 0.3);
+  }
 }
 
-.main-nav__logo:hover {
-  fill: #d22856;
+.main-nav__logo--tablet {
+  display: none;
 }
 
-.main-nav__logo:active {
-  fill: rgba(210, 40, 86, 0.3);
-}
-
-.main-nav__logo--tablet-desktop {
+.main-nav__logo--desktop {
   display: none;
 }
 
 .main-nav__button--burger {
   position: absolute;
-  top: 20px;
-  right: 0;
+  top: 0;
+  right: 19px;
   cursor: pointer;
   border: none;
   width: 50px;
@@ -84,8 +90,8 @@
 
 .main-nav__button--cross {
   position: absolute;
-  top: 30px;
-  right: 20px;
+  top: 10px;
+  right: 38px;
   cursor: pointer;
   border: none;
   background-color: transparent;
@@ -96,8 +102,8 @@
     display: block;
     position: absolute;
     top: 0;
-    width: 25px;
-    height: 3px;
+    width: 29px;
+    height: 4px;
     outline: 0;
     background-color: #ffffff;
     transform: rotate(135deg);
@@ -108,8 +114,8 @@
     display: block;
     position: absolute;
     top: 0;
-    width: 25px;
-    height: 3px;
+    width: 29px;
+    height: 4px;
     outline: 0;
     background-color: #ffffff;
     transform: rotate(45deg);
@@ -127,13 +133,14 @@
 }
 
 .site-list--opened {
-  position: absolute;
+  position: relative;
+  top: 20px;
+  min-width: 320px;
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  top: 68px;
-  left: 0;
   width: 100%;
+  line-height: 22px;
 }
 
 .site-list--closed {
@@ -143,7 +150,7 @@
 .site-list a {
   display: block;
   text-align: center;
-  padding: 20px 100px;
+  padding: 20px 80px;
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
@@ -165,33 +172,44 @@
     border-bottom: 1px solid #485461;
   }
 }
-
+// версия для планшета версия для планшета версия для планшета версия для планшета
 @media (min-width: $tablet-width) {
   .main-nav {
-    min-height: 110px;
+    min-height: 30px;
   }
 
-  .main-nav__logo {
-    width: 145px;
-    height: 40px;
-    margin-right: 375px;
-    margin-top: -16px;
+  .main-nav--filled {
+    background-color: #283645;
   }
 
-  .main-nav__logo--tablet-desktop {
+  .main-nav__logo--tablet {
     display: block;
-  }
+    width: 146px;
+    height: 40px;
+    margin-right: 475px;
+    margin-top: 8px;
+    fill: #ffffff;
 
-  .main-nav__logo--tablet-desktop:hover {
-    fill: #d22856;
-  }
+    &:hover {
+      fill: #d22856;
+    }
 
-  .main-nav__logo--tablet-desktop:active {
-    fill: rgba(255, 255, 255, 0.3);
+    &:active {
+      fill: rgba(210, 40, 86, 0.3);
+    }
   }
 
   .main-nav__logo--mobile {
     display: none;
+  }
+
+  .main-nav__button--burger {
+    top: 20px;
+    right: 0;
+  }
+
+  .main-nav__button--cross {
+    top: 37px;
   }
 
   .page-header__wrapper {
@@ -203,27 +221,51 @@
   }
 
   .site-list {
-    position: absolute;
-    top: 110px;
+    top: 40px;
     left: 0;
     width: 100%;
   }
 
-  .site-list a {
-    padding: 19px;
-  }
-}
-// для десктопа
-@media (min-width: $desktop-width) {
-  .main-nav__wrapper {
-    min-width: 940px;
+  .site-list--opened {
+    position: relative;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    min-width: 660px;
   }
 
-  .main-nav__logo {
-    margin-right: 155px;
-    margin-top: -16px;
-    margin-left: 0;
+  .site-list a {
+    padding: 21px 20px;
+  }
+}
+// для десктопа для десктопа для десктопа для десктопа для десктопа
+@media (min-width: $desktop-width) {
+  .main-nav__wrapper {
+    min-width: 960px;
+    flex-direction: row;
+  }
+
+  .main-nav__logo--desktop {
+    width: 146px;
+    height: 40px;
+    display: block;
+    margin-right: 115px;
+    margin-top: 8px;
+    margin-left: 10px;
     margin-bottom: 0;
+    fill: #ffffff;
+
+    &:hover {
+      fill: #d22856;
+    }
+
+    &:active {
+      fill: rgba(210, 40, 86, 0.3);
+    }
+  }
+
+  .main-nav__logo--tablet {
+    display: none;
   }
 
   .main-nav__button {
@@ -231,10 +273,11 @@
   }
 
   .site-list {
-    position: static;
+    position: relative;
     display: flex;
     justify-content: space-between;
     list-style: none;
+    top: 5px;
   }
 
   .site-list a {

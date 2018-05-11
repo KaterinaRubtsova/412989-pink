@@ -1,5 +1,5 @@
 .regular-footer__social-wrapper {
-  height: 244px;
+  min-height: 200px;
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -8,12 +8,16 @@
   flex-direction: column;
 }
 
-.regular-footer__logo {
+.regular-footer__logo--mobile-tablet {
   width: 150px;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 18px;
+  margin-bottom: 41px;
+  margin-left: -2px;
+  padding: 0;
 }
 
 .footer-pink-logo {
@@ -34,7 +38,15 @@
 }
 
 .footer-pink-logo:active {
-  fill-opacity: 0.3; // насколько корректно здесь использовать свойство fill-opacity?
+  fill-opacity: 0.3;
+}
+
+.regular-footer__logo--desktop {
+  display: none;
+}
+
+.regular-footer__social-buttons {
+  margin-bottom: 0;
 }
 
 .social-buttons__list {
@@ -49,8 +61,8 @@
 }
 
 .social-buttons__media {
-  width: 15px;
-  height: 15px;
+  width: 18px;
+  height: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -85,30 +97,41 @@
 }
 
 .regular-footer__copyright-text {
-  font-size: 18px;
+  padding-left: 20px;
+  font-size: 14px;
   font-weight: 400;
   color: #000000;
-  line-height: 24px;
+  line-height: 18px;
 }
 
 .regular-footer__copyright-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 29px;
-  height: 39px;
+  width: 38px;
+  height: 35px;
+  padding-left: 15px;
+  padding-top: 10px;
 }
 
 .academy-icon {
-  width: 29px;
+  width: 40px;
   height: 39px;
-  padding-left: 10px;
-  fill: #cd0c54;
+  fill: #d22856;
 }
 
 @media (min-width: $tablet-width) {
   .regular-footer__social-wrapper {
     flex-direction: row;
-    height: 197px;
+    min-height: 100px;
+    padding: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .regular-footer__social-wrapper {
+    flex-direction: row;
+    min-height: 220px;
+    padding: 20px 10px;
   }
 }

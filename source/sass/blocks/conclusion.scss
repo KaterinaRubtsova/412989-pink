@@ -1,4 +1,7 @@
-.motive-text {
+.conclusion-text {
+  display: block;
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   font-weight: 400;
   color: #000000;
@@ -6,12 +9,31 @@
   text-align: center;
 }
 
-@media (min-width: $desktop-width) {
-  .motive-text {
+.conclusion-text--first-line {
+  margin-top: 15px;
+}
+
+.conclusion-text--second-line {
+  margin: 0 10px 42px;
+}
+
+@media (min-width: $tablet-width) {
+  .conclusion-text {
     font-size: 18px;
-    font-weight: 600;
-    color: #000000;
-    line-height: 30px;
-    text-align: center;
+    font-weight: 400;
+  }
+
+  .conclusion-text--first-line {
+    margin-top: 45px;
+  }
+
+  .conclusion-text--second-line {
+    margin: 0 10px 67px;
+  }
+}
+// для десктопа для десктопа для десктопа для десктопа
+@media (min-width: $desktop-width) {
+  .conclusion-text--first-line {
+    margin-top: 3px;
   }
 }

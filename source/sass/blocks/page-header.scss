@@ -1,50 +1,115 @@
 // мобильная версия
-.page-header--main {
-  min-height: 900px;
+.page-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: #15202d;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+}
+
+.page-header--main {
+  min-height: 733px;
+  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom 279px left -1px, bottom 270px center;
+  background-size: 260px auto, cover;
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .page-header--main {
+    background-image: url("../img/iphone-hand-mobile@2x.png"), url("../img/bg-back-mobile@2x.jpg");
+  }
 }
 
 .page-header--regular {
-  min-height: 250px;
-  background-color: #15202d;
+  min-height: 240px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom center;
   background-size: cover;
+  justify-content: flex-start;
 }
 
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .page-header--regular {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
+}
+
+.page-header--opened-main {
+  min-height: 990px;
+  background-position: bottom 279px left -1px, bottom 270px center;
+  background-size: 260px auto, contain;
+}
+
+.page-header--opened-regular {
+  min-height: 600px;
+}
+// для планшета для планшета для планшета для планшета для планшета
 @media (min-width: $tablet-width) {
   .page-header--main {
-    background: url("../img/bg-back-tablet@1x.jpg");
+    min-height: 715px;
+    background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top 180px right -18px, center;
+    background-size: 690px auto, cover;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .page-header--main {
+      background-image: url("../img/iphone-hand-tablet@2x.png"), url("../img/bg-back-tablet@2x.jpg");
+    }
+  }
+
+  .page-header--opened-main {
+    min-height: 990px;
+    background-position: bottom 0 right -18px, center;
+    background-size: 690px auto, cover;
+  }
+
+  .page-header--regular {
+    min-height: 695px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
 
-  .page-header--regular {
-    background: url("../img/bg-back-tablet@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .page-header--regular {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
+  }
+
+  .page-header--opened-regular {
+    min-height: 973px;
   }
 }
-
+// для десктопа для десктопа для десктопа для десктопа для десктопа для десктопа
 @media (min-width: $desktop-width) {
   .page-header--main {
-    background: url("../img/bg-back-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom left 215px, center;
+    background-size: 1070px auto, cover;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .page-header--main {
+      background-image: url("../img/iphone-hand-desktop@2x.png"), url("../img/bg-back-desktop@2x.jpg");
+    }
   }
 
   .page-header--regular {
+    min-height: 395px;
     background: url("../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
+    background-position: bottom center;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .page-header--regular {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
   }
 }

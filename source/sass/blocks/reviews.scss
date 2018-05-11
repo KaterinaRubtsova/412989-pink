@@ -5,16 +5,33 @@
   background-position: bottom center; // не могу понять, как спозиционировать
 }
 
+.reviews__wrapper {
+  min-height: 380px;
+  margin: 0;
+  padding: 0;
+}
+
+.reviews__item {
+  padding: 28px 0;
+}
+
 .reviews__user-name {
-  font-size: 18px;
+  display: block;
+  margin: 17px 0 14px;
+  padding: 0;
+  font-size: 20px;
   font-weight: 700;
   color: #000000;
-  line-height: 30px;
+  line-height: 28px;
   font-style: normal;
   text-align: center;
 }
 
 .reviews__user-comment {
+  display: block;
+  min-height: 80px;
+  margin: 0;
+  padding: 0 25px;
   font-size: 14px;
   font-weight: 400;
   color: #000000;
@@ -24,7 +41,8 @@
 
 .reviews__toggles-list {
   margin: 0 auto;
-  width: 65px;
+  padding: 2px 0;
+  width: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,8 +51,8 @@
 .reviews__toggles-item {
   flex-grow: 0;
   flex-shrink: 0;
-  width: 5px;
-  height: 5px;
+  width: 1px;
+  height: 1px;
   background: #bec2c7;
   border: 3px solid transparent;
   border-radius: 50%;
@@ -44,25 +62,38 @@
 
 .reviews__toggles-item--active {
   background: #f2f2f2;
-  width: 10px;
-  height: 10px;
+  width: 6px;
+  height: 6px;
   border: 3px solid #000000;
   border-radius: 50%;
   cursor: pointer;
   outline: none;
 }
 
+.reviews__arrows {
+  display: none;
+}
+// для планшета  для планшета для планшета для планшета для планшета
 @media (min-width: $tablet-width) {
+  .reviews__wrapper {
+    min-height: 330px;
+  }
+
   .reviews__user-comment {
     display: block;
-    margin: 40px 0;
+    margin: 0 0 42px 0;
     padding: 0;
     font-size: 18px;
+    line-height: 28px;
+  }
+
+  .reviews__item {
+    padding: 28px 19px 34px;
   }
 
   .reviews__user-name {
     display: block;
-    margin: 0;
+    margin: 0 0 10px 0;
     padding: 0;
     font-size: 20px;
     line-height: 20px;
@@ -73,12 +104,12 @@
     font-size: 14px;
   }
 }
-
+// для десктопа для десктопа для десктопа для десктопа для десктопа
 @media (min-width: $desktop-width) {
   .reviews__wrapper {
-    padding: 120px 40px 140px;
+    padding: 160px 40px 40px;
     background: url("../img/icon-quotes.svg") no-repeat;
-    background-position: center top 40px;
+    background-position: center top 90px;
   }
 
   .reviews__item {
@@ -86,7 +117,10 @@
   }
 
   .reviews__user-comment {
+    margin: 0 28px 30px 28px;
+    padding: 0;
     font-size: 18px;
+    line-height: 28px;
   }
 
   .reviews__user-name {
@@ -129,15 +163,15 @@
   }
 
   .arrow--left {
-    top: 100px;
-    margin-left: -80px;
+    top: 78px;
+    margin-left: -27px;
     border-top: none;
     border-right: none;
   }
 
   .arrow--right {
-    left: 900px;
-    top: -180px;
+    left: 870px;
+    top: -155px;
     border-bottom: none;
     border-left: none;
   }

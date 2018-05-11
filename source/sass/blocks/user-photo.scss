@@ -1,15 +1,16 @@
 .user-photo__panoramic-wrapper {
+  position: relative;
   margin: 0 auto;
   width: auto;
 }
 
-.user-photo__panoramic-wrapper picture::before {
+.user-photo__panoramic-wrapper::before {
   content: "Панорама дня";
   display: inline-block;
   position: absolute;
   right: 20px;
   width: 140px;
-  height: 37px;
+  min-height: 37px;
   background: #d22856;
   font-size: 13px;
   line-height: 35px;
@@ -19,31 +20,47 @@
   text-transform: uppercase;
 }
 
-.user-photo__panoramic-picture { // нужно ли дополнительно прописывать в css?
+.user-photo__panoramic-picture {
   width: 100%;
   height: auto;
 }
 
 .user-photo__photo-comments {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  width: 260px;
-  height: 158px;
+  width: 280px;
+  min-height: 125px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 20px 0;
   background-color: #f2f2f2;
   text-align: left;
 }
 
 .user-photo__photo-comments--panoramic {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  min-width: 280px;
+  min-height: 180px;
+  margin: 0 auto;
+  padding: 20px 20px 0;
+  background-color: #f2f2f2;
+  text-align: left;
 }
 
 .user-photo {
   margin: 0 auto;
   padding: 0;
   padding-bottom: 20px;
+}
+
+.user-photo--panoramic {
+  padding-bottom: 23px;
+}
+
+.user-photo img {
+  display: block;
 }
 
 .user-photo__wrapper {
@@ -54,14 +71,15 @@
 }
 
 .user-photo__picture {
-  width: 300px;
-  height: 180px;
+  width: 100%;
+  height: auto;
 }
 
 .photo-comments__author-name {
   display: block;
   margin: 0;
-  padding: 0 0 5px 0;
+  padding: 0;
+  min-height: 24px;
   font-size: 14px;
   font-weight: 700;
   color: #000000;
@@ -77,61 +95,93 @@
 }
 
 .photo-comments__published-text {
+  display: block;
+  margin: 0;
+  padding: 0;
+  min-height: 25px;
   font-size: 14px;
   font-weight: 400;
   color: #000000;
   line-height: 24px;
 }
 
+.photo-comments__published-text--panoramic {
+  min-height: 98px;
+}
+
 .photo-comments__text {
+  display: block;
+  min-height: 40px;
+  margin: 0;
+  padding: 0;
   font-size: 12px;
+  line-height: 14px;
   color: #cd0c54;
   text-transform: uppercase;
 }
 
 .photo-comments__like {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: baseline;
 }
 
 .like-button {
-  margin-left: 10px;
+  width: 12px;
+  height: 11px;
+  margin-right: 10px;
   fill: #d22856;
 }
-
+// для планшета для планшета для планшета для планшета для планшета для планшета
 @media (min-width: $tablet-width) {
-  .user-photo__panoramic-wrapper picture::before {
+  .user-photo__panoramic-wrapper::before {
     content: "Панорама дня";
     display: inline-block;
     position: absolute;
     right: 20px;
-    bottom: -56px;
+    top: 60px;
     width: 140px;
-    height: 37px;
+    height: 35px;
   }
 
-  .user-photo__panoramic-picture {
-    width: 100%;
-    height: auto;
+  .user-photo__photo-comments {
+    box-sizing: border-box;
+    min-width: 300px;
   }
 
   .user-photo__photo-comments--panoramic {
-    min-width: 660px;
+    min-width: 620px;
+    min-height: 150px;
     margin: 0 auto;
+    margin-bottom: 28px;
+    padding: 20px 45px 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .photo-comments__author-name--panoramic {
-    order: 2;
+    flex-basis: 50%;
+    order: 1;
   }
 
   .photo-comments__published-text--panoramic {
+    min-height: 85px;
     order: 3;
   }
 
   .photo-comments__like--panoramic {
-    order: 1;
-    align-self: flex-end;
+    order: 2;
+    flex-direction: row;
+  }
+
+  .like-button {
+    margin-right: 0;
+    margin-left: 10px;
   }
 
   .user-photo__wrapper {
@@ -146,30 +196,79 @@
     padding-bottom: 20px;
   }
 
-  .user-photo__picture {
-    width: 300px;
-    height: 300px;
+  .photo-comments__author-name {
+    display: block;
+    margin: 0;
+    padding: 0;
+    min-height: 24px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 24px;
+  }
+
+  .photo-comments__publishing-time {
+    line-height: 30px;
+  }
+
+  .photo-comments__published-text {
+    min-height: 60px;
   }
 }
-
+// для десктопа для десктопа для десктопа для десктопа для десктопа
 @media (min-width: $desktop-width) {
   .user-photo {
     margin: 0 auto;
-    padding-bottom: 20px;
+    padding-bottom: 0;
+    margin-bottom: 54px;
   }
 
-  .user-photo__picture {
-    width: 301px;
-    height: 404px;
+  .user-photo__panoramic-wrapper::before {
+    content: "Панорама дня";
+    right: 130px;
+    top: 50px;
+  }
+
+  .user-photo__photo-comments {
+    margin-bottom: 0;
   }
 
   .user-photo__photo-comments--panoramic {
     box-sizing: border-box;
     min-width: 940px;
-    margin-top: -10px;
+    min-height: 80px;
+    margin-bottom: 33px;
+    padding: 20px 27px 0;
+    align-items: flex-start;
   }
 
-  .user-photo__photo-comments {
-    margin-top: -10px;
+  .photo-comments__author-name--panoramic {
+    flex-basis: 50%;
+    order: 1;
+  }
+
+  .photo-comments__published-text--panoramic {
+    min-height: 25px;
+    order: 3;
+  }
+
+  .photo-comments__like {
+    min-width: 260px;
+    min-height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .like-button {
+    margin-right: 10px;
+    fill: #d22856;
+  }
+
+  .photo-comments__like--panoramic {
+    order: 2;
+    flex-direction: row;
+    justify-content: flex-end;
   }
 }
