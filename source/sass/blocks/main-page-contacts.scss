@@ -1,0 +1,146 @@
+.main-page-contacts {
+  text-align: center;
+}
+
+.main-footer__wrapper {
+  margin: 0 auto;
+}
+
+.main-footer__invitation {
+  align-self: center;
+  min-width: 245px;
+  margin: 40px auto 28px;
+  font-size: 24px;
+  font-weight: 300;
+  color: #000000;
+  line-height: 30px;
+  text-align: center;
+}
+
+.main-footer__contacts-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 260px;
+  text-align: center;
+  justify-content: center;
+}
+
+.main-footer__text {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #000000;
+  line-height: 30px;
+}
+
+.main-footer__info {
+  display: block;
+  margin: 0 40px;
+  padding: 0;
+  font-size: 24px;
+  font-weight: 300;
+  color: #cd0c54;
+  line-height: 28px;
+  text-decoration: none;
+}
+
+.main-footer__info:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.main-footer__info:active {
+  text-decoration: none;
+  opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .main-footer__wrapper {
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+
+  .main-footer__invitation {
+    min-width: 200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  .main-footer__info {
+    margin: 0;
+  }
+
+  .main-footer__contacts {
+    display: block;
+    margin: 0;
+    padding: 0;
+    min-width: 310px;
+    margin-top: 45px;
+  }
+
+  .main-footer__contacts--address {
+    margin-top: 10px;
+  }
+
+  .main-footer__contacts--address .main-footer__info {
+    padding: 0 170px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer__wrapper {
+    min-height: 250px;
+    padding: 0;
+  }
+
+  .main-footer__invitation {
+    display: block;
+    min-width: 300px;
+    margin: 16px 100px 0;
+    padding: 0;
+    font-size: 50px;
+    line-height: 58px;
+  }
+
+  .main-footer__contacts-wrapper {
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 40px;
+    min-height: 140px;
+  }
+
+  .main-footer__contacts {
+    padding: 0;
+    min-width: 305px;
+    margin-top: 0;
+  }
+
+  .main-footer__contacts--address {
+    margin-top: 0;
+    order: 2;
+  }
+
+  .main-footer__contacts--address .main-footer__info {
+    margin: 0 40px;
+    padding: 0;
+  }
+
+  .main-footer__text {
+    padding: 17px 0;
+  }
+
+  .main-footer__contacts--tel {
+    order: 1;
+  }
+
+  .main-footer__contacts--e-mail {
+    order: 3;
+  }
+}

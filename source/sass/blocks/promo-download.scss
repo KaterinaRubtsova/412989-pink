@@ -1,11 +1,20 @@
 .promo-download {
-  min-height: 278px;
+  display: flex;
+  align-items: flex-end;
+  margin-top: -110px;
+  min-height: 780px;
+  width: 100%;
+  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom 270px left 0, bottom center;
+  background-size: 260px auto, cover;
   box-sizing: border-box;
 }
 
-.promo-download__section {
-  display: flex;
-  justify-content: space-between;
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .promo-download {
+    background-image: url("../img/iphone-hand-mobile@2x.png"), url("../img/bg-back-mobile@2x.jpg");
+  }
 }
 
 .promo-download__block {
@@ -14,7 +23,6 @@
   flex-direction: column;
   align-items: center;
   background-color: #15202d;
-  box-sizing: border-box;
 }
 
 .promo-download__slogan {
@@ -23,10 +31,10 @@
 
 .promo-download__button {
   display: block;
-  width: 260px;
+  min-width: 260px;
   height: 20px;
   padding: 14px 8px;
-  margin-top: 37px;
+  margin-top: 30px;
   text-decoration: none;
   font-weight: 700;
   font-size: 20px;
@@ -79,7 +87,7 @@
 .promo-download__promo-options {
   display: block;
   margin: 0 auto;
-  padding: 15px 20px 0;
+  padding: 15px 20px 35px;
   min-width: 200px;
   font-weight: 400;
   font-size: 14px;
@@ -90,16 +98,27 @@
 // для планшета для планшета для планшета для планшета для планшета для планшета
 @media (min-width: $tablet-width) {
   .promo-download {
-    min-height: 550px;
+    min-height: 730px;
+    background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top 194px right -13px, center;
+    background-size: 690px auto, cover;
+    align-items: center;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .promo-download {
+      background-image: url("../img/iphone-hand-tablet@2x.png"), url("../img/bg-back-tablet@2x.jpg");
+    }
   }
 
   .promo-download__block {
-    max-width: 319px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: transparent;
-    margin: 22px 10px 0;
+    margin-top: 100px;
+    margin-left: -160px;
   }
 
   .promo-download__list {
@@ -108,14 +127,13 @@
 
   .promo-download__slogan {
     display: block;
-    width: 230px;
-    padding: 0;
+    margin: 0 auto;
+    padding: 0 210px;
     font-size: 40px;
     font-weight: 300;
     color: #ffffff;
     text-align: center;
     line-height: 50px;
-    align-self: center;
   }
 
   .promo-download__button {
@@ -140,25 +158,35 @@
 
   .promo-download__promo-options {
     display: block;
-    padding: 0 10px;
+    padding: 0 180px;
     font-weight: 300;
     font-size: 18px;
     line-height: 26px;
   }
 }
-// для десктопа для десктопа для десктопа для десктопа для десктопа
+// для десктопа для десктопа для десктопа для десктопа для десктопа для десктопа для десктопа для десктопа
 @media (min-width: $desktop-width) {
   .promo-download {
-    padding-top: 160px;
+    min-height: 853px;
+    background: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top 206px right 0, center;
+    background-size: 1070px auto, cover;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .promo-download {
+      background-image: url("../img/iphone-hand-desktop@2x.png"), url("../img/bg-back-desktop@2x.jpg");
+    }
   }
 
   .promo-download__block {
-    max-width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: transparent;
-    margin: 0;
+    margin-top: 220px;
+    margin-left: -320px;
   }
 
   .promo-download__section {
@@ -170,14 +198,14 @@
   }
 
   .promo-download__slogan {
-    margin-top: -34px;
-    padding: 0;
-    font-size: 48px;
+    display: block;
+    margin: 0 auto;
+    padding: 0 330px;
+    font-size: 50px;
     font-weight: 300;
     color: #ffffff;
     text-align: center;
     line-height: 58px;
-    align-self: center;
   }
 
   .promo-download__button {
@@ -186,7 +214,7 @@
     height: 20px;
     padding: 14px 19px;
     margin-top: 54px;
-    margin-left: 20px;
+    margin-left: 8px;
     text-decoration: none;
     font-weight: 700;
     font-size: 20px;
@@ -198,7 +226,7 @@
   }
 
   .promo-download__promo-options {
-    min-width: 290px;
+    padding: 0 300px;
     font-weight: 300;
     font-size: 18px;
   }

@@ -1,19 +1,23 @@
 .main-nav {
   position: relative;
+  box-sizing: border-box;
   min-width: 320px;
-  min-height: 20px;
+  min-height: 65px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 20px 0 20px;
+  background-color: rgba(21, 32, 45, 0.7);
 }
 
 .main-nav--transparent {
+  padding-bottom: 20px;
   background-color: rgba(21, 32, 45, 0.7);
 }
 
 .main-nav--filled {
   background-color: #283645;
+  padding-bottom: 0;
 }
 
 .main-nav__wrapper {
@@ -26,7 +30,6 @@
 
 .main-nav__logo--mobile {
   margin-right: 207px;
-  margin-bottom: 7px;
   text-decoration: none;
   cursor: pointer;
   width: 70px;
@@ -131,55 +134,22 @@
     background-color: rgba(210, 40, 86, 0.3);
   }
 }
-
-.site-list--opened {
-  position: relative;
-  top: 20px;
-  min-width: 320px;
-  list-style: none;
-  margin: 0 auto;
-  padding: 0;
-  width: 100%;
-  line-height: 22px;
-}
-
-.site-list--closed {
-  display: none;
-}
-
-.site-list a {
-  display: block;
-  text-align: center;
-  padding: 20px 80px;
-  font-size: 18px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #ffffff;
-  background-color: #283645;
-  border-top: 1px solid #485461;
-  border-bottom: 1px solid #000000;
-}
-
-.site-list a[href] {
-  &:hover {
-    color: #d22856;
-  }
-
-  &:active {
-    color: rgba(210, 40, 86, 0.3);
-    border-top: 1px solid #000000;
-    border-bottom: 1px solid #485461;
-  }
-}
 // версия для планшета версия для планшета версия для планшета версия для планшета
 @media (min-width: $tablet-width) {
   .main-nav {
-    min-height: 30px;
+    min-height: 110px;
+    padding: 10px 20px 0;
   }
 
   .main-nav--filled {
     background-color: #283645;
+    padding-bottom: 0;
+    padding-top: 30px;
+  }
+
+  .main-nav__wrapper {
+    justify-content: space-between;
+    align-items: center;
   }
 
   .main-nav__logo--tablet {
@@ -187,7 +157,6 @@
     width: 146px;
     height: 40px;
     margin-right: 475px;
-    margin-top: 8px;
     fill: #ffffff;
 
     &:hover {
@@ -204,54 +173,42 @@
   }
 
   .main-nav__button--burger {
-    top: 20px;
+    top: 10px;
     right: 0;
   }
 
   .main-nav__button--cross {
-    top: 37px;
+    top: 24px;
+    right: 18px;
   }
 
   .page-header__wrapper {
     min-width: 660px;
   }
-
-  .main-nav__initial-navigation {
-    padding: 20px;
-  }
-
-  .site-list {
-    top: 40px;
-    left: 0;
-    width: 100%;
-  }
-
-  .site-list--opened {
-    position: relative;
-    list-style: none;
-    margin: 0 auto;
-    padding: 0;
-    min-width: 660px;
-  }
-
-  .site-list a {
-    padding: 21px 20px;
-  }
 }
 // для десктопа для десктопа для десктопа для десктопа для десктопа
 @media (min-width: $desktop-width) {
+  .main-nav {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 30px;
+    padding-right: 80px;
+  }
+
   .main-nav__wrapper {
     min-width: 960px;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .main-nav__logo--desktop {
     width: 146px;
     height: 40px;
     display: block;
-    margin-right: 115px;
-    margin-top: 8px;
-    margin-left: 10px;
+    margin-right: 170px;
+    margin-left: 35px;
+    margin-top: -10px;
     margin-bottom: 0;
     fill: #ffffff;
 
@@ -270,43 +227,5 @@
 
   .main-nav__button {
     display: none;
-  }
-
-  .site-list {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    top: 5px;
-  }
-
-  .site-list a {
-    display: inline;
-    text-align: center;
-    padding: 20px;
-    font-size: 18px;
-    font-weight: 400;
-    text-transform: none;
-    text-decoration: none;
-    color: #ffffff;
-    background-color: transparent;
-    border-top: none;
-    border-bottom: none;
-  }
-
-  .site-list a[href] {
-    &:hover {
-      color: #d22856;
-    }
-
-    &:active {
-      color: rgba(210, 40, 86, 0.3);
-      border-bottom: none;
-      border-top: none;
-    }
-
-    .site-list__item--active { // почему не работает?
-      border-bottom: 2px solid #ffffff;
-    }
   }
 }

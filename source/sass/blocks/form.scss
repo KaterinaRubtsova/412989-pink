@@ -193,9 +193,18 @@
   border-radius: 50%;
 }
 
+.radio + label:hover::before {
+  border: 2px solid #000000;
+}
+
+.radio + label:active::before {
+  border: 2px solid #d22856;
+}
+
 .radio:checked + label::before {
   background: radial-gradient(at center, #d22856 30%, #ffffff 30%);
 }
+
 
 .form__blocks__intro--emotions {
   margin-bottom: 19px;
@@ -229,6 +238,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: -30px;
 }
 
 .form__submit-button {
@@ -273,6 +283,10 @@
 
 .form__notification-star {
   color: #d22856;
+}
+
+.form-notifications-desktop {
+  display: none;
 }
 // для планшета для плашета для планшета для планшета для планшета для планшета
 @media (min-width: $tablet-width) {
@@ -488,6 +502,7 @@
     justify-content: space-between;
     padding: 20px 20px 0;
     order: 6;
+    margin-bottom: 30px;
   }
 
   .form__submit-button {
@@ -519,7 +534,7 @@
     box-sizing: border-box;
     order: 1;
     min-width: 300px;
-    padding: 0 10px;
+    padding: 0 10px 0;
   }
 
   .form__list--name {
@@ -551,16 +566,16 @@
 
   .form__blocks__intro--applications {
     width: 330px;
-    margin-top: -40px;
-    margin-left: 51px;
+    margin-top: -39px;
+    margin-left: 66px;
     padding-bottom: 20px;
     background-color: #ffffff;
   }
 
   .fieldset-wrapper--applications {
     padding: 0;
-    margin-left: 60px;
-    margin-bottom: 72px;
+    margin-left: 55px;
+    margin-bottom: 74px;
     order: 2;
   }
 
@@ -569,16 +584,16 @@
     justify-content: space-between;
     flex-direction: column;
     padding-top: 20px;
-    padding-right: 50px;
   }
 
   .form__list--applications {
-    padding: 28px 58px 0 73px;
+    padding: 28px 0 0 78px;
+    margin-right: 150px;
   }
 
   .fieldset-wrapper--contacts {
+    min-width: 880px;
     margin-bottom: 70px;
-    padding-right: 40px;
     order: 3;
   }
 
@@ -587,7 +602,7 @@
     align-items: flex-start;
     margin: 35px 0 0;
     padding: 0;
-    padding-left: 60px;
+    padding-left: 65px;
     padding-right: 0;
   }
 
@@ -619,20 +634,19 @@
   .form__list--achievements {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 0;
     padding-top: 50px;
-    padding-left: 10px;
+    padding-left: 50px;
     list-style: none;
   }
 
   .form__blocks--achievements label {
     margin-top: 50px;
-    padding-left: 60px;
   }
 
   .form__item--achievements {
-    min-width: 230px;
+    min-width: 257px;
   }
 
   .form__item--shark-achiev {
@@ -660,12 +674,12 @@
   }
 
   .form__blocks--emotions {
-    min-width: 820px;
+    min-width: 800px;
     margin: 0 auto;
   }
 
   .fieldset-wrapper--emotions {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     order: 5;
     width: 100%;
     height: 200px;
@@ -677,9 +691,9 @@
 
   .form__blocks__intro--emotions + textarea {
     box-sizing: border-box;
-    padding: 20px 0 0;
-    min-width: 820px;
-    height: 100px;
+    padding: 10px 40px 0;
+    min-width: 800px;
+    min-height: 120px;
     margin-left: 0;
   }
 
@@ -687,5 +701,11 @@
     width: 100%;
     justify-content: space-between;
     order: 6;
+    margin-bottom: 10px;
+    padding: 20px 10px 0;
+  }
+
+  .form-notifications-desktop {
+    display: inline;
   }
 }

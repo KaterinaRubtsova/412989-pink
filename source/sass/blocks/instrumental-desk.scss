@@ -17,7 +17,7 @@
 
 .instrumental-desk__original-photo {
   margin: 0 auto;
-  padding-top: 20px;
+  padding-top: 10px;
   padding-bottom: 30px;
 }
 
@@ -77,13 +77,12 @@
   position: relative;
   margin-bottom: 45px;
   margin-top: 30px;
-  width: 200px;
   align-self: center;
 }
 
 .slider-scale-mobile {
   margin: 0 auto;
-  width: 260px;
+  width: 240px;
   height: 2px;
   background-color: #000000;
 }
@@ -91,7 +90,7 @@
 .slider-button-mobile {
   position: absolute;
   top: -5px;
-  left: 210px;
+  left: 190px;
   width: 10px;
   height: 10px;
   background: #f2f2f2;
@@ -185,6 +184,7 @@
     flex-wrap: nowrap;
     flex-direction: row;
     padding-bottom: 25px;
+    margin-bottom: 0;
   }
 
   .instrumental-desk__original-photo {
@@ -209,7 +209,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 48px;
   }
 
   .instrumental-desk__instruments-slider {
@@ -260,21 +260,21 @@
     width: 25px;
     height: 25px;
     fill: #cd0c54;
-    padding-right: 25px;
+    padding-right: 35px;
   }
 
   .fill-icon {
     width: 25px;
     height: 25px;
     fill: #cd0c54;
-    padding-right: 25px;
+    padding-right: 35px;
   }
 
   .contrast-icon {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     fill: #d22856;
-    padding-right: 25px;
+    padding-right: 35px;
   }
 
   .crop-icon:hover,
@@ -302,6 +302,10 @@
 }
 // для десктопа для десктопа для десктопа для десктопа для десктопа для десктопа
 @media (min-width: $desktop-width) {
+  .instrumental-desk__form {
+    margin-bottom: 60px;
+  }
+
   .instrumental-desk__original-photo {
     min-width: 300px;
     height: auto;

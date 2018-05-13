@@ -6,12 +6,13 @@
   <title>Пинк</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/style.css" rel="stylesheet">
+  <script src="js/picturefill.min.js"></script>
 </head>
 
 <body>
   <!--Хедер, навигационная секция (лого, кнопка-бургер) и промо-секция, в пейдж-хедер закладывается бэкграунд-имейдж -->
-  <header class="page-header page-header--main">
-    <nav class="main-nav main-nav--transparent">
+  <header class="page-header">
+    <nav class="main-nav">
       <div class="container">
         <div class="main-nav__wrapper">
           <a class="main-nav__logo main-nav__logo--mobile" href="index.html">
@@ -184,7 +185,7 @@
       </div>
     </div>
     <div class="promo-features">
-      <div class="container">
+      <div class="container container-promo-features">
         <div class="promo-features__wrapper">
           <div class="promo-features__text">
             <section class="promo-features__item promo-features__item--first">
@@ -211,7 +212,8 @@
                 alt="изображение на телефоне">
             </picture>
             <picture class="promo-features__picture promo-features__picture--big">
-              <img src="../img/iphone-screen-3-desktop@1x.png" srcset="../img/iphone-screen-3-desktop@2x.png 2x" width="292" height="302">
+              <img src="../img/iphone-screen-3-desktop@1x.png" srcset="../img/iphone-screen-3-desktop@2x.png 2x" width="292" height="302"
+                alt="изображение на телефоне">
             </picture>
           </div>
         </div>
@@ -257,11 +259,12 @@
     </section>
     <!--Блок с тарифами-->
     <section class="price">
+      <h2 class="visually-hidden">Таблица с тарифами</h2>
       <div class="container">
         <div class="price-table-wrapper">
           <div class="price__table">
             <div class="price__table-col price__table-col--empty">
-              <div class="price__table-row price__table-row--empty-head"></div>
+              <div class="price__table-head price__table-head--empty-head"></div>
               <div class="price__table-row">
                 <p class="price__table-description price__table-description--tablet-desktop">Розовый фильтр</p>
               </div>
@@ -273,15 +276,14 @@
               </div>
             </div>
             <div class="price__table-col price__table-col--base">
-              <div class="price__table-row price__table-row--head">
+              <div class="price__table-head">
                 <p>База</p>
                 <div class="price__table-row--span">1,99 USD</div>
               </div>
               <div class="price__table-row price__table-row--yes">
                 <p>Розовый фильтр</p>
                 <svg class="icon-yes" version="1.0" id="Layer_1" width="31" height="21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                  x="0px" y="0px" width="31" height="21" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09"
-                  xml:space="preserve">
+                  x="0px" y="0px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
                   <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"
                   />
                 </svg>
@@ -289,8 +291,7 @@
               <div class="price__table-row price__table-row--no">
                 <p>Смайлики</p>
                 <svg class="icon-no" version="1.0" id="Layer_1" width="27" height="26" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                  x="0px" y="0px" width="27" height="26" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752"
-                  xml:space="preserve">
+                  x="0px" y="0px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
                   <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"
                   />
                 </svg>
@@ -298,23 +299,21 @@
               <div class="price__table-row price__table-row--no">
                 <p>Комментарии</p>
                 <svg class="icon-no" version="1.0" id="Layer_1" width="27" height="26" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                  x="0px" y="0px" width="27" height="26" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752"
-                  xml:space="preserve">
+                  x="0px" y="0px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
                   <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"
                   />
                 </svg>
               </div>
             </div>
             <div class="price__table-col price__table-col--hit">
-              <div class="price__table-row price__table-row--head-hit">
+              <div class="price__table-head price__table-head--head-hit">
                 <p>Стандарт</p>
                 <div class="price__table-row--span">3,99 USD </div>
               </div>
               <div class="price__table-row price__table-row--yes">
                 <p>Розовый фильтр</p>
                 <svg class="icon-yes" version="1.0" id="Layer_1" width="31" height="21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                  x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09"
-                  xml:space="preserve">
+                  x="0px" y="0px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
                   <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"
                   />
                 </svg>
@@ -322,8 +321,7 @@
               <div class="price__table-row price__table-row--yes">
                 <p>Смайлики</p>
                 <svg class="icon-yes" version="1.0" id="Layer_1" width="31" height="21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                  x="0px" y="0px" width="31" height="21" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09"
-                  xml:space="preserve">
+                  x="0px" y="0px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
                   <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"
                   />
                 </svg>
@@ -331,23 +329,21 @@
               <div class="price__table-row price__table-row--no">
                 <p>Комментарии</p>
                 <svg class="icon-no" version="1.0" id="Layer_1" width="27" height="26" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                  x="0px" y="0px" width="27" height="26" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752"
-                  xml:space="preserve">
+                  x="0px" y="0px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
                   <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"
                   />
                 </svg>
               </div>
             </div>
             <div class="price__table-col price__table-col--unlim">
-              <div class="price__table-row price__table-row--head">
+              <div class="price__table-head">
                 <p>Анлим</p>
                 <div class="price__table-row--span">9,99 USD </div>
               </div>
               <div class="price__table-row price__table-row--yes">
                 <p>Розовый фильтр</p>
                 <svg class="icon-yes" version="1.0" id="Layer_1" width="31" height="21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                  x="0px" y="0px" width="31" height="21" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09"
-                  xml:space="preserve">
+                  x="0px" y="0px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
                   <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"
                   />
                 </svg>
@@ -355,8 +351,7 @@
               <div class="price__table-row price__table-row--yes">
                 <p>Смайлики</p>
                 <svg class="icon-yes" version="1.0" id="Layer_1" width="31" height="21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                  x="0px" y="0px" width="31" height="21" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09"
-                  xml:space="preserve">
+                  x="0px" y="0px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
                   <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"
                   />
                 </svg>
@@ -364,8 +359,7 @@
               <div class="price__table-row price__table-row--yes">
                 <p>Комментарии</p>
                 <svg class="icon-yes" version="1.0" id="Layer_1" width="31" height="21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                  x="0px" y="0px" width="31" height="21" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09"
-                  xml:space="preserve">
+                  x="0px" y="0px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
                   <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"
                   />
                 </svg>
@@ -379,41 +373,43 @@
           <span class="price__toggles-item"></span>
         </div>
       </div>
-      </div>
     </section>
-  </main>
-  <!--Блок с футером-->
-  <footer class="main-footer">
-    <h2 class="visually-hidden">Контактная информация</h2>
-    <div class="container">
-      <div class="main-footer__wrapper">
-        <p class="main-footer__invitation">Остались вопросы? Свяжитесь с нами!</p>
-        <div class="main-footer__contacts-wrapper">
-          <div class="main-footer__contacts main-footer__contacts--tel">
-            <p class="main-footer__text">Звоните:</p>
-            <a class="main-footer__info" href="#">+7 (812) 555-66-66</a>
-          </div>
-          <div class="main-footer__contacts main-footer__contacts--e-mail">
-            <p class="main-footer__text">Пишите:</p>
-            <a class="main-footer__info" href="#">mail@htmlacademy.ru</a>
-          </div>
-          <div class="main-footer__contacts main-footer__contacts--address">
-            <p class="main-footer__text">Приезжайте в гости:</p>
-            <p class="main-footer__info"> ул. Большая Конюшенная, 19/8</p>
+    <section class="main-page-contacts">
+      <h2 class="visually-hidden">Контактная информация</h2>
+
+      <div class="container">
+        <div class="main-footer__wrapper">
+          <p class="main-footer__invitation">Остались вопросы? Свяжитесь с нами!</p>
+          <div class="main-footer__contacts-wrapper">
+            <div class="main-footer__contacts main-footer__contacts--tel">
+              <p class="main-footer__text">Звоните:</p>
+              <a class="main-footer__info" href="#">+7 (812) 555-66-66</a>
+            </div>
+            <div class="main-footer__contacts main-footer__contacts--e-mail">
+              <p class="main-footer__text">Пишите:</p>
+              <a class="main-footer__info" href="#">mail@htmlacademy.ru</a>
+            </div>
+            <div class="main-footer__contacts main-footer__contacts--address">
+              <p class="main-footer__text">Приезжайте в гости:</p>
+              <p class="main-footer__info"> ул. Большая Конюшенная, 19/8</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
+    </section>
     <!--Блок с картой-->
     <div class="map">
       <h2 class="visually-hidden">Схема проезда</h2>
-      <img src="../img/bg-triangle-white-footer.svg" class="map-triangle" alt="map-decoration" width="100%" height="auto">
-      <svg class="map-marker" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="35" height="35" viewBox="0 0 35.983 35.983" enable-background="new 0 0 35.983 35.983" xml:space="preserve">
-        <circle fill="#FFFFFF" cx="17.991" cy="17.991" r="17.991"/>
-        <circle fill="#D22856" cx="17.991" cy="17.991" r="7.866"/>
+      <img src="../img/bg-triangle-white-footer.svg" class="map-triangle" alt="map-decoration" width="320" height="200">
+      <svg class="map-marker" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px" y="0px" width="35" height="35" viewBox="0 0 35.983 35.983" enable-background="new 0 0 35.983 35.983" xml:space="preserve">
+        <circle fill="#FFFFFF" cx="17.991" cy="17.991" r="17.991" />
+        <circle fill="#D22856" cx="17.991" cy="17.991" r="7.866" />
       </svg>
     </div>
+  </main>
+  <!--Блок с футером-->
+  <footer class="main-footer main-footer--hide">
     <div class="container">
       <div class="main-footer__social-wrapper">
         <a class="main-footer__logo main-footer__logo--mobile-tablet" href="index.html">
@@ -530,4 +526,5 @@
   </footer>
   <script src="../js/nav-menu.js"></script>
 </body>
+
 </html>

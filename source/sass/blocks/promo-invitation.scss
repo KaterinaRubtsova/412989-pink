@@ -6,16 +6,26 @@
   color: #000000;
   line-height: 24px;
   text-align: center;
+}
+
+.promo-invitation::after {
+  content: "";
+  position: absolute;
+  top: 120px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100px;
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-position: bottom;//добавить фигурное изображение нижнего треугольника
+  z-index: 20;
 }
 
 .promo-invitation__wrapper {
   position: relative;
   margin: 46px auto;
   padding: 0 20px;
+  z-index: 30;
 }
 
 .promo-invitation__proposal--first-line {
@@ -45,6 +55,10 @@
     padding: 0 20px;
   }
 
+  .promo-invitation::after {
+    top: 160px;
+  }
+
   .promo-invitation__proposal--first-line {
     display: block;
     margin: 0;
@@ -65,21 +79,25 @@
 // для десктопа для десктопа для десктопа для десктопа
 @media (min-width: $desktop-width) {
   .promo-invitation {
-    margin-top: 35px;
-    margin-bottom: 115px;
+    margin-top: 65px;
+    margin-bottom: 80px;
+  }
+
+  .promo-invitation::after {
+    top: 259px;
   }
 
   .promo-invitation__proposal--first-line {
     margin: 0 0 9px;
     padding: 0;
     font-size: 50px;
-    line-height: 50px;
+    line-height: 58px;
   }
 
   .promo-invitation__proposal--second-line {
     margin: 0;
     padding: 0 240px;
     font-size: 50px;
-    line-height: 50px;
+    line-height: 58px;
   }
 }

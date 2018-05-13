@@ -2,100 +2,18 @@
   text-align: center;
 }
 
-.main-footer__wrapper {
-  display: flex;
-  margin: 0 auto;
-  flex-direction: column;
+.main-footer--hide .main-footer__social-wrapper {
+  display: none;
 }
-
-.main-footer__invitation {
-  align-self: center;
-  width: 245px;
-  margin: 0;
-  margin-top: 40px;
-  margin-bottom: 30px;
-  font-size: 24px;
-  font-weight: 300;
-  color: #000000;
-  line-height: 30px;
-  text-align: center;
-}
-
-.main-footer__contacts-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: center;
-  min-height: 260px;
-  padding: 0 20px 20px;
-}
-
-.main-footer__text {
-  display: block;
-  margin: 0;
-  padding: 0;
-  font-size: 20px;
-  font-weight: 700;
-  color: #000000;
-  line-height: 30px;
-}
-
-.main-footer__info {
-  display: block;
-  margin: 0;
-  padding: 0;
-  font-size: 24px;
-  font-weight: 300;
-  color: #cd0c54;
-  line-height: 28px;
-  text-decoration: none;
-}
-
-.main-footer__info:hover {
-  color: #000000;
-  text-decoration: underline;
-}
-
-.main-footer__info:active {
-  text-decoration: none;
-  opacity: 0.3;
-}
-
-.map {
-  position: relative;
-  min-height: 200px;
-  background-image: url("../img/bg-map-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .map {
-    background-image: url("../img/bg-map-mobile@2x.jpg");
-  }
-}
-
-.map-triangle {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 2000;
-}
-
-.map-marker {
-  position: relative;
-  width: 35px;
-  height: 35px;
-  top: 80px;
-}
-
 
 .main-footer__social-wrapper {
-  display: none;
+  display: flex;
+  min-height: 200px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: 50px 20px;
 }
 
 .main-footer__logo--mobile-tablet {
@@ -104,7 +22,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -8px;
+  margin-top: 0;
+  margin-bottom: 10px;
   margin-left: -2px;
   padding: 0;
 }
@@ -146,14 +65,14 @@
 }
 
 .social-buttons__media {
-  width: 19px;
-  height: 19px;
+  width: 17px;
+  height: 17px;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 3px solid #f2f2f2;
   border-radius: 50%;
-  padding: 18px 18px;
+  padding: 15px 15px;
 }
 
 .social-buttons__media:hover {
@@ -214,8 +133,8 @@
 }
 
 .academy-icon {
-  width: 40px;
-  height: 39px;
+  width: 30px;
+  height: 35px;
   fill: #d22856;
 }
 
@@ -228,130 +147,39 @@
 }
 // для планшета для планшета для планшета для планшета для планшета
 @media (min-width: $tablet-width) {
-  .main-footer__invitation {
-    width: 380px;
-    margin: 0 auto;
-    font-size: 40px;
-    line-height: 44px;
-  }
-
-  .main-footer__contacts-wrapper {
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .main-footer__contacts {
-    display: block;
-    margin: 0;
-    padding: 0 20px;
-    width: 250px;
-    margin-top: 20px;
-  }
-
-  .main-footer__contacts--address {
-    margin-top: 10px;
-  }
-
-  .main-footer__wrapper {
+  .main-footer--hide .main-footer__social-wrapper {
     display: flex;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-
-  .main-footer__social-wrapper {
     min-height: 130px;
-    display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
     margin: 0 20px;
   }
 
-  .map {
-    position: relative;
-    min-height: 300px;
-    background-color: #ffffff;
-    background-image: url("../img/bg-map-tablet@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  .main-footer__social-wrapper {
+    flex-direction: row;
+    min-height: 130px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 0 20px;
   }
 
-  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .map {
-      background-image: url("../img/bg-map-tablet@2x.jpg");
-    }
-  }
-
-  .map-triangle {
-    position: absolute;
-    width: 100%;
-    height: 150px;
-    top: -41px;
-    left: 0;
-    right: 0;
-  }
-
-  .map-marker {
-    position: relative;
-    width: 35px;
-    height: 35px;
-    top: 80px;
+  .main-footer__wrapper {
+    display: flex;
+    margin: 0 auto;
+    padding: 0 20px;
   }
 }
-
+// для десктопа для десктопа для десктопа для десктопа для десктопа для десктопа для десктопа для десктопа
 @media (min-width: $desktop-width) {
-  .main-footer__wrapper {
-    padding: 0 0 21px;
-  }
-
-  .main-footer__invitation {
-    display: block;
-    min-width: 600px;
-    margin: 0;
-    padding: 0;
-    font-size: 50px;
-    line-height: 58px;
-  }
-
-  .main-footer__contacts-wrapper {
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: center;
-    min-height: 160px;
-    padding-top: 35px;
-  }
-
-  .main-footer__contacts {
-    padding: 0 20px;
-    width: 265px;
-    margin-top: 0;
-  }
-
-  .main-footer__contacts--address {
-    margin-top: 0;
-    order: 2;
-  }
-
-  .main-footer__text {
-    padding: 17px 0;
-  }
-
-  .main-footer__contacts--tel {
-    order: 1;
-  }
-
-  .main-footer__contacts--e-mail {
-    order: 3;
-  }
-
-  .main-footer__social-wrapper {
-    min-height: 180px;
-  }
-
   .main-footer__logo--mobile-tablet {
     display: none;
+  }
+
+  .main-footer--hide .main-footer__social-wrapper {
+    display: flex;
+    min-height: 190px;
   }
 
   .main-footer__logo--desktop {
@@ -361,34 +189,15 @@
     align-items: center;
     justify-content: center;
     margin-top: -10px;
-    margin-left: -2px;
+    margin-left: -6px;
     padding: 0;
   }
 
-  .map {
-    min-height: 480px;
-    background-image: url("../img/bg-map-desktop@1x.jpg");
-  }
-
-  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .map {
-      background-image: url("../img/bg-map-desktop@2x.jpg");
-    }
-  }
-
-  .map-triangle {
-    position: absolute;
-    width: 100%;
-    height: 150px;
-    top: -41px;
-    left: 0;
-    right: 0;
-  }
-
-  .map-marker {
-    position: relative;
-    width: 35px;
-    height: 35px;
-    top: 80px;
+  .main-footer__copyright-text {
+    padding-left: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+    line-height: 18px;
   }
 }
