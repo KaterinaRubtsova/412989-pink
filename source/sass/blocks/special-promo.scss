@@ -9,10 +9,6 @@
     background-color: #ffffff;
     min-height: 337px;
     padding: 35px 0;
-    background-image: url("../img/icon-timer.svg");
-    background-repeat: no-repeat;
-    background-size: 238px 276px;
-    background-position: left 21px top 59px;
   }
 
   .special-promo__wrapper {
@@ -21,6 +17,10 @@
     padding: 65px 0;
     text-align: left;
     padding-left: 330px;
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-size: 238px 276px;
+    background-position: left 21px top 24px;
   }
 
   .special-promo__wrapper::before {
@@ -79,8 +79,6 @@
     background-color: #f2f2f2;
     margin-bottom: 0;
     padding-bottom: 50px;
-    background-size: 408px 346px;
-    background-position: left 77px top 56px;
   }
 
   .special-promo__wrapper::before {
@@ -108,6 +106,8 @@
     padding-left: 376px;
     position: relative;
     text-align: left;
+    background-size: 300px 340px;
+    background-position: left 9px top 24px;
   }
 
   .special-promo__caption {
