@@ -3,33 +3,92 @@
   background-color: #f2f2f2;
 }
 
+.container-promo-features {
+  position: relative;
+  z-index: 30;
+}
+
 .promo-features__wrapper {
   display: flex;
   flex-direction: column;
+  padding-top: 54px;
 }
 
 .promo-features__item {
-  margin-bottom: 40px;
+  margin-bottom: 34px;
+}
+
+.promo-features__caption {
+  display: block;
+  margin: 18px 0 13px;
+  padding: 0;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.promo-features__clarification {
+  display: block;
+  margin: 0;
+  padding: 0 30px 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.promo-features__images {
+  min-height: 285px;
+  background-image: url("../img/iphone-screen-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top 30px center;
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .promo-features__images {
+    background-image: url("../img/iphone-screen-mobile@2x.png");
+  }
 }
 
 .promo-features__picture--big {
   display: none;
 }
-
+// для планшета  для планшета  для планшета   для планшета   для планшета
 @media (min-width: $tablet-width) {
   .promo-features__wrapper {
-    padding: 50px 20px;
     flex-direction: row;
+    padding-top: 0;
+  }
+
+  .promo-features__item {
+    margin-bottom: 38px;
+  }
+
+  .promo-features__item:nth-child(3) {
+    margin-bottom: 16px;
+  }
+
+  .promo-features__images {
+    min-width: 300px;
+    min-height: auto;
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: top 1px center;
+    background-size: 270px auto;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .promo-features__images {
+      background-image: url("../img/iphone-screen-3-tablet@2x.png");
+    }
   }
 
   .promo-features__text {
-    order: 2;
     display: flex;
     flex-direction: column;
-    min-width: 250px;
-    padding-top: 60px;
-    padding-left: 40px;
+    min-width: 300px;
+    padding-top: 75px;
+    padding-left: 30px;
     text-align: left;
+    order: 2;
   }
 
   .promo-features__caption {
@@ -40,6 +99,14 @@
     line-height: 18px;
   }
 
+  .promo-features__clarification {
+    display: block;
+    margin: 0;
+    padding: 15px 40px 0 0;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
   .promo-features__pictures {
     order: 1;
     flex-wrap: nowrap;
@@ -48,19 +115,14 @@
   .promo-features__picture--big {
     display: none;
   }
-
-  .promo-features__picture--regular {
-    align-self: flex-start;
-    width: 550px;
-    height: auto;
-  }
 }
-
+// для десктопа для десктопа для десктопа для десктопа для десктопа
 @media (min-width: $desktop-width) {
   .promo-features {
     width: 100%;
     background-color: #f2f2f2;
     background-image: none;
+    padding-top: 20px;
   }
 
   .promo-features__wrapper {
@@ -75,36 +137,48 @@
     flex-wrap: nowrap;
     flex-direction: row;
     text-align: center;
+    padding-top: 50px;
     padding-left: 0;
+    padding-right: 10px;
   }
 
   .promo-features__item {
-    width: 300px;
+    width: 220px;
+    margin: 0 auto;
+    padding: 0;
     text-align: center;
-    background-position: left 15px top 40px;
+  }
+
+  .promo-features__item--first {
+    width: 240px;
+  }
+
+  .promo-features__item--third .promo-features__clarification {
+    width: 230px;
+  }
+
+  .promo-features__clarification {
+    display: block;
+    margin: 0;
+    padding: 28px 0 0 0;
+    font-size: 18px;
+    line-height: 28px;
   }
 
   .promo-features__images {
+    background-image: none;
     order: 2;
     display: flex;
   }
 
   .promo-features__picture {
     width: 190px;
-    height: auto;
-    margin: -15px 55px 0 57px;
+    margin: -28px 0 0 0;
   }
 
   .promo-features__picture--big {
     display: block;
     width: 320px;
-    justify-content: center;
-  }
-
-  .promo-features__picture--regular {
-    display: block;
-    width: 320px;
-    height: auto;
     justify-content: center;
   }
 

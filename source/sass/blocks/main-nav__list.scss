@@ -1,18 +1,23 @@
 .main-nav {
   position: relative;
+  box-sizing: border-box;
   min-width: 320px;
-  min-height: 68px;
+  min-height: 65px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px 0 20px;
+  background-color: rgba(21, 32, 45, 0.7);
 }
 
 .main-nav--transparent {
+  padding-bottom: 20px;
   background-color: rgba(21, 32, 45, 0.7);
 }
 
 .main-nav--filled {
   background-color: #283645;
+  padding-bottom: 0;
 }
 
 .main-nav__wrapper {
@@ -20,34 +25,38 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-width: 320px;
+  flex-direction: column;
 }
 
-.main-nav__logo {
+.main-nav__logo--mobile {
+  margin-right: 207px;
   text-decoration: none;
   cursor: pointer;
   width: 70px;
   height: 22px;
   fill: #ffffff;
-  margin: 20px;
+
+  &:hover {
+    fill: #d22856;
+  }
+
+  &:active {
+    fill: rgba(210, 40, 86, 0.3);
+  }
 }
 
-.main-nav__logo:hover {
-  fill: #d22856;
+.main-nav__logo--tablet {
+  display: none;
 }
 
-.main-nav__logo:active {
-  fill: rgba(210, 40, 86, 0.3);
-}
-
-.main-nav__logo--tablet-desktop {
+.main-nav__logo--desktop {
   display: none;
 }
 
 .main-nav__button--burger {
   position: absolute;
-  top: 20px;
-  right: 0;
+  top: 0;
+  right: 19px;
   cursor: pointer;
   border: none;
   width: 50px;
@@ -84,8 +93,8 @@
 
 .main-nav__button--cross {
   position: absolute;
-  top: 30px;
-  right: 20px;
+  top: 10px;
+  right: 38px;
   cursor: pointer;
   border: none;
   background-color: transparent;
@@ -96,8 +105,8 @@
     display: block;
     position: absolute;
     top: 0;
-    width: 25px;
-    height: 3px;
+    width: 29px;
+    height: 4px;
     outline: 0;
     background-color: #ffffff;
     transform: rotate(135deg);
@@ -108,8 +117,8 @@
     display: block;
     position: absolute;
     top: 0;
-    width: 25px;
-    height: 3px;
+    width: 29px;
+    height: 4px;
     outline: 0;
     background-color: #ffffff;
     transform: rotate(45deg);
@@ -125,145 +134,98 @@
     background-color: rgba(210, 40, 86, 0.3);
   }
 }
-
-.site-list--opened {
-  position: absolute;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  top: 68px;
-  left: 0;
-  width: 100%;
-}
-
-.site-list--closed {
-  display: none;
-}
-
-.site-list a {
-  display: block;
-  text-align: center;
-  padding: 20px 100px;
-  font-size: 18px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #ffffff;
-  background-color: #283645;
-  border-top: 1px solid #485461;
-  border-bottom: 1px solid #000000;
-}
-
-.site-list a[href] {
-  &:hover {
-    color: #d22856;
-  }
-
-  &:active {
-    color: rgba(210, 40, 86, 0.3);
-    border-top: 1px solid #000000;
-    border-bottom: 1px solid #485461;
-  }
-}
-
+// версия для планшета версия для планшета версия для планшета версия для планшета
 @media (min-width: $tablet-width) {
   .main-nav {
     min-height: 110px;
+    padding: 10px 20px 0;
   }
 
-  .main-nav__logo {
-    width: 145px;
-    height: 40px;
-    margin-right: 375px;
-    margin-top: -16px;
+  .main-nav--filled {
+    background-color: #283645;
+    padding-bottom: 0;
+    padding-top: 30px;
   }
 
-  .main-nav__logo--tablet-desktop {
+  .main-nav__wrapper {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main-nav__logo--tablet {
     display: block;
-  }
+    width: 146px;
+    height: 40px;
+    margin-right: 475px;
+    fill: #ffffff;
 
-  .main-nav__logo--tablet-desktop:hover {
-    fill: #d22856;
-  }
+    &:hover {
+      fill: #d22856;
+    }
 
-  .main-nav__logo--tablet-desktop:active {
-    fill: rgba(255, 255, 255, 0.3);
+    &:active {
+      fill: rgba(210, 40, 86, 0.3);
+    }
   }
 
   .main-nav__logo--mobile {
     display: none;
   }
 
+  .main-nav__button--burger {
+    top: 10px;
+    right: 0;
+  }
+
+  .main-nav__button--cross {
+    top: 24px;
+    right: 18px;
+  }
+
   .page-header__wrapper {
     min-width: 660px;
   }
-
-  .main-nav__initial-navigation {
-    padding: 20px;
-  }
-
-  .site-list {
-    position: absolute;
-    top: 110px;
-    left: 0;
-    width: 100%;
-  }
-
-  .site-list a {
-    padding: 19px;
-  }
 }
-// для десктопа
+// для десктопа для десктопа для десктопа для десктопа для десктопа
 @media (min-width: $desktop-width) {
-  .main-nav__wrapper {
-    min-width: 940px;
+  .main-nav {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 30px;
+    padding-right: 80px;
   }
 
-  .main-nav__logo {
-    margin-right: 155px;
-    margin-top: -16px;
-    margin-left: 0;
+  .main-nav__wrapper {
+    min-width: 960px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main-nav__logo--desktop {
+    width: 146px;
+    height: 40px;
+    display: block;
+    margin-right: 170px;
+    margin-left: 35px;
+    margin-top: -10px;
     margin-bottom: 0;
+    fill: #ffffff;
+
+    &:hover {
+      fill: #d22856;
+    }
+
+    &:active {
+      fill: rgba(210, 40, 86, 0.3);
+    }
+  }
+
+  .main-nav__logo--tablet {
+    display: none;
   }
 
   .main-nav__button {
     display: none;
-  }
-
-  .site-list {
-    position: static;
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-  }
-
-  .site-list a {
-    display: inline;
-    text-align: center;
-    padding: 20px;
-    font-size: 18px;
-    font-weight: 400;
-    text-transform: none;
-    text-decoration: none;
-    color: #ffffff;
-    background-color: transparent;
-    border-top: none;
-    border-bottom: none;
-  }
-
-  .site-list a[href] {
-    &:hover {
-      color: #d22856;
-    }
-
-    &:active {
-      color: rgba(210, 40, 86, 0.3);
-      border-bottom: none;
-      border-top: none;
-    }
-
-    .site-list__item--active { // почему не работает?
-      border-bottom: 2px solid #ffffff;
-    }
   }
 }

@@ -1,6 +1,7 @@
 .price {
   text-transform: uppercase;
   background-color: #f2f2f2;
+  z-index: 1;
 }
 
 .price-table-wrapper {
@@ -11,46 +12,26 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
-  margin: 20px 0;
-  box-sizing: border-box;
+  margin: 64px 0 0;
   background-color: #f2f2f2;
 }
 
 .price__table-col {
-  min-width: 320px;
+  min-width: 280px;
   display: flex;
   align-self: center;
   flex-direction: column;
   flex-shrink: 0;
   background-color: #ffffff;
+  border-right: 3px solid #e5e5e5;
 }
 
 .price__table-col--empty {
   display: none;
 }
 
-.price__table-col--hit {
-  align-self: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-width: 320px;
-  margin: 0 auto;
-}
-
-.price__table-col--unlim {
-  border-right: 3px solid #e5e5e5;
-}
-
-.price__table-row {
-  min-height: 45px;
-  border-left: 3px solid #e5e5e5;
-  border-bottom: 3px solid #e5e5e5;
-}
-
-.price__table-row--head {
-  min-width: 160px;
-  min-height: 80px;
+.price__table-head {
+  min-height: 100px;
   background-color: #17212b;
   font-size: 18px;
   font-weight: 700;
@@ -60,42 +41,50 @@
   padding: 0;
 }
 
-.price__table-row--head-hit {
+.price__table-head--head-hit {
   position: relative;
-  background-color: #17212b;
-  font-size: 18px;
-  font-weight: 700;
-  color: #ffffff;
-  line-height: 30px;
-  text-align: center;
 }
 
-.price__table-row--head-hit::before {
+.price__table-head--head-hit::before {
   position: absolute;
   content: "";
-  top: -52px;
-  left: -60px;
-  width: 45px;
-  height: 30px;
+  top: -56px;
+  left: -56px;
+  width: 46px;
+  height: 46px;
   border-style: solid;
-  border-width: 30px;
+  border-width: 31px;
   border-color: transparent #cd0c54 transparent transparent;
   transform: rotate(45deg);
 }
 
-.price__table-row--head-hit::after {
+.price__table-head--head-hit::after {
   position: absolute;
   content: "хит";
   text-transform: uppercase;
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 400;
   display: inline-block;
-  top: 4px;
-  left: -1px;
+  top: 11px;
+  left: 6px;
   transform: rotate(-45deg);
 }
 
+.price__table-row {
+  border-bottom: 3px solid #e5e5e5;
+}
+
+.price__table-head p,
+.price__table-head--head-hit p {
+  display: block;
+  margin: 0;
+  padding: 15px 0 0;
+}
+
 .price__table-row--span {
+  display: block;
+  margin: 0;
+  padding: 3px 0 0;
   font-size: 24px;
   font-weight: 300;
   color: #ffffff;
@@ -111,7 +100,7 @@
   color: #000000;
   line-height: 30px;
   background-color: #ffffff;
-  border-bottom: 3px solid #e5e5e5;
+  padding: 0 20px;
 }
 
 
@@ -124,7 +113,7 @@
   color: #000000;
   line-height: 30px;
   background-color: #ffffff;
-  border-bottom: 3px solid #e5e5e5;
+  padding: 0 20px;
 }
 
 .icon-yes {
@@ -141,8 +130,8 @@
 
 .price__toggles-list {
   margin: 0 auto;
-  padding: 20px;
-  width: 105px;
+  padding: 35px 0 50px;
+  width: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -151,8 +140,8 @@
 .price__toggles-item {
   flex-grow: 0;
   flex-shrink: 0;
-  width: 5px;
-  height: 5px;
+  width: 2px;
+  height: 2px;
   background: #bec2c7;
   border: 3px solid transparent;
   border-radius: 50%;
@@ -162,19 +151,20 @@
 
 .price__toggles-item--active {
   background: #f2f2f2;
-  width: 10px;
-  height: 10px;
+  width: 7px;
+  height: 7px;
   border: 3px solid #000000;
   border-radius: 50%;
   cursor: pointer;
   outline: none;
 }
-
+// для планшета для планшета для планшета для планшета для планшета
 @media (min-width: $tablet-width) {
   .price {
-    padding-top: 80px;
-    padding-bottom: 30px;
+    padding-top: 70px;
+    padding-bottom: 70px;
     margin-bottom: 50px;
+    margin-top: -28px;
   }
 
   .price-table-wrapper {
@@ -182,13 +172,30 @@
   }
 
   .price__table-col {
-    min-width: 150px;
+    min-width: 155px;
+    align-self: flex-start;
+    border-right: 1px solid #e5e5e5;
   }
 
-  .price__table-row--empty-head {
-    box-sizing: border-box;
+  .price__table-row {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    border-left: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    border-right: none;
+    min-height: 45px;
+  }
+
+  .price__table-row--span {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    padding-bottom: 10px;
+  }
+
+  .price__table-head--empty-head {
     display: block;
-    min-height: 99px;
     border-left: none;
     background-color: #f2f2f2;
   }
@@ -197,18 +204,34 @@
     display: block;
   }
 
-  .price__table-description--tablet-desktop {
-    text-transform: none;
-    font-size: 18px;
-    display: inline-block;
-    vertical-align: middle;
-    padding-top: 10px;
-    margin: 0;
+  .price__table-col--unlim {
+    border-right: 1px solid #e5e5e5;
   }
 
-  .price__table-col--hit {
-    width: 150px;
+  .price__table-description--tablet-desktop {
+    text-transform: none;
+    font-size: 14px;
+    line-height: 18px;
     margin: 0;
+    padding-left: 15px;
+    padding-top: 13px;
+  }
+
+  .price__table-head {
+    min-height: 81px;
+  }
+
+  .price__table-head--head-hit::before {
+    position: absolute;
+    content: "";
+    top: -44px;
+    left: -44px;
+    width: 30px;
+    height: 30px;
+    border-style: solid;
+    border-width: 27px;
+    border-color: transparent #cd0c54 transparent transparent;
+    transform: rotate(45deg);
   }
 
   .price__table-row--yes {
@@ -233,14 +256,39 @@
     display: none;
   }
 }
-
+// для десктопа для десктопа для десктопа для десктопа для десктопа
 @media (min-width: $desktop-width) {
   .price {
-    padding-top: 20px;
-    padding-bottom: 100px;
+    padding-top: 70px;
+    padding-bottom: 94px;
   }
 
   .price__table-col {
-    min-width: 230px;
+    min-width: 236px;
+  }
+
+  .price__table-head {
+    min-height: 100px;
+  }
+
+  .price__table-row {
+    min-height: 60px;
+  }
+
+  .price__table-row--span {
+    font-size: 24px;
+    line-height: 36px;
+    padding-bottom: 15px;
+  }
+
+  .price__table-row--head-hit::before {
+    border-width: 50px;
+  }
+
+  .price__table-description--tablet-desktop {
+    font-size: 18px;
+    line-height: 18px;
+    padding-left: 28px;
+    padding-top: 18px;
   }
 }

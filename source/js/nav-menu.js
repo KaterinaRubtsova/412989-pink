@@ -2,6 +2,7 @@ var navButton = document.querySelector(".main-nav__button");
 var navMenu = document.querySelector(".site-list");
 var navColor = document.querySelector(".main-nav");
 
+
 navButton.addEventListener("click", function() {
   if (navButton.classList.contains("main-nav__button--burger")) {
     navButton.classList.remove("main-nav__button--burger");

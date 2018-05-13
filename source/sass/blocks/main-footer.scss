@@ -2,88 +2,30 @@
   text-align: center;
 }
 
-.main-footer__wrapper {
-  display: flex;
-  margin: 0 auto;
-  flex-direction: column;
-}
-
-.main-footer__invitation {
-  align-self: center;
-  width: 245px;
-  margin: 0;
-  margin-top: 40px;
-  margin-bottom: 30px;
-  font-size: 24px;
-  font-weight: 300;
-  color: #000000;
-  line-height: 30px;
-  text-align: center;
-}
-
-.main-footer__contacts-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: center;
-}
-
-.main-footer__contacts {
-  margin-bottom: 25px;
-  text-align: center;
-}
-
-.main-footer__text {
-  display: block;
-  margin: 0;
-  padding: 0;
-  font-size: 18px;
-  font-weight: 700;
-  color: #000000;
-  line-height: 30px;
-}
-
-.main-footer__info {
-  font-size: 24px;
-  font-weight: 300;
-  color: #cd0c54;
-  line-height: 30px;
-  text-decoration: none;
-}
-
-.main-footer__info:hover {
-  color: #000000;
-  text-decoration: underline;
-}
-
-.main-footer__info:active {
-  text-decoration: none;
-  opacity: 0.3;
-}
-
-.map {
-  position: relative;
-}
-
-.map-triangle {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  top: -1px;
-  left: 0;
-  right: 0;
-}
-
-.main-footer__social-wrapper {
+.main-footer--hide .main-footer__social-wrapper {
   display: none;
 }
 
-.main-footer__logo {
+.main-footer__social-wrapper {
+  display: flex;
+  min-height: 200px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: 50px 20px;
+}
+
+.main-footer__logo--mobile-tablet {
   width: 150px;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin-left: -2px;
+  padding: 0;
 }
 
 .footer-pink-logo {
@@ -107,6 +49,9 @@
   fill-opacity: 0.3;
 }
 
+.main-footer__logo--desktop {
+  display: none;
+}
 
 .social-buttons__list {
   padding: 0;
@@ -120,14 +65,14 @@
 }
 
 .social-buttons__media {
-  width: 15px;
-  height: 15px;
+  width: 17px;
+  height: 17px;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 3px solid #f2f2f2;
   border-radius: 50%;
-  padding: 13px 13px;
+  padding: 15px 15px;
 }
 
 .social-buttons__media:hover {
@@ -170,24 +115,26 @@
 }
 
 .main-footer__copyright-text {
-  font-size: 18px;
+  padding-left: 20px;
+  font-size: 14px;
   font-weight: 400;
   color: #000000;
-  line-height: 24px;
+  line-height: 18px;
 }
 
 .main-footer__copyright-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 29px;
-  height: 39px;
+  width: 38px;
+  height: 35px;
+  padding-left: 15px;
+  padding-top: 10px;
 }
 
 .academy-icon {
-  width: 29px;
-  height: 39px;
-  padding-left: 10px;
+  width: 30px;
+  height: 35px;
   fill: #d22856;
 }
 
@@ -198,72 +145,59 @@
 .academy-icon:active {
   fill: rgba(000, 000, 000, 0.3);
 }
-// для планшета
+// для планшета для планшета для планшета для планшета для планшета
 @media (min-width: $tablet-width) {
-  .main-footer__invitation {
-    width: 380px;
-    margin: 0 auto;
-    font-size: 40px;
-    line-height: 40px;
-  }
-
-  .main-footer__contacts-wrapper {
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .main-footer__contacts {
-    display: block;
-    margin: 0;
-    padding: 0 20px;
-    width: 250px;
-    margin-top: 40px;
-  }
-
-  .main-footer__wrapper {
+  .main-footer--hide .main-footer__social-wrapper {
     display: flex;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-
-  .main-footer__social-wrapper {
-    height: 130px;
-    display: flex;
+    min-height: 130px;
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
     margin: 0 20px;
   }
-}
 
-@media (min-width: $desktop-width) {
+  .main-footer__social-wrapper {
+    flex-direction: row;
+    min-height: 130px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 0 20px;
+  }
+
   .main-footer__wrapper {
+    display: flex;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+}
+// для десктопа для десктопа для десктопа для десктопа для десктопа для десктопа для десктопа для десктопа
+@media (min-width: $desktop-width) {
+  .main-footer__logo--mobile-tablet {
+    display: none;
+  }
+
+  .main-footer--hide .main-footer__social-wrapper {
+    display: flex;
+    min-height: 190px;
+  }
+
+  .main-footer__logo--desktop {
+    width: 146px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10px;
+    margin-left: -6px;
     padding: 0;
   }
 
-  .main-footer__invitation {
-    display: block;
-    min-width: 600px;
-    margin: 0;
-    padding: 70px 0 0;
-    font-size: 50px;
-    line-height: 58px;
-  }
-
-  .main-footer__text {
-    padding: 16px 0;
-  }
-
-  .main-footer__contacts--tel {
-    order: 1;
-  }
-
-  .main-footer__contacts--e-mail {
-    order: 3;
-  }
-
-  .main-footer__contacts--address {
-    order: 2;
+  .main-footer__copyright-text {
+    padding-left: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+    line-height: 18px;
   }
 }

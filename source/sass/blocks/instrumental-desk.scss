@@ -17,14 +17,21 @@
 
 .instrumental-desk__original-photo {
   margin: 0 auto;
-  padding-top: 20px;
-  padding-bottom: 40px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.instrumental-desk__original-photo img {
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
 .instrumental-desk__instruments-buttons {
   display: flex;
-  max-width: 280px;
+  min-width: 220px;
   align-self: center;
+  margin: 0 auto;
 }
 
 .crop-icon-mobile,
@@ -50,7 +57,7 @@
 }
 
 .contrast-icon-mobile {
-  width: 45px;
+  width: 35px;
   height: 45px;
 }
 
@@ -68,23 +75,24 @@
 
 .instrumental-desk__instruments-slider--mobile {
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 45px;
   margin-top: 30px;
-  width: 280px;
   align-self: center;
 }
 
 .slider-scale-mobile {
+  margin: 0 auto;
+  width: 240px;
   height: 2px;
   background-color: #000000;
 }
 
 .slider-button-mobile {
   position: absolute;
-  top: -8px;
-  left: 200px;
-  width: 12px;
-  height: 12px;
+  top: -5px;
+  left: 190px;
+  width: 10px;
+  height: 10px;
   background: #f2f2f2;
   border: 2px solid #d22856;
   border-radius: 50%;
@@ -123,7 +131,8 @@
   height: 55px;
   width: 281px;
   padding: 18px 34px;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
+  margin-top: 29px;
 }
 
 .publish-button:hover {
@@ -149,7 +158,7 @@
   height: 55px;
   width: 281px;
   padding: 18px 34px;
-  margin-bottom: 10px;
+  margin-bottom: 1px;
 }
 
 .cancel-button:hover {
@@ -161,7 +170,7 @@
   color: #f2f2f2;
   background-color: #b5b9be;
 }
-
+// для планшета для планшета для планшета для планшета для планшета
 @media (min-width: $tablet-width) {
   .instrumental-desk__instruments-buttons {
     display: none;
@@ -172,8 +181,18 @@
   }
 
   .instrumental-desk__form {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: row;
+    padding-bottom: 25px;
+    margin-bottom: 0;
+  }
+
+  .instrumental-desk__original-photo {
+    min-width: 300px;
+    height: auto;
+    margin: 0 20px;
+    padding-top: 57px;
+    padding-bottom: 30px;
   }
 
   .instrumental-desk__list {
@@ -182,30 +201,26 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 40px 0;
-    width: 300px;
-  }
-
-  .instrumental-desk__original-photo {
-    margin: 10px 100px;
+    padding: 70px 0 30px;
+    min-width: 250px;
   }
 
   .instrumental-desk__item {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 48px;
   }
 
   .instrumental-desk__instruments-slider {
     position: relative;
-    width: 180px;
+    width: 140px;
     height: 100px;
     align-self: center;
   }
 
   .slider-scale {
-    width: 240px;
+    width: 200px;
     height: 2px;
     background-color: #000000;
   }
@@ -217,23 +232,23 @@
     border-radius: 50%;
     cursor: pointer;
     outline: none;
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
   }
 
   .instrumental-desk__slider--crop .slider-button {
     top: -10px;
-    left: 230px;
+    left: 140px;
   }
 
   .instrumental-desk__slider--fill .slider-button {
     top: -10px;
-    left: 30px;
+    left: 18px;
   }
 
   .instrumental-desk__slider--contrast .slider-button {
     top: -10px;
-    left: 150px;
+    left: 90px;
   }
 
   .slider-button:hover,
@@ -242,24 +257,24 @@
   }
 
   .crop-icon {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     fill: #cd0c54;
-    padding-right: 25px;
+    padding-right: 35px;
   }
 
   .fill-icon {
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
     fill: #cd0c54;
-    padding-right: 25px;
+    padding-right: 35px;
   }
 
   .contrast-icon {
-    width: 30px;
-    height: 30px;
+    width: 18px;
+    height: 18px;
     fill: #d22856;
-    padding-right: 25px;
+    padding-right: 35px;
   }
 
   .crop-icon:hover,
@@ -273,21 +288,104 @@
   .contrast-icon:active {
     fill: #d22856;
   }
-}
-
-@media (min-width: $desktop-width) {
-  .instrumental-desk__button-wrapper {
-    flex-direction: row;
-  }
 
   .publish-button {
-    width: 170px;
-    margin-bottom: 10px;
-    margin-right: 10px;
+    width: 260px;
+    margin-bottom: 25px;
+    margin-top: 0;
   }
 
   .cancel-button {
-    width: 170px;
+    height: 55px;
+    width: 260px;
+  }
+}
+// для десктопа для десктопа для десктопа для десктопа для десктопа для десктопа
+@media (min-width: $desktop-width) {
+  .instrumental-desk__form {
+    margin-bottom: 60px;
+  }
+
+  .instrumental-desk__original-photo {
+    min-width: 300px;
+    height: auto;
+    margin: 0 90px;
+    padding-top: 56px;
+    padding-bottom: 30px;
+  }
+
+  .instrumental-desk__list {
+    padding: 60px 120px 30px 0;
+    margin-bottom: 100px;
+  }
+
+  .instrumental-desk__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 29px;
+  }
+
+  .crop-icon {
+    width: 45px;
+    height: 45px;
+  }
+
+  .fill-icon {
+    width: 45px;
+    height: 45px;
+  }
+
+  .contrast-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .slider-scale {
+    width: 280px;
+    height: 2px;
+    background-color: #000000;
+  }
+
+  .slider-button {
+    position: relative;
+    background: #f2f2f2;
+    border: 2px solid #cd0c54;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    width: 10px;
+    height: 10px;
+  }
+
+  .instrumental-desk__slider--crop .slider-button {
+    top: -8px;
+    left: 90px;
+  }
+
+  .instrumental-desk__slider--fill .slider-button {
+    top: -10px;
+    left: 265px;
+  }
+
+  .instrumental-desk__slider--contrast .slider-button {
+    top: -10px;
+    left: 180px;
+  }
+
+  .instrumental-desk__button-wrapper {
+    flex-direction: row;
+    margin: 0 70px 0 0;
+  }
+
+  .publish-button {
+    width: 184px;
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+
+  .cancel-button {
+    width: 184px;
     margin-bottom: 10px;
   }
 }

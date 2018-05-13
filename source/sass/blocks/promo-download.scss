@@ -1,13 +1,20 @@
 .promo-download {
-  padding-top: 150px;
-  background: url("../img/iphone-hand-mobile@1x.png") no-repeat;
-  background-size: 540px auto;
-  background-position: top 100px left 580px;
+  display: flex;
+  align-items: flex-end;
+  margin-top: -110px;
+  min-height: 780px;
+  width: 100%;
+  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom 270px left 0, bottom center;
+  background-size: 260px auto, cover;
+  box-sizing: border-box;
 }
 
-.promo-download__section {
-  display: flex;
-  justify-content: space-between; // не могу понять, как сдвинуть блок вниз на мобильной версии
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .promo-download {
+    background-image: url("../img/iphone-hand-mobile@2x.png"), url("../img/bg-back-mobile@2x.jpg");
+  }
 }
 
 .promo-download__block {
@@ -24,10 +31,10 @@
 
 .promo-download__button {
   display: block;
-  width: 260px;
+  min-width: 260px;
   height: 20px;
-  padding: 14px 19px;
-  margin-top: 10px;
+  padding: 14px 8px;
+  margin-top: 30px;
   text-decoration: none;
   font-weight: 700;
   font-size: 20px;
@@ -48,10 +55,14 @@
   color: rgba(210, 40, 86, 0.3);
 }
 
+.promo-download__wrapper {
+  margin: 33px 0 0;
+}
+
 .promo-download__list {
-  width: 212px;
+  min-width: 205px;
   margin: 0;
-  padding: 20px 0;
+  padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -60,7 +71,7 @@
 
 .mac-icon {
   width: 46px;
-  height: 56px;
+  height: 55px;
 }
 
 .android-icon {
@@ -68,37 +79,46 @@
   height: 47px;
 }
 
-.microsoft-icon {
+.windows-icon {
   width: 43px;
   height: 41px;
 }
 
 .promo-download__promo-options {
+  display: block;
+  margin: 0 auto;
+  padding: 15px 20px 35px;
+  min-width: 200px;
   font-weight: 400;
   font-size: 14px;
+  line-height: 22px;
   color: #ffffff;
   text-align: center;
 }
-
+// для планшета для планшета для планшета для планшета для планшета для планшета
 @media (min-width: $tablet-width) {
   .promo-download {
-    padding-top: 115px;
-    background: url("../img/iphone-hand-tablet@1x.png") no-repeat;
-    //background-size: 700px auto;
-    background-position: bottom 0 left 60px;
+    min-height: 730px;
+    background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top 194px right -13px, center;
+    background-size: 690px auto, cover;
+    align-items: center;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .promo-download {
+      background-image: url("../img/iphone-hand-tablet@2x.png"), url("../img/bg-back-tablet@2x.jpg");
+    }
   }
 
   .promo-download__block {
-    max-width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: transparent;
-    margin: 0 20px;
-  }
-
-  .promo-download__section {
-    padding-bottom: 103px;
+    margin-top: 100px;
+    margin-left: -160px;
   }
 
   .promo-download__list {
@@ -107,15 +127,13 @@
 
   .promo-download__slogan {
     display: block;
-    width: 230px;
-    padding: 0;
-    margin-top: 230px;
+    margin: 0 auto;
+    padding: 0 210px;
     font-size: 40px;
     font-weight: 300;
     color: #ffffff;
     text-align: center;
     line-height: 50px;
-    align-self: center;
   }
 
   .promo-download__button {
@@ -123,7 +141,7 @@
     width: 260px;
     height: 20px;
     padding: 14px 19px;
-    margin-top: 30px;
+    margin-top: 25px;
     text-decoration: none;
     font-weight: 700;
     font-size: 20px;
@@ -134,49 +152,60 @@
     border-radius: 30px 30px;
   }
 
+  .promo-download__wrapper {
+    margin: 5px 10px 0;
+  }
+
   .promo-download__promo-options {
     display: block;
-    padding-top: 0;
-    margin: 0;
+    padding: 0 180px;
     font-weight: 300;
     font-size: 18px;
+    line-height: 26px;
   }
 }
-
+// для десктопа для десктопа для десктопа для десктопа для десктопа для десктопа для десктопа для десктопа
 @media (min-width: $desktop-width) {
   .promo-download {
-    padding-top: 150px;
-    background: url("../img/iphone-hand-desktop@1x.png") no-repeat;
-    //background-size: 570px auto;
-    background-position: top 100px left 280px;
+    min-height: 853px;
+    background: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top 206px right 0, center;
+    background-size: 1070px auto, cover;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .promo-download {
+      background-image: url("../img/iphone-hand-desktop@2x.png"), url("../img/bg-back-desktop@2x.jpg");
+    }
   }
 
   .promo-download__block {
-    max-width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: transparent;
-    margin: 0;
+    margin-top: 220px;
+    margin-left: -320px;
   }
 
   .promo-download__section {
-    padding-bottom: 120px;
+    margin-bottom: 120px;
   }
 
   .promo-download__list {
-    padding: 70px 0 48px 0;
+    padding: 65px 0 48px 0;
   }
 
   .promo-download__slogan {
-    margin-top: -35px;
-    padding: 0;
-    font-size: 48px;
+    display: block;
+    margin: 0 auto;
+    padding: 0 330px;
+    font-size: 50px;
     font-weight: 300;
     color: #ffffff;
     text-align: center;
     line-height: 58px;
-    align-self: center;
   }
 
   .promo-download__button {
@@ -184,7 +213,8 @@
     width: 260px;
     height: 20px;
     padding: 14px 19px;
-    margin-top: 50px;
+    margin-top: 54px;
+    margin-left: 8px;
     text-decoration: none;
     font-weight: 700;
     font-size: 20px;
@@ -196,6 +226,7 @@
   }
 
   .promo-download__promo-options {
+    padding: 0 300px;
     font-weight: 300;
     font-size: 18px;
   }

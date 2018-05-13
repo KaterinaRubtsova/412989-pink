@@ -1,50 +1,89 @@
-// мобильная версия
-.page-header--main {
-  min-height: 900px;
-  background-color: #15202d;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.page-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #283645;
 }
 
-.page-header--regular {
-  min-height: 250px;
-  background-color: #15202d;
+.page-header__info-header {
+  min-height: 234px;
+  margin-top: -65px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom center;
   background-size: cover;
+  box-sizing: border-box;
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .page-header__info-header {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
+}
+
+.introduction__header {
+  display: block;
+  min-width: 175px;
+  margin: 95px 10px 52px;
+  padding: 0;
+  font-size: 24px;
+  font-weight: 300;
+  color: #ffffff;
+  line-height: 28px;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
-  .page-header--main {
-    background: url("../img/bg-back-tablet@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  .introduction__header {
+    margin: 174px 20px 52px;
+    padding: 0;
+    font-size: 50px;
+    line-height: 60px;
   }
 
-  .page-header--regular {
-    background: url("../img/bg-back-tablet@1x.jpg");
+  .page-header__info-header {
+    min-height: 432px;
+    margin-top: -109px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom center;
     background-size: cover;
+    box-sizing: border-box;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .page-header__info-header {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page-header--main {
-    background: url("../img/bg-back-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  .introduction__header {
+    margin: 174px 400px 52px;
+    padding: 0;
+    font-size: 50px;
+    line-height: 60px;
   }
 
-  .page-header--regular {
-    background: url("../img/bg-back-desktop@1x.jpg");
+  .page-header__info-header {
+    min-height: 394px;
+    margin-top: -110px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom center;
     background-size: cover;
+    box-sizing: border-box;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .page-header__info-header {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
+  }
+
+  .page-header__info-header--form .introduction__header {
+    margin: 174px 200px 52px;
+    padding: 0;
   }
 }
