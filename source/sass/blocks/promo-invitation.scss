@@ -11,7 +11,7 @@
 .promo-invitation::after {
   content: "";
   position: absolute;
-  top: 120px;
+  top: 113px;
   left: 0;
   right: 0;
   width: 100%;
@@ -23,18 +23,18 @@
 
 .promo-invitation__wrapper {
   position: relative;
-  margin: 46px auto;
+  margin: 40px auto;
   padding: 0 20px;
   z-index: 30;
 }
 
 .promo-invitation__proposal--first-line {
   display: block;
-  margin: 0 0 38px;
+  margin: 0 0 30px;
   padding: 0;
   font-size: 24px;
   font-weight: 300;
-  line-height: 26px;
+  line-height: 28px;
   text-align: center;
 }
 
@@ -44,19 +44,19 @@
   padding: 0;
   font-size: 24px;
   font-weight: 300;
-  line-height: 24px;
+  line-height: 28px;
   text-align: center;
 }
 // для планшета для планшета для планшета для планшета для планшета для планшета
 @media (min-width: $tablet-width) {
   .promo-invitation__wrapper {
     position: relative;
-    margin: 46px auto;
+    margin: 47px auto;
     padding: 0 20px;
   }
 
   .promo-invitation::after {
-    top: 160px;
+    top: 154px;
   }
 
   .promo-invitation__proposal--first-line {

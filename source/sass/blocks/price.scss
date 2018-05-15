@@ -12,7 +12,7 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
-  margin: 64px 0 0;
+  margin: 88px 0 0;
   background-color: #f2f2f2;
 }
 
@@ -23,7 +23,7 @@
   flex-direction: column;
   flex-shrink: 0;
   background-color: #ffffff;
-  border-right: 3px solid #e5e5e5;
+  border-right: 2px solid #e5e5e5;
 }
 
 .price__table-col--empty {
@@ -161,7 +161,7 @@
 // для планшета для планшета для планшета для планшета для планшета
 @media (min-width: $tablet-width) {
   .price {
-    padding-top: 70px;
+    padding-top: 4px;
     padding-bottom: 70px;
     margin-bottom: 50px;
     margin-top: -28px;
@@ -172,26 +172,26 @@
   }
 
   .price__table-col {
-    min-width: 155px;
+    min-width: 154px;
     align-self: flex-start;
     border-right: 1px solid #e5e5e5;
   }
 
   .price__table-row {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 18px;
     font-weight: 400;
     border-left: 1px solid #e5e5e5;
     border-bottom: 1px solid #e5e5e5;
     border-right: none;
-    min-height: 45px;
+    min-height: 44px;
   }
 
   .price__table-row--span {
     font-size: 18px;
     font-weight: 300;
-    line-height: 22px;
-    padding-bottom: 10px;
+    line-height: 18px;
+    padding: 8px 0 0;
   }
 
   .price__table-head--empty-head {
@@ -218,7 +218,13 @@
   }
 
   .price__table-head {
-    min-height: 81px;
+    min-height: 80px;
+  }
+
+  .price__table-head p {
+    padding: 18px 0 0;
+    font-size: 14px;
+    line-height: 18px;
   }
 
   .price__table-head--head-hit::before {
@@ -259,7 +265,7 @@
 // для десктопа для десктопа для десктопа для десктопа для десктопа
 @media (min-width: $desktop-width) {
   .price {
-    padding-top: 70px;
+    padding-top: 45px;
     padding-bottom: 94px;
   }
 
@@ -269,6 +275,13 @@
 
   .price__table-head {
     min-height: 100px;
+  }
+
+  .price__table-head p {
+    padding: 22px 0 0;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400px;
   }
 
   .price__table-row {

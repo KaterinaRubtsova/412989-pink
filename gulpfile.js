@@ -65,5 +65,6 @@ gulp.task("serve", ["build"], function() {
 
   gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
   gulp.watch("source/*.html", ["copy"]);
+  gulp.watch("source/js/*.js", ["copy"]).on("change", server.reload);
   gulp.watch("build/*.html").on("change", server.reload);
 });

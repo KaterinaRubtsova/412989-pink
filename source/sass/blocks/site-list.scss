@@ -2,6 +2,7 @@
   display: none;
 }
 
+
 .site-list--opened {
   width: 100%;
   list-style: none;
@@ -17,7 +18,7 @@
 .site-list__item a {
   display: block;
   text-align: center;
-  padding: 24px 80px 17px;
+  padding: 22px 80px 18px;
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
@@ -42,17 +43,12 @@
 
 @media (min-width: $tablet-width) {
   .site-list--opened {
-    width: 100%;
     margin: 0 auto;
     padding: 0;
   }
 
   .site-list__item:first-child {
     margin-top: 38px;
-  }
-
-  .site-list__item a {
-    padding: 21px 20px;
   }
 }
 
@@ -63,7 +59,7 @@
   }
 
   .site-list {
-    min-width: 630px;
+    min-width: 620px;
     display: flex;
     justify-content: space-between;
     list-style: none;

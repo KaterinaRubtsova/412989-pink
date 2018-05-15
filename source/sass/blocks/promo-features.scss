@@ -15,15 +15,15 @@
 }
 
 .promo-features__item {
-  margin-bottom: 34px;
+  margin-bottom: 30px;
 }
 
 .promo-features__caption {
   display: block;
   margin: 18px 0 13px;
   padding: 0;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .promo-features__clarification {
@@ -35,11 +35,11 @@
 }
 
 .promo-features__images {
-  min-height: 285px;
+  min-height: 288px;
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: top 30px center;
+  background-size: 160px auto;
+  background-position: top 10px center;
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -59,7 +59,7 @@
   }
 
   .promo-features__item {
-    margin-bottom: 38px;
+    margin-bottom: 37px;
   }
 
   .promo-features__item:nth-child(3) {
@@ -84,9 +84,9 @@
   .promo-features__text {
     display: flex;
     flex-direction: column;
-    min-width: 300px;
-    padding-top: 75px;
-    padding-left: 30px;
+    min-width: 340px;
+    padding: 0;
+    margin: 0;
     text-align: left;
     order: 2;
   }
@@ -131,30 +131,24 @@
   }
 
   .promo-features__text {
+    box-sizing: border-box;
     order: 1;
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
     flex-direction: row;
-    text-align: center;
-    padding-top: 50px;
+    text-align: baseline;
+    padding-top: 52px;
     padding-left: 0;
-    padding-right: 10px;
+    padding-right: 0;
+    margin: 0;
   }
 
   .promo-features__item {
-    width: 220px;
-    margin: 0 auto;
+    flex-basis: 300px;
     padding: 0;
+    margin: 0 40px;
     text-align: center;
-  }
-
-  .promo-features__item--first {
-    width: 240px;
-  }
-
-  .promo-features__item--third .promo-features__clarification {
-    width: 230px;
   }
 
   .promo-features__clarification {
@@ -162,7 +156,7 @@
     margin: 0;
     padding: 28px 0 0 0;
     font-size: 18px;
-    line-height: 28px;
+    line-height: 30px;
   }
 
   .promo-features__images {
@@ -172,7 +166,7 @@
   }
 
   .promo-features__picture {
-    width: 190px;
+    width: 200px;
     margin: -28px 0 0 0;
   }
 

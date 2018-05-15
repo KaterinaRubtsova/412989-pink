@@ -9,7 +9,7 @@
 .main-footer__invitation {
   align-self: center;
   min-width: 245px;
-  margin: 40px auto 28px;
+  margin: 44px auto 29px;
   font-size: 24px;
   font-weight: 300;
   color: #000000;
@@ -23,13 +23,14 @@
   min-height: 260px;
   text-align: center;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 .main-footer__text {
   display: block;
   margin: 0;
   padding: 0;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   color: #000000;
   line-height: 30px;
@@ -65,31 +66,37 @@
   }
 
   .main-footer__invitation {
-    min-width: 200px;
+    min-width: 100px;
     margin: 0 auto;
     padding: 0 40px;
     font-size: 40px;
-    line-height: 44px;
+    line-height: 48px;
   }
 
   .main-footer__info {
     margin: 0;
+    line-height: 30px;
+  }
+
+  .main-footer__contacts-wrapper {
+    justify-content: space-between;
+    margin-bottom: 10px;
   }
 
   .main-footer__contacts {
     display: block;
     margin: 0;
     padding: 0;
-    min-width: 310px;
-    margin-top: 45px;
+    min-width: 300px;
+    margin-top: 39px;
   }
 
   .main-footer__contacts--address {
-    margin-top: 10px;
+    margin-top: 13px;
   }
 
   .main-footer__contacts--address .main-footer__info {
-    padding: 0 170px;
+    padding: 0 165px;
   }
 }
 
@@ -118,7 +125,7 @@
 
   .main-footer__contacts {
     padding: 0;
-    min-width: 305px;
+    flex-basis: 310px;
     margin-top: 0;
   }
 

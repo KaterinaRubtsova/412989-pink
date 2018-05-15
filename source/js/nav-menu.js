@@ -2,6 +2,10 @@ var navButton = document.querySelector(".main-nav__button");
 var navMenu = document.querySelector(".site-list");
 var navColor = document.querySelector(".main-nav");
 
+navMenu.classList.remove("site-list--opened");
+navMenu.classList.add("site-list--closed");
+navButton.classList.add("main-nav__button--burger");
+navColor.classList.remove("main-nav--filled");
 
 navButton.addEventListener("click", function() {
   if (navButton.classList.contains("main-nav__button--burger")) {

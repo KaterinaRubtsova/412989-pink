@@ -41,7 +41,7 @@
   }
 
   &:active {
-    fill: rgba(210, 40, 86, 0.3);
+    fill: rgba(255, 255, 255, 0.3);
   }
 }
 
@@ -53,7 +53,12 @@
   display: none;
 }
 
+.main-nav__button {
+  display: none;
+}
+
 .main-nav__button--burger {
+  display: block;
   position: absolute;
   top: 0;
   right: 19px;
@@ -63,6 +68,10 @@
   height: 4px;
   background-color: #ffffff;
   outline: none;
+}
+
+.main-nav__button--burger.main-nav__button--show {
+  display: block;
 }
 
 .main-nav__button--burger::before {
@@ -92,6 +101,7 @@
 }
 
 .main-nav__button--cross {
+  display: block;
   position: absolute;
   top: 10px;
   right: 38px;
@@ -164,7 +174,7 @@
     }
 
     &:active {
-      fill: rgba(210, 40, 86, 0.3);
+      fill: rgba(255, 255, 255, 0.3);
     }
   }
 
@@ -189,27 +199,24 @@
 // для десктопа для десктопа для десктопа для десктопа для десктопа
 @media (min-width: $desktop-width) {
   .main-nav {
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-left: 30px;
-    padding-right: 80px;
+    padding: 0;
   }
 
   .main-nav__wrapper {
-    min-width: 960px;
+    min-width: 940px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    box-sizing: border-box;
   }
 
   .main-nav__logo--desktop {
     width: 146px;
     height: 40px;
     display: block;
-    margin-right: 170px;
-    margin-left: 35px;
-    margin-top: -10px;
-    margin-bottom: 0;
+    margin-right: 100px;
+    margin-left: 0;
+    margin-bottom: 15px;
     fill: #ffffff;
 
     &:hover {

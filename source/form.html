@@ -16,7 +16,7 @@
       <div class="container">
         <div class="main-nav__wrapper">
           <a class="main-nav__logo main-nav__logo--mobile" href="index.html">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               width="70" height="22" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
               <g>
                 <path d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"
@@ -31,7 +31,7 @@
             </svg>
           </a>
           <a class="main-nav__logo main-nav__logo--tablet" href="index.html">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               width="146" height="40" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
               <g>
                 <path d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z"
@@ -49,7 +49,7 @@
             </svg>
           </a>
           <a class="main-nav__logo main-nav__logo--desktop" href="index.html">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               width="146" height="40" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
               <g>
                 <path d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.064 c0,4.861-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.288-1.288,1.288c-0.676,0-1.256-0.58-1.256-1.288V18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.063c0-3.22-2.414-4.894-6.053-4.894h-5.699v9.917H79.988L79.988,29.641z"
@@ -94,7 +94,7 @@
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <!-- далее размещено скрытое меню -->
-          <ul class="main-nav__list site-list site-list--closed">
+          <ul class="main-nav__list site-list site-list--closed site-list--nojs">
             <li class="site-list__item">
               <a href="index.html">Главная</a>
             </li>
@@ -131,48 +131,48 @@
       <h2 class="visually-hidden">Указать фамилию, имя и отчество</h2>
       <div class="container">
         <form class="form__input-fields" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="form__blocks form__blocks--name">
-            <ul class="form__list form__list--name">
-              <li class="form__item form__item--name">
+          <fieldset class="form-blocks form-blocks--name">
+            <ul class="form-blocks__list form-list form-list--name">
+              <li class="form-list__item form-list__item--name">
                 <label class="name-fields" for="surname-field">Фамилия:</label>
-                <input type="text" name="surname" id="surname-field" placeholder="Укажите фамилию*">
+                <input class="surname-required" type="text" name="surname" id="surname-field" placeholder="Укажите фамилию*" required>
               </li>
-              <li class="form__item form__item--name">
+              <li class="form-list__item form-list__item--name">
                 <label class="name-fields" for="name-field">Имя:</label>
-                <input type="text" name="name" id="name-field" placeholder="Укажите имя*">
+                <input class="name-required" type="text" name="name" id="name-field" placeholder="Укажите имя*" required>
               </li>
-              <li class="form__item form__item--name">
+              <li class="form-list__item form-list__item--name">
                 <label class="name-fields" for="middlename-field">Отчество:</label>
                 <input type="text" name="middlename" id="middlename-field" placeholder="Ну и отчество тоже">
               </li>
             </ul>
           </fieldset>
           <div class="fieldset-wrapper fieldset-wrapper--achievements">
-            <fieldset class="form__blocks form__blocks--achievements">
+            <fieldset class="form-blocks form-blocks--achievements">
               <h2 class="visually-hidden">Указать ваши достижения</h2>
-              <p class="form__blocks__intro form__blocks__intro--achievements">Ваши безбашенные достижения в путешествии</p>
-              <ul class="form__list form__list--achievements">
-                <li class="form__item form__item--achievements form__item--shark-achiev">
+              <p class="form-blocks__intro form-blocks__intro--achievements">Ваши безбашенные достижения в путешествии</p>
+              <ul class="form-blocks__list form-list form-list--achievements">
+                <li class="form-list__item form-list__item--achievements form-list__item--shark-achiev">
                   <input class="checkbox visually-hidden" type="checkbox" name="shark" id="shark-achiev" checked>
                   <label for="shark-achiev">Сделал селфи с акулой</label>
                 </li>
-                <li class="form__item form__item--achievements form__item--sunburn-achiev">
+                <li class="form-list__item form-list__item--achievements form-list__item--sunburn-achiev">
                   <input class="checkbox visually-hidden" type="checkbox" name="sunburn" id="sunburn-achiev" checked>
                   <label for="sunburn-achiev">Обгорел на пляже</label>
                 </li>
-                <li class="form__item form__item--achievements form__item--chak-achiev">
+                <li class="form-list__item form-list__item--achievements form-list__item--chak-achiev">
                   <input class="checkbox visually-hidden" type="checkbox" name="chak" id="chak-achiev">
                   <label for="chak-achiev">Видел Чака Норриса</label>
                 </li>
-                <li class="form__item form__item--achievements form__item--souvenir-achiev">
+                <li class="form-list__item form-list__item--achievements form-list__item--souvenir-achiev">
                   <input class="checkbox visually-hidden" type="checkbox" name="souvenir" id="souvenir-achiev">
                   <label for="souvenir-achiev">Накупил сувениров</label>
                 </li>
-                <li class="form__item form__item--achievements form__item--tower-achiev">
+                <li class="form-list__item form-list__item--achievements form-list__item--tower-achiev">
                   <input class="checkbox visually-hidden" type="checkbox" name="tower" id="tower-achiev" checked>
                   <label for="tower-achiev">Удержал башню</label>
                 </li>
-                <li class="form__item form__item--achievements form__item--hotel-achiev">
+                <li class="form-list__item form-list__item--achievements form-list__item--hotel-achiev">
                   <input class="checkbox visually-hidden" type="checkbox" name="hotel" id="hotel-achiev">
                   <label for="hotel-achiev">Разгромил отель</label>
                 </li>
@@ -180,49 +180,50 @@
             </fieldset>
           </div>
           <div class="fieldset-wrapper fieldset-wrapper--contacts">
-            <fieldset class="form__blocks form__blocks--contacts">
-              <p class="form__blocks__intro form__blocks__intro--contacts">Контактная информация</p>
-              <ul class="form__list form__list--contacts">
-                <li class="form__item form__item--contacts form__item--tel">
+            <fieldset class="form-blocks form-blocks--contacts">
+              <p class="form-blocks__intro form-blocks__intro--contacts">Контактная информация</p>
+              <ul class="form-blocks__list form-list form-list--contacts">
+                <li class="form-list__item form-list__item--contacts form-list__item--tel">
                   <label class="data-fields" for="telNo">Номер телефона</label>
                   <input type="tel" id="telNo" placeholder="Номер, пожалуйста">
                 </li>
-                <li class="form__item form__item--contacts form__item--email">
+                <li class="form-list__item form-list__item--contacts form-list__item--email">
                   <label class="data-fields" for="email">Адрес почты</label>
-                  <input type="email" id="email" placeholder="Введите почту*">
+                  <input class="email-required" type="email" id="email" placeholder="Введите почту*" required>
                 </li>
               </ul>
             </fieldset>
           </div>
           <div class="fieldset-wrapper fieldset-wrapper--applications">
-            <fieldset class="form__blocks form__blocks--applications">
-              <p class="form__blocks__intro form__blocks__intro--applications">С каким приложением путешествовали?</p>
-              <ul class="form__list form__list--applications">
-                <li class="form__item form__item--applications">
+            <fieldset class="form-blocks form-blocks--applications">
+              <p class="form-blocks__intro form-blocks__intro--applications">С каким приложением путешествовали?</p>
+              <ul class="form-blocks__list form-list form-list--applications">
+                <li class="form-list__item form-list__item--applications">
                   <input class="radio visually-hidden" type="radio" name="application" value="ios" id="radio-ios" checked>
                   <label for="radio-ios">Pink для iOS</label>
                 </li>
-                <li class="form__item form__item--applications">
+                <li class="form-list__item form-list__item--applications">
                   <input class="radio visually-hidden" type="radio" name="application" value="android" id="radio-android">
-                  <label for="radio-android">Pink для Android</label>
+                  <label for="radio-android">Pink на Android</label>
                 </li>
-                <li class="form__item form__item--applications">
+                <li class="form-list__item form-list__item--applications">
                   <input class="radio visually-hidden" type="radio" name="application" value="windows" id="radio-windows">
-                  <label for="radio-windows">Pink для Windows</label>
+                  <label for="radio-windows">Windows Phone</label>
                 </li>
               </ul>
             </fieldset>
           </div>
           <div class="fieldset-wrapper fieldset-wrapper--emotions">
-            <fieldset class="form__blocks form__blocks--emotions">
-              <p class="form__blocks__intro form__blocks__intro--emotions">Опишите свои эмоции</p>
+            <fieldset class="form-blocks form-blocks--emotions">
+              <p class="form-blocks__intro form-blocks__intro--emotions">Опишите свои эмоции</p>
               <textarea name="comment" id="comment-field"> Можно прям в красках, не стесняясь в выражениях</textarea>
             </fieldset>
           </div>
           <div class="submit-wrapper">
             <input class="form__submit-button" type="submit" value="Отправить форму">
             <p class="form__notification">
-              <span class="form__notification-star">*</span> - обязательные <span class="form-notifications-desktop">для заполнения </span>поля </p>
+              <span class="form__notification-star">*</span> - обязательные
+              <span class="form__notifications-desktop">для заполнения </span>поля </p>
           </div>
         </form>
       </div>
@@ -234,7 +235,7 @@
       <div class="main-footer__social-wrapper">
         <a class="main-footer__logo main-footer__logo--mobile-tablet" href="index.html">
           <span class="hide-text">Pink</span>
-          <svg class="footer-pink-logo" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          <svg class="footer-pink-logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             x="0px" y="0px" width="150" height="40" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
             <g class="blue-colored-logo">
               <path d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z"
@@ -252,7 +253,7 @@
           </svg>
         </a>
         <a class="main-footer__logo main-footer__logo--desktop" href="index.html">
-          <svg class="footer-pink-logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          <svg class="footer-pink-logo" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             x="0px" y="0px" width="146" height="40" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
             <g class="blue-colored-logo">
               <path d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.064 c0,4.861-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.288-1.288,1.288c-0.676,0-1.256-0.58-1.256-1.288V18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.063c0-3.22-2.414-4.894-6.053-4.894h-5.699v9.917H79.988L79.988,29.641z"
@@ -295,7 +296,7 @@
         <div class="main-footer__social-buttons">
           <ul class="main-social-buttons__list social-buttons__list">
             <li class="social-buttons__item">
-              <a class="social-buttons__media social-buttons__media--twitter" href="https://twitter.com/">
+              <a class="social-buttons__media social-buttons__media--tw÷itter" href="https://twitter.com/">
                 <span class="hide-text">Twitter</span>
                 <svg class="twitter-icon" width="18" height="18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                   x="0px" y="0px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
@@ -320,7 +321,7 @@
             </li>
             <li class="social-buttons__item">
               <a class="social-buttons__media social-buttons__media--youtube" href="https://youtube.com/">
-                <svg class="youtube-icon" width="18" height="18"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                <svg class="youtube-icon" width="18" height="18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                   x="0px" y="0px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
                   <path d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z"
                   />
@@ -333,8 +334,8 @@
         <div class="main-footer__copyright">
           <p class="main-footer__copyright-text">Разработано</p>
           <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="academy-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-              x="0px" y="0px" width="29" height="39" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+            <svg class="academy-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="29"
+              height="39" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
               <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z"
               />
             </svg>
@@ -344,7 +345,22 @@
       </div>
     </div>
   </footer>
+  <div class="popup popup--fail">
+    <h3 class="popup__title">Что-то пошло не так!</h3>
+    <p class="popup__text">Проверьте поля, выделенные красным, скорее всего, вы забыли их заполнить</p>
+    <div class="popup__button-wrapper popup__button-wrapper--fail">
+    <button class="popup__button  popup__button--fail">ОК</button>
+  </div>
+  </div>
+  <div class="popup popup--success">
+    <h3 class="popup__title">Ваша заявка отправлена!</h3>
+    <p class="popup__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+    <div class="popup__button-wrapper">
+      <button class="popup__button  popup__button--success">Закрыть окно</button>
+    </div>
+  </div>
   <script src="js/nav-menu.js"></script>
+  <script src="js/popup.js"></script>
 </body>
 
 </html>
