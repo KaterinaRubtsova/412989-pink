@@ -1,7 +1,7 @@
 .map {
   width: 100%;
   position: relative;
-  min-height: 200px;
+  height: 200px;
   background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -35,7 +35,7 @@
 @media (min-width: $tablet-width) {
   .map {
     position: relative;
-    min-height: 300px;
+    height: 367px;
     background-color: #ffffff;
     background-image: url("../img/bg-map-tablet@1x.jpg");
     background-repeat: no-repeat;
@@ -65,7 +65,7 @@
 
 @media (min-width: $desktop-width) {
   .map {
-    min-height: 500px;
+    height: 500px;
     background-image: url("../img/bg-map-desktop@1x.jpg");
   }
 

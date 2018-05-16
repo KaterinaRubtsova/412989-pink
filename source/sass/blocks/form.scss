@@ -1,4 +1,5 @@
 // ДЛЯ МОБИЛЬНОЙ ВЕРСИИ
+
 .page-form {
   background-color: #ffffff;
 }
@@ -10,7 +11,7 @@
 }
 
 .form-list {
-  margin: 0 0 30px;
+  margin: 0 0 29px;
   padding: 0;
   list-style: none;
   text-align: left;
@@ -18,7 +19,7 @@
 
 .name-fields {
   display: block;
-  padding: 8px 44px;
+  padding: 8px 42px 5px;
   margin: 0;
   font-size: 14px;
   font-weight: 400;
@@ -31,7 +32,7 @@
 .name-fields + input {
   min-width: 280px;
   box-sizing: border-box;
-  padding: 13px;
+  padding: 14px 20px;
   margin: 0 20px 10px;
   font-size: 18px;
   font-weight: 400;
@@ -52,7 +53,7 @@
 .form-blocks__intro {
   display: block;
   padding: 0;
-  margin: 40px 20px;
+  margin: 41px 20px 43px;
   font-size: 14px;
   font-weight: 400;
   color: #d22856;
@@ -129,24 +130,24 @@
 }
 
 .form-list--contacts {
-  padding: 20px 20px;
+  padding: 18px 21px 12px;
 }
 
 .data-fields {
   display: block;
   font-size: 14px;
   font-weight: 400;
-  color: #cd0c54;
+  color: #d22856;
   line-height: 30px;
   text-transform: uppercase;
-  padding: 14px 20px 8px;
+  padding: 14px 20px 6px;
   text-align: left;
 }
 
 .data-fields + input {
   min-width: 280px;
   box-sizing: border-box;
-  padding: 10px 20px;
+  padding: 13px 20px;
   font-size: 18px;
   font-weight: 400;
   color: #000000;
@@ -176,15 +177,15 @@
 }
 
 .form-blocks__intro--applications {
-  margin: 40px 20px 30px;
+  margin: 40px 20px 34px;
 }
 
 .form-list--applications {
-  padding: 0 20px;
+  padding: 0 18px;
 }
 
 .form-list__item--applications {
-  margin-bottom: 38px;
+  margin-bottom: 37px;
 }
 
 .radio + label::before {
@@ -193,7 +194,7 @@
   vertical-align: middle;
   width: 35px;
   height: 35px;
-  margin-right: 32px;
+  margin-right: 33px;
   background: #ffffff;
   border: 2px solid #e5e5e5;
   border-radius: 50%;
@@ -220,7 +221,7 @@
 }
 
 .form-blocks__intro--emotions {
-  margin-bottom: 19px;
+  margin-bottom: 16px;
 }
 
 .form-blocks__intro--emotions + textarea {
@@ -228,7 +229,7 @@
   min-width: 280px;
   min-height: 200px;
   box-sizing: border-box;
-  padding: 10px;
+  padding: 14px 16px;
   margin: 0 20px 40px;
   font-size: 18px;
   font-weight: 400;
@@ -251,7 +252,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: -30px;
+  margin-bottom: -25px;
 }
 
 .form__submit-button {
@@ -264,7 +265,7 @@
   font-weight: 700;
   border-radius: 0;
   border: none;
-  min-height: 59px;
+  min-height: 63px;
   min-width: 281px;
   padding: 19px 34px;
   outline: none;
@@ -287,6 +288,7 @@
 .form__notification {
   display: block;
   margin: 40px 0;
+  padding-left: 10px;
   font-size: 14px;
   font-weight: 400;
   color: #000000;
@@ -304,7 +306,7 @@
 // для планшета для плашета для планшета для планшета для планшета для планшета
 @media (min-width: $tablet-width) {
   .form-list {
-    margin: 0 0 37px;
+    margin: 0 0 30px;
   }
 
   .name-fields {
@@ -314,8 +316,8 @@
 
   .name-fields + input {
     min-width: 523px;
-    padding: 15px;
-    margin: 0 0 50px;
+    padding: 14px 17px;
+    margin: 0 0 52px;
   }
 
   .form-list__item--name:nth-child(2) .name-fields + input {
@@ -354,6 +356,7 @@
   .fieldset-wrapper--applications {
     min-width: 300px;
     order: 2;
+    margin-bottom: 70px;
   }
 
   .form-blocks--applications {
@@ -370,7 +373,11 @@
   }
 
   .form-list--applications {
-    padding: 16px 58px 0;
+    padding: 23px 58px 0;
+  }
+
+  .form-list__item--applications:last-child {
+    margin-bottom: 51px;
   }
 
   .radio + label::before {
@@ -381,7 +388,7 @@
   }
 
   .fieldset-wrapper--contacts {
-    padding-right: 60px;
+    padding-right: 3px;
     margin-bottom: 60px;
     order: 3;
   }
@@ -397,10 +404,10 @@
 
   .form-list--contacts {
     list-style: none;
-    margin: 40px 0 20px;
+    margin: 40px 0 24px;
     padding: 0;
     padding-left: 60px;
-    padding-right: 0;
+    padding-right: 56px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -415,7 +422,8 @@
   .data-fields + input {
     min-width: 200px;
     box-sizing: border-box;
-    padding: 10px 20px;
+    padding: 8px 18px 12px;
+    border: 2px solid #f2f2f2;
   }
 
   .form-list__item--tel {
@@ -429,7 +437,7 @@
     vertical-align: middle;
     width: 58px;
     height: 54px;
-    background: #f2f2f2 url("../img/icon-phone.svg") no-repeat center; // пока нет картинки с телефоном
+    background: #f2f2f2 url("../img/icon-phone.svg") no-repeat center;
     top: 2px;
     right: 2px;
   }
@@ -441,7 +449,7 @@
     vertical-align: middle;
     width: 58px;
     height: 54px;
-    background: #f2f2f2 url("../img/icon-mail.svg") no-repeat center; // пока нет картинки с телефоном
+    background: #f2f2f2 url("../img/icon-mail.svg") no-repeat center;
     top: 2px;
     right: 2px;
   }
@@ -488,11 +496,12 @@
 
   .form-blocks--emotions {
     margin: 0 auto;
-    max-width: 820px;
+    //min-width: 620px;
   }
 
   .form-blocks--emotions textarea {
     min-width: 500px;
+    min-height: 190px;
     margin-top: 40px;
     margin-left: 60px;
     box-sizing: border-box;
@@ -513,7 +522,7 @@
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
-    padding: 20px 20px 0;
+    padding: 30px 20px 0;
     order: 6;
     margin-bottom: 30px;
   }
@@ -529,8 +538,6 @@
 @media (min-width: $desktop-width) {
   .fieldset-wrapper {
     margin: 0;
-    margin-bottom: 60px;
-    border: 2px solid #f2f2f2;
   }
 
   .form__input-fields {
@@ -551,11 +558,11 @@
   }
 
   .form-list--name {
-    width: 435px;
+    min-width: 435px;
   }
 
   .form-list__item--name {
-    justify-content: flex-start;
+    padding-top: 3px;
   }
 
   .name-fields {
@@ -565,7 +572,7 @@
 
   .name-fields + input {
     min-width: 340px;
-    padding: 13px;
+    padding: 12px 20px;
     margin: 0 0 55px;
   }
 
@@ -578,9 +585,9 @@
   }
 
   .form-blocks__intro--applications {
-    width: 330px;
-    margin-top: -39px;
-    margin-left: 66px;
+    width: 318px;
+    margin-top: -37px;
+    margin-left: 62px;
     padding-bottom: 20px;
     background-color: #ffffff;
   }
@@ -588,7 +595,7 @@
   .fieldset-wrapper--applications {
     padding: 0;
     margin-left: 55px;
-    margin-bottom: 74px;
+    margin-bottom: 61px;
     order: 2;
   }
 
@@ -600,13 +607,14 @@
   }
 
   .form-list--applications {
-    padding: 28px 0 0 78px;
+    padding: 28px 10px 0 79px;
     margin-right: 150px;
   }
 
   .fieldset-wrapper--contacts {
-    min-width: 880px;
-    margin-bottom: 70px;
+    min-width: 932px;
+    margin: 0 10px 62px 10px;
+    padding-right: 0;
     order: 3;
   }
 
@@ -614,18 +622,16 @@
     flex-direction: row;
     align-items: flex-start;
     margin: 35px 0 0;
-    padding: 0;
-    padding-left: 65px;
-    padding-right: 0;
+    padding: 0 55px 10px;
   }
 
   .form-blocks__intro--contacts {
-    margin-top: -8px;
-    margin-left: 350px;
+    text-align: center;
+    margin: -8px 350px 0;
   }
 
   .form-list__item--tel {
-    min-width: 380px;
+    min-width: 375px;
     margin-right: 70px;
     margin-bottom: 0;
   }
@@ -636,11 +642,12 @@
   }
 
   .fieldset-wrapper--achievements {
-    margin-bottom: 75px;
+    margin: 0 10px 74px 10px;
     order: 4;
   }
 
   .form-blocks__intro--achievements {
+    width: 374px;
     margin-top: -10px;
   }
 
@@ -649,8 +656,8 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0;
-    padding-top: 50px;
-    padding-left: 50px;
+    padding-top: 49px;
+    padding-left: 37px;
     list-style: none;
   }
 
@@ -659,11 +666,12 @@
   }
 
   .form-list__item--achievements {
-    min-width: 257px;
+    min-width: 260px;
   }
 
   .form-list__item--shark-achiev {
     order: 1;
+    margin-right: 28px;
   }
 
   .form-list__item--chak-achiev {
@@ -676,14 +684,17 @@
 
   .form-list__item--tower-achiev {
     order: 3;
+    margin-right: -10px;
   }
 
   .form-list__item--hotel-achiev {
     order: 6;
+    margin-right: -10px;
   }
 
   .form-list__item--sunburn-achiev {
     order: 4;
+    margin-right: 30px;
   }
 
   .form-blocks--emotions {
@@ -692,7 +703,7 @@
   }
 
   .fieldset-wrapper--emotions {
-    margin-bottom: 30px;
+    margin: 0 10px 34px 10px;
     order: 5;
     width: 100%;
     height: 200px;
@@ -704,10 +715,10 @@
 
   .form-blocks__intro--emotions + textarea {
     box-sizing: border-box;
-    padding: 10px 40px 0;
-    min-width: 800px;
-    min-height: 120px;
-    margin-left: 0;
+    padding: 12px 15px 0;
+    min-width: 821px;
+    margin: 36px 0 36px 57px;
+    min-height: 127px;
   }
 
   .submit-wrapper {
@@ -715,7 +726,8 @@
     justify-content: space-between;
     order: 6;
     margin-bottom: 10px;
-    padding: 20px 10px 0;
+    margin-left: 10px;
+    padding: 20px 10px 0 0;
   }
 
   .form__notifications-desktop {

@@ -17,8 +17,8 @@
 
 .instrumental-desk__original-photo {
   margin: 0 auto;
-  padding-top: 10px;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 37px;
 }
 
 .instrumental-desk__original-photo img {
@@ -29,7 +29,7 @@
 
 .instrumental-desk__instruments-buttons {
   display: flex;
-  min-width: 220px;
+  min-width: 216px;
   align-self: center;
   margin: 0 auto;
 }
@@ -41,8 +41,8 @@
 }
 
 .crop-icon-mobile {
-  width: 55px;
-  height: 55px;
+  width: 52px;
+  height: 56px;
   padding-right: 30px;
 }
 
@@ -51,14 +51,14 @@
 }
 
 .fill-icon-mobile {
-  width: 55px;
-  height: 55px;
-  padding-right: 30px;
+  width: 49px;
+  height: 58px;
+  padding-right: 38px;
 }
 
 .contrast-icon-mobile {
-  width: 35px;
-  height: 45px;
+  width: 33px;
+  height: 55px;
 }
 
 .crop-icon-mobile:hover,
@@ -76,7 +76,7 @@
 .instrumental-desk__instruments-slider--mobile {
   position: relative;
   margin-bottom: 45px;
-  margin-top: 30px;
+  margin-top: 25px;
   align-self: center;
 }
 
@@ -123,14 +123,12 @@
   background-color: #f2f2f2;
   text-decoration: none;
   color: #d22856;
-  line-height: 18px;
+  line-height: 30px;
   font-size: 18px;
   font-weight: 700;
   border: 3px solid #d22856;
   border-radius: 30px 30px;
-  height: 55px;
-  width: 281px;
-  padding: 18px 34px;
+  padding: 9px 87px;
   margin-bottom: 12px;
   margin-top: 29px;
 }
@@ -150,14 +148,12 @@
   background-color: #f2f2f2;
   color: #dddee0;
   border-color: #dddee0;
-  line-height: 18px;
+  line-height: 30px;
   font-size: 18px;
   font-weight: 700;
   border: 3px solid #dddee0;
   border-radius: 30px 30px;
-  height: 55px;
-  width: 281px;
-  padding: 18px 34px;
+  padding: 9px 98px;
   margin-bottom: 1px;
 }
 
@@ -183,7 +179,7 @@
   .instrumental-desk__form {
     flex-wrap: nowrap;
     flex-direction: row;
-    padding-bottom: 25px;
+    padding-bottom: 24px;
     margin-bottom: 0;
   }
 
@@ -197,19 +193,21 @@
 
   .instrumental-desk__list {
     display: flex;
+    flex-direction: column;
     list-style: none;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 70px 0 30px;
-    min-width: 250px;
+    padding: 75px 0 35px;
+    width: 300px;
   }
 
   .instrumental-desk__item {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 48px;
+    align-items: flex-start;
+    padding-bottom: 13px;
+    margin-bottom: 33px;
+    border-bottom: 1px solid #b5b9be;
   }
 
   .instrumental-desk__instruments-slider {
@@ -237,17 +235,17 @@
   }
 
   .instrumental-desk__slider--crop .slider-button {
-    top: -10px;
-    left: 140px;
+    top: -8px;
+    left: 137px;
   }
 
   .instrumental-desk__slider--fill .slider-button {
-    top: -10px;
-    left: 18px;
+    top: -8px;
+    left: 17px;
   }
 
   .instrumental-desk__slider--contrast .slider-button {
-    top: -10px;
+    top: -8px;
     left: 90px;
   }
 
@@ -259,22 +257,28 @@
   .crop-icon {
     width: 25px;
     height: 25px;
-    fill: #cd0c54;
+    fill: #d22856;
     padding-right: 35px;
+    margin-top: -10px;
+
   }
 
   .fill-icon {
     width: 25px;
     height: 25px;
-    fill: #cd0c54;
+    fill: #d22856;
+    padding-right: 25px;
     padding-right: 35px;
+    margin-top: -10px;
   }
 
   .contrast-icon {
     width: 18px;
     height: 18px;
     fill: #d22856;
+    padding-right: 25px;
     padding-right: 35px;
+    margin-top: -10px;
   }
 
   .crop-icon:hover,
@@ -290,14 +294,13 @@
   }
 
   .publish-button {
-    width: 260px;
+    padding: 9px 78px;
     margin-bottom: 25px;
     margin-top: 0;
   }
 
   .cancel-button {
-    height: 55px;
-    width: 260px;
+    padding: 9px 90px;
   }
 }
 // для десктопа для десктопа для десктопа для десктопа для десктопа для десктопа
@@ -315,15 +318,19 @@
   }
 
   .instrumental-desk__list {
-    padding: 60px 120px 30px 0;
-    margin-bottom: 100px;
+    padding: 62px 0 32px 0;
+    margin-bottom: 90px;
+    margin-right: 120px;
+    width: 353px;
+    align-items: flex-end;
+    box-sizing: border-box;
   }
 
   .instrumental-desk__item {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 29px;
+    margin-bottom: 26px;
   }
 
   .crop-icon {
@@ -337,8 +344,8 @@
   }
 
   .contrast-icon {
-    width: 35px;
-    height: 35px;
+    width: 33px;
+    height: 33px;
   }
 
   .slider-scale {
@@ -360,32 +367,35 @@
 
   .instrumental-desk__slider--crop .slider-button {
     top: -8px;
-    left: 90px;
+    left: 84px;
   }
 
   .instrumental-desk__slider--fill .slider-button {
-    top: -10px;
-    left: 265px;
+    top: -9px;
+    left: 260px;
   }
 
   .instrumental-desk__slider--contrast .slider-button {
-    top: -10px;
+    top: -8px;
     left: 180px;
   }
 
   .instrumental-desk__button-wrapper {
     flex-direction: row;
-    margin: 0 70px 0 0;
+    margin: 0 30px 0 0;
   }
 
   .publish-button {
-    width: 184px;
+    min-width: 175px;
+    padding: 10px 40px;
     margin-bottom: 10px;
-    margin-right: 0;
+
   }
 
   .cancel-button {
-    width: 184px;
+    min-width: 175px;
+    padding: 10px 40px;
     margin-bottom: 10px;
+    margin-right: 45px;
   }
 }

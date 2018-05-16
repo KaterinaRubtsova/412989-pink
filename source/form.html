@@ -12,7 +12,7 @@
 <body>
   <!--Блок хедер и навигационный блок-меню (скрыто под кнопкой-бургером)-->
   <header class="page-header">
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--filled">
       <div class="container">
         <div class="main-nav__wrapper">
           <a class="main-nav__logo main-nav__logo--mobile" href="index.html">
@@ -90,11 +90,11 @@
             </svg>
           </a>
           <!--здесь расположена кнопка бургер и кнопка-закрывающая(крестик)-->
-          <button class="main-nav__button main-nav__button--burger" type="button">
+          <button class="main-nav__button" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <!-- далее размещено скрытое меню -->
-          <ul class="main-nav__list site-list site-list--closed site-list--nojs">
+          <ul class="main-nav__list site-list site-list--opened">
             <li class="site-list__item">
               <a href="index.html">Главная</a>
             </li>
@@ -105,7 +105,7 @@
               <a>Конкурс</a>
             </li>
             <li class="site-list__item">
-              <a href="https://htmlacademy.ru/intensive/adaptive">Htmlacademy</a>
+              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -121,7 +121,7 @@
       <div class="container">
         <article class="introduction__article introduction__article--form">
           <h3 class="visually-hidden">Предложение участвовать в конкурсе</h3>
-          <p class="motive-text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
+          <p class="motive-text motive-text--form">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
             <span class="motive-text-hidden">Пожалуйста, заполните форму ниже: </span>
           </p>
         </article>
@@ -139,7 +139,7 @@
               </li>
               <li class="form-list__item form-list__item--name">
                 <label class="name-fields" for="name-field">Имя:</label>
-                <input class="name-required" type="text" name="name" id="name-field" placeholder="Укажите имя*" required>
+                <input class="name-required" type="text" name="name" id="name-field" placeholder="Введите ваше имя*" required>
               </li>
               <li class="form-list__item form-list__item--name">
                 <label class="name-fields" for="middlename-field">Отчество:</label>

@@ -10,11 +10,11 @@
 }
 
 .conclusion-text--first-line {
-  margin-top: 18px;
+  margin-top: 20px;
 }
 
 .conclusion-text--second-line {
-  margin: 0 10px 42px;
+  margin: 0 10px 42px 8px;
 }
 
 @media (min-width: $tablet-width) {
@@ -34,6 +34,6 @@
 // для десктопа для десктопа для десктопа для десктопа
 @media (min-width: $desktop-width) {
   .conclusion-text--first-line {
-    margin-top: 3px;
+    margin-top: 10px;
   }
 }

@@ -240,7 +240,7 @@
               <p class="reviews__user-comment">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился
                 со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </section>
-            <!--вариант с чекбоксами-->
+            <!--сделала слайдер через чекбоксы, чекбоксы скрыла, стилизовала через лейбл-->
             <div class="reviews__toggles-list">
               <input type="radio" name="reviews-toggle" id="reviews-toggle-1" checked>
               <label class="toggle-label" for="reviews-toggle-1"></label>
@@ -249,7 +249,6 @@
               <input type="radio" name="reviews-toggle" id="reviews-toggle-3">
               <label class="toggle-label" for="reviews-toggle-3"></label>
             </div>
-
           </div>
           <div class="reviews__arrows">
             <button class="arrow  arrow--right" type="button" title="пролистать отзывы вправо">
@@ -369,10 +368,13 @@
           </div>
         </div>
         <div class="price__toggles-list">
-          <button class="price__toggles-item" type="button" title="посмотреть опции тарифов"></button>
-          <button class="price__toggles-item price__toggles-item--active" type="button" title="посмотреть опции тарифов"></button>
-          <button class="price__toggles-item" type="button" title="посмотреть опции тарифов"></button>
-        </div>
+            <input type="radio" name="price-toggle" id="price-toggle-1">
+            <label class="price-toggle-label" for="price-toggle-1"></label>
+            <input type="radio" name="price-toggle" id="price-toggle-2" checked>
+            <label class="price-toggle-label" for="price-toggle-2"></label>
+            <input type="radio" name="price-toggle" id="price-toggle-3">
+            <label class="price-toggle-label" for="price-toggle-3"></label>
+          </div>
       </div>
     </section>
     <section class="main-page-contacts">

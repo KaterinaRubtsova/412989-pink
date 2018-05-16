@@ -9,10 +9,11 @@
 }
 
 .price__table {
+  position: relative;
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
-  margin: 88px 0 0;
+  margin: 88px 0 96px;
   background-color: #f2f2f2;
 }
 
@@ -129,34 +130,48 @@
 }
 
 .price__toggles-list {
-  margin: 0 auto;
-  padding: 35px 0 50px;
-  width: 60px;
+  position: absolute;
+  top: 2755px;
+  left: 130px;
+  min-width: 60px;
+  padding-top: 2px;
+  padding-left: 3px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
-.price__toggles-item {
-  flex-grow: 0;
-  flex-shrink: 0;
-  width: 2px;
-  height: 2px;
-  background: #bec2c7;
+.price__toggles-list input {
+  display: none;
+}
+
+.price-toggle-label {
+  width: 1px;
+  height: 1px;
+  background-color: #bec2c7;
   border: 3px solid transparent;
   border-radius: 50%;
   cursor: pointer;
   outline: none;
+
+  &:hover {
+    background-color: #7e868f;
+  }
+
+  &:active {
+    background-color: #f2f2f2;
+  }
 }
 
-.price__toggles-item--active {
-  background: #f2f2f2;
+.price-toggle-label:not(:nth-child(3)) {
+  margin-right: 14px;
+}
+
+.price__toggles-list input:checked + label {
   width: 7px;
   height: 7px;
+  background-color: transparent;
   border: 3px solid #000000;
-  border-radius: 50%;
-  cursor: pointer;
-  outline: none;
 }
 // для планшета для планшета для планшета для планшета для планшета
 @media (min-width: $tablet-width) {
@@ -169,6 +184,10 @@
 
   .price-table-wrapper {
     overflow: visible;
+  }
+
+  .price__table {
+    margin-bottom: 0;
   }
 
   .price__table-col {
@@ -282,6 +301,7 @@
     font-size: 16px;
     line-height: 18px;
     font-weight: 400px;
+    letter-spacing: 1px;
   }
 
   .price__table-row {
@@ -294,8 +314,17 @@
     padding-bottom: 15px;
   }
 
-  .price__table-row--head-hit::before {
-    border-width: 50px;
+  .price__table-head--head-hit::before {
+    top: -54px;
+    left: -52px;
+    width: 49px;
+    height: 51px;
+    border-width: 28px;
+  }
+
+  .price__table-head--head-hit::after {
+    top: 10px;
+    left: 10px;
   }
 
   .price__table-description--tablet-desktop {

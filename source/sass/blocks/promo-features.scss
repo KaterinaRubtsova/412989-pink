@@ -85,7 +85,8 @@
     display: flex;
     flex-direction: column;
     min-width: 340px;
-    padding: 0;
+    padding-top: 75px;
+    padding-left: 29px;
     margin: 0;
     text-align: left;
     order: 2;
@@ -105,6 +106,18 @@
     padding: 15px 40px 0 0;
     font-size: 14px;
     line-height: 24px;
+  }
+
+  .promo-features__item--second .promo-features__clarification {
+    padding-right: 33px;
+  }
+
+  .promo-features__item--third .promo-features__clarification {
+    padding-right: 33px;
+  }
+
+  .promo-features__item--third {
+    padding-bottom: 27px;
   }
 
   .promo-features__pictures {
@@ -157,6 +170,17 @@
     padding: 28px 0 0 0;
     font-size: 18px;
     line-height: 30px;
+  }
+  .promo-features__item--second .promo-features__clarification {
+    padding-right: 0;
+  }
+
+  .promo-features__item--third .promo-features__clarification {
+    padding-right: 0;
+  }
+
+  .promo-features__item--third {
+    padding-bottom: 0;
   }
 
   .promo-features__images {
