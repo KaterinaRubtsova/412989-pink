@@ -1,3 +1,4 @@
+
 .main-footer--hide {
   display: none;
 }
@@ -26,6 +27,7 @@
 .footer-logo-mobile-tablet {
   width: 150px;
   height: 40px;
+  fill: #283645;
 
   &:hover {
     fill: #d22856;
@@ -33,14 +35,6 @@
 
   &:active {
     fill-opacity: 0.3;
-  }
-}
-
-.blue-fill {
-  fill: #283645;
-
-  &:hover {
-    fill: #d22856;
   }
 }
 
@@ -146,7 +140,7 @@
 }
 // для планшета для планшета для планшета для планшета для планшета
 @media (min-width: $tablet-width) {
-.main-footer--hide {
+  .main-footer--hide {
     display: block;
   }
 
@@ -175,26 +169,16 @@
   .footer-logo-mobile-tablet {
     width: 150px;
     height: 40px;
+    fill: #283645;
 
     &:hover {
       fill: #d22856;
     }
 
     &:active {
-      fill: rgba(255, 255, 255, 0.3);
+      fill: #283645;
+      fill-opacity: 0.3;
     }
-  }
-
-  .blue-fill {
-    fill: #283645;
-
-    &:hover {
-      fill: #d22856;
-    }
-  }
-
-  .pink-fill {
-    fill: #d22856;
   }
 
   .footer-logo-desktop {
@@ -225,7 +209,7 @@
 @media (min-width: $desktop-width) {
   .main-footer--hide .main-footer__social-wrapper {
     min-height: 190px;
-    margin: 0 5px 0 10px;
+    margin: 0 6px 0 12px;
   }
 
   .main-footer__social-wrapper {
@@ -246,12 +230,14 @@
     margin-bottom: 45px;
     margin-left: -2px;
     padding: 0;
+    fill: #283645;
 
     &:hover {
       fill: #d22856;
     }
 
     &:active {
+      fill: #283645;
       fill-opacity: 0.3;
     }
   }
@@ -259,6 +245,7 @@
   .footer-logo-mobile-tablet {
     display: none;
   }
+
   .main-footer__copyright {
     margin-top: 0;
   }
@@ -266,10 +253,16 @@
   .main-footer__copyright-text {
     padding-left: 0;
     padding-right: 2px;
+    margin: 0 0 0 6px;
     font-size: 18px;
     font-weight: 400;
     color: #000000;
     line-height: 18px;
+  }
+
+  .main-footer--hide .main-footer__copyright-text {
+    margin: 0 0 0 17px;
+    padding-right: 5px;
   }
 
   .main-footer__copyright-link {

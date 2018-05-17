@@ -110,7 +110,7 @@
 .photo-comments__published-text {
   display: block;
   margin: 0;
-  padding-bottom: 8px;;
+  padding-bottom: 8px;
   min-height: 25px;
   font-size: 14px;
   font-weight: 400;
@@ -209,8 +209,10 @@
   }
 
   .like-button {
-    margin-right: 0;
     margin-left: 21px;
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
   }
 
   .user-photo__wrapper {
@@ -233,19 +235,12 @@
   .photo-comments__published-text {
     min-height: 55px;
   }
-
-  .like-button {
-    width: 14px;
-    height: 14px;
-    margin-right: 5px;
-  }
 }
 // для десктопа для десктопа для десктопа для десктопа для десктопа
 @media (min-width: $desktop-width) {
   .user-photo {
-    margin: 0 auto;
     padding-bottom: 0;
-    margin-bottom: 54px;
+    margin: 0 auto 52px;
   }
 
   .user-photo.user-photo--panoramic {
@@ -265,11 +260,6 @@
 
   .user-photo__wrapper {
     margin: 0;
-  }
-
-  .user-photo {
-    padding-bottom: 0;
-    margin: 0 auto 52px;
   }
 
   .user-photo__photo-comments {

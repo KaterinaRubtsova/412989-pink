@@ -85,6 +85,7 @@
       height: 4px;
       background-color: transparent;
       border: 3px solid #000000;
+      margin-bottom: -2px;
     }
   }
 }
@@ -99,7 +100,7 @@
   }
 
   .reviews::after {
-    top: 237px;
+    top: 238px;
   }
 
   .reviews__user-comment {
@@ -111,7 +112,7 @@
   }
 
   .reviews__item {
-    padding: 25px 19px 34px;
+    padding: 27px 19px 34px;
   }
 
   .reviews__user-name {

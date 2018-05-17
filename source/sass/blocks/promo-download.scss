@@ -115,11 +115,17 @@
     }
   }
 
+  .promo-download__section {
+    box-sizing: border-box;
+    margin-bottom: 0;
+    padding-right: 325px;
+  }
+
   .promo-download__block {
     min-height: 310px;
     align-items: flex-start;
     padding: 0;
-    margin: 98px 40px 0 15px;
+    margin: 74px 20px 0 20px;
     background-color: transparent;
   }
 
@@ -128,7 +134,7 @@
     min-height: 120px;
     display: block;
     margin-bottom: 35px;
-    padding: 0 330px 0 36px;
+    padding: 30px 53px 0;
     font-size: 40px;
     font-weight: 300;
     color: #ffffff;
@@ -138,21 +144,21 @@
 
   .promo-download__button {
     padding: 14px 19px;
-    margin-left: 3px;
+    margin-left: 0;
     margin-bottom: 48px;
   }
 
   .promo-download__wrapper {
-    margin: 0 48px 30px;
+    margin: 0 43px 30px;
   }
 
   .promo-download__promo-options {
-    padding: 0 230px 0 10px;
+    padding: 0;
     margin: 0;
     font-weight: 300;
     font-size: 18px;
-    line-height: 26px;
-    text-align: left;
+    line-height: 24px;
+    text-align: center;
   }
 }
 // для десктопа для десктопа для десктопа для десктопа для десктопа для десктопа для десктопа для десктопа
@@ -172,28 +178,28 @@
     }
   }
 
+  .promo-download__section {
+    margin-bottom: 0;
+    padding-right: 648px;
+  }
+
   .promo-download__block {
     display: flex;
     align-items: flex-start;
-    justify-content: flex-start;
     background-color: transparent;
-    margin-top: 100px;
-    padding-right: 10px;
-  }
-
-  .promo-download__section {
-    margin-bottom: 0;
+    margin: 96px 0 0 13px;
+    padding: 0;
   }
 
   .promo-download__list {
-    min-width: 200px;
     padding: 0;
+    min-width: 207px;
+    margin-left: -12px;
   }
 
   .promo-download__slogan {
-    display: block;
-    margin: 0 600px 57px 0;
-    padding: 0;
+    margin: 0 0 57px 0;
+    padding: 0 20px;
     font-size: 50px;
     font-weight: 300;
     color: #ffffff;
@@ -213,17 +219,15 @@
     text-align: center;
     border: 3px solid #ffffff;
     border-radius: 30px 30px;
-    margin-bottom: 70px;
-    margin-left: -3px;
+    margin-bottom: 65px;
   }
 
-  .promo-download__list {
-    min-width: 207px;
-    margin-left: -12px;
+  .promo-download__wrapper {
+    margin: 0 53px 30px;
   }
 
   .promo-download__promo-options {
-    padding: 15px 600px 0 0;
+    padding: 15px 0 0 0;
     font-weight: 300;
     font-size: 18px;
     text-align: center;

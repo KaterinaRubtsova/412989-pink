@@ -55,7 +55,7 @@
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
-  background-color: #2aab6d;
+  background-color: #26ac6d;
   border: none;
   outline: none;
   cursor: pointer;
@@ -153,6 +153,7 @@
   .popup {
     min-width: 782px;
   }
+
   .popup--fail {
     top: 828px;
   }
@@ -160,13 +161,16 @@
   .popup--success {
     top: 1227px;
   }
+
   .popup__button-wrapper {
     padding-top: 90px;
     padding-bottom: 90px;
   }
+
   .popup__button-wrapper--fail {
     background-color: #f2f2f2;
   }
+
   .popup--success .popup__button {
     min-width: 462px;
   }

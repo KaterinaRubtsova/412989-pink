@@ -622,23 +622,29 @@
     flex-direction: row;
     align-items: flex-start;
     margin: 35px 0 0;
-    padding: 0 55px 10px;
+    padding: 0 0 10px;
   }
 
   .form-blocks__intro--contacts {
     text-align: center;
-    margin: -8px 350px 0;
+    margin: -8px 345px 0;
+  }
+
+  .data-fields + input {
+    padding: 10px 25px 12px;
   }
 
   .form-list__item--tel {
-    min-width: 375px;
+    min-width: 374px;
     margin-right: 70px;
+    margin-left: 60px;
     margin-bottom: 0;
   }
 
   .form-list__item--email {
     min-width: 375px;
-    margin-right: 20px;
+    margin-left: 0;
+    margin-right: 63px;
   }
 
   .fieldset-wrapper--achievements {
@@ -717,7 +723,7 @@
 
   .form-blocks__intro--emotions + textarea {
     box-sizing: border-box;
-    padding: 12px 15px 0;
+    padding: 11px 17px 0;
     min-width: 821px;
     margin: 36px 0 36px 57px;
     min-height: 127px;
@@ -729,7 +735,7 @@
     order: 6;
     margin-bottom: 10px;
     margin-left: 10px;
-    padding: 20px 10px 0 0;
+    padding: 18px 10px 0 0;
   }
 
   .form__notifications-desktop {
