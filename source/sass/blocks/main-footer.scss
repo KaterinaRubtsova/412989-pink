@@ -1,9 +1,9 @@
-.main-footer {
-  text-align: center;
+.main-footer--hide {
+  display: none;
 }
 
-.main-footer--hide .main-footer__social-wrapper {
-  display: none;
+.main-footer {
+  text-align: center;
 }
 
 .main-footer__social-wrapper {
@@ -13,32 +13,42 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
-  margin: 17px 20px;
+  margin: 41px 20px 10px;
 }
 
-.main-footer__logo--mobile-tablet {
-  width: 150px;
-  height: 40px;
+.main-footer__logo {
   margin-top: 0;
-  margin-bottom: 65px;
+  margin-bottom: 32px;
   margin-left: -2px;
   padding: 0;
 }
 
-.footer-pink-logo {
+.footer-logo-mobile-tablet {
   width: 150px;
   height: 40px;
+
+  &:hover {
+    fill: #d22856;
+  }
+
+  &:active {
+    fill-opacity: 0.3;
+  }
 }
 
-.main-footer__logo .footer-pink-logo:hover {
+.blue-fill {
+  fill: #283645;
+
+  &:hover {
+    fill: #d22856;
+  }
+}
+
+.pink-fill {
   fill: #d22856;
 }
 
-.main-footer__logo .footer-pink-logo:active {
-  fill-opacity: 0.3;
-}
-
-.main-footer__logo--desktop {
+.footer-logo-desktop {
   display: none;
 }
 
@@ -136,23 +146,17 @@
 }
 // для планшета для планшета для планшета для планшета для планшета
 @media (min-width: $tablet-width) {
-.main-footer--hide .main-footer__social-wrapper {
-    display: flex;
-    flex-direction: row;
-    min-height: 135px;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap;
-    margin: 0 20px;
+.main-footer--hide {
+    display: block;
   }
 
   .main-footer__social-wrapper {
     flex-direction: row;
-    min-height: 135px;
+    min-height: 110px;
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
-    margin: 0 20px;
+    margin: 4px 15px;
   }
 
   .main-footer__wrapper {
@@ -161,31 +165,72 @@
     padding: 0 20px;
   }
 
-  .main-footer__logo--mobile-tablet {
+  .main-footer__logo {
     margin-top: 0;
-    margin-bottom: 80px;
+    margin-bottom: 0;
     margin-left: -2px;
     padding: 0;
   }
 
+  .footer-logo-mobile-tablet {
+    width: 150px;
+    height: 40px;
+
+    &:hover {
+      fill: #d22856;
+    }
+
+    &:active {
+      fill: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  .blue-fill {
+    fill: #283645;
+
+    &:hover {
+      fill: #d22856;
+    }
+  }
+
+  .pink-fill {
+    fill: #d22856;
+  }
+
+  .footer-logo-desktop {
+    display: none;
+  }
+
   .social-buttons__list {
-    margin-bottom: 10px;
+    margin-bottom: -11px;
+    margin-left: -10px;
+  }
+
+  .main-footer__copyright {
+    margin-top: 15px;
+  }
+
+  .main-footer__copyright-text {
+    margin: 0 0 0 10px;
+    padding-top: 7px;
+  }
+
+  .main-footer__copyright-link {
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 // для десктопа для десктопа для десктопа для десктопа для десктопа для десктопа для десктопа для десктопа
 @media (min-width: $desktop-width) {
-  .main-footer__logo--mobile-tablet {
-    display: none;
-  }
-
-.main-footer--hide .main-footer__social-wrapper {
-    display: flex;
-    min-height: 188px;
-    margin: 0 10px;
+  .main-footer--hide .main-footer__social-wrapper {
+    min-height: 190px;
+    margin: 0 5px 0 10px;
   }
 
   .main-footer__social-wrapper {
-    margin: 0 10px;
+    min-height: 139px;
+    margin: 0 5px 0 10px;
   }
 
   .main-footer__social-wrapper .social-buttons__list {
@@ -193,19 +238,34 @@
     margin-left: 15px;
   }
 
-  .main-footer__logo--desktop {
-    width: 146px;
+  .footer-logo-desktop {
+    display: block;
+    width: 150px;
     height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: -10px;
-    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 45px;
+    margin-left: -2px;
     padding: 0;
+
+    &:hover {
+      fill: #d22856;
+    }
+
+    &:active {
+      fill-opacity: 0.3;
+    }
+  }
+
+  .footer-logo-mobile-tablet {
+    display: none;
+  }
+  .main-footer__copyright {
+    margin-top: 0;
   }
 
   .main-footer__copyright-text {
     padding-left: 0;
+    padding-right: 2px;
     font-size: 18px;
     font-weight: 400;
     color: #000000;
@@ -215,6 +275,6 @@
   .main-footer__copyright-link {
     padding-left: 0;
     padding-right: 0;
-    padding-top: 18px;
+    padding-top: 0;
   }
 }

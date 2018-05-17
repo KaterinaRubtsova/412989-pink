@@ -18,7 +18,7 @@
 .reviews__wrapper {
   position: relative;
   min-height: 300px;
-  margin: 0 0 45px;
+  margin: 0 0 20px;
   padding: 0;
   z-index: 50;
 }
@@ -52,46 +52,41 @@
 }
 
 .reviews__toggles-list {
-  min-width: 60px;
+  width: 80px;
+  min-height: 30px;
   margin: 0 auto;
-  padding-top: 2px;
-  padding-left: 3px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  vertical-align: middle;
 }
 
-.reviews__toggles-list input {
-  display: none;
-}
+.reviews__toggles-button {
+  font-size: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  margin: 0 5px;
 
-.toggle-label {
-  width: 1px;
-  height: 1px;
-  background-color: #bec2c7;
-  border: 3px solid transparent;
-  border-radius: 50%;
-  cursor: pointer;
-  outline: none;
-
-  &:hover {
-    background-color: #7e868f;
+  &::before {
+    width: 1px;
+    height: 1px;
+    background-color: #bec2c7;
+    border: 3px solid transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    font-size: 0;
+    display: block;
+    content: "";
   }
 
-  &:active {
-    background-color: #f2f2f2;
+  &--active {
+    &::before {
+      width: 4px;
+      height: 4px;
+      background-color: transparent;
+      border: 3px solid #000000;
+    }
   }
-}
-
-.toggle-label:not(:nth-child(3)) {
-  margin-right: 14px;
-}
-
-.reviews__toggles-list input:checked + label {
-  width: 7px;
-  height: 7px;
-  background-color: transparent;
-  border: 3px solid #000000;
 }
 
 .reviews__arrows {
@@ -130,6 +125,18 @@
   .reviews__user-info {
     display: block;
     font-size: 14px;
+  }
+
+  .reviews__toggles-list {
+    width: 100px;
+  }
+
+  .reviews__toggles-button {
+    font-size: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    margin: 0 7px;
   }
 }
 // для десктопа для десктопа для десктопа для десктопа для десктопа

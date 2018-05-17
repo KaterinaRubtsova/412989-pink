@@ -13,7 +13,7 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
-  margin: 88px 0 96px;
+  margin: 100px 0 96px;
   background-color: #f2f2f2;
 }
 
@@ -131,47 +131,43 @@
 
 .price__toggles-list {
   position: absolute;
-  top: 2755px;
-  left: 130px;
-  min-width: 60px;
-  padding-top: 2px;
-  padding-left: 3px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  top: 2751px;
+  left: 120px;
+  width: 80px;
+  min-height: 30px;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
 }
 
-.price__toggles-list input {
-  display: none;
-}
+.price__toggles-button {
+  font-size: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  margin: 0 5px;
 
-.price-toggle-label {
-  width: 1px;
-  height: 1px;
-  background-color: #bec2c7;
-  border: 3px solid transparent;
-  border-radius: 50%;
-  cursor: pointer;
-  outline: none;
-
-  &:hover {
-    background-color: #7e868f;
+  &::before {
+    width: 1px;
+    height: 1px;
+    background-color: #bec2c7;
+    border: 3px solid transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    font-size: 0;
+    display: block;
+    content: "";
   }
 
-  &:active {
-    background-color: #f2f2f2;
+  &--active {
+    &::before {
+      width: 4px;
+      height: 4px;
+      background-color: transparent;
+      border: 3px solid #000000;
+    }
   }
-}
-
-.price-toggle-label:not(:nth-child(3)) {
-  margin-right: 14px;
-}
-
-.price__toggles-list input:checked + label {
-  width: 7px;
-  height: 7px;
-  background-color: transparent;
-  border: 3px solid #000000;
 }
 // для планшета для планшета для планшета для планшета для планшета
 @media (min-width: $tablet-width) {
@@ -179,7 +175,7 @@
     padding-top: 4px;
     padding-bottom: 70px;
     margin-bottom: 50px;
-    margin-top: -28px;
+    margin-top: -30px;
   }
 
   .price-table-wrapper {
@@ -284,7 +280,7 @@
 // для десктопа для десктопа для десктопа для десктопа для десктопа
 @media (min-width: $desktop-width) {
   .price {
-    padding-top: 45px;
+    padding-top: 35px;
     padding-bottom: 94px;
   }
 

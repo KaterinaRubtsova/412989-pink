@@ -8,6 +8,11 @@ var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var cssminify = require("gulp-csso");
 var imgminify = require("gulp-imagemin");
+var svgstore = require("gulp-svgstore");
+var cheerio = require('gulp-cheerio');
+var rename = require("gulp-rename");
+var posthtml = require("gulp-posthtml");
+var include = require("posthtml-include");
 var del = require("del");
 var run = require("run-sequence");
 
@@ -19,7 +24,6 @@ gulp.task("clean", function() {
 
 gulp.task("copy", function() {
   return gulp.src([
-    "source/*.html",
     "source/fonts/**/*.{woff,woff2}",
     "source/js/**/*.js"
   ], {
@@ -40,6 +44,21 @@ gulp.task("style", function() {
     .pipe(server.stream());
 });
 
+gulp.task("sprite", function() {
+  return gulp.src("source/img/logo-pink-*.svg")
+  .pipe(cheerio({
+  run: function ($) {
+  $('[fill]').removeAttr('fill');
+  },
+  parserOptions: { xmlMode: true }
+  }))
+  .pipe(svgstore({
+  inlineSvg: true
+  }))
+  .pipe(rename("sprite.svg"))
+  .pipe(gulp.dest("build/img"));
+  });
+
 gulp.task("images", function() {
   return gulp.src("source/img/**/*.{jpg,png,svg}")
     .pipe(imgminify([
@@ -50,8 +69,16 @@ gulp.task("images", function() {
     .pipe(gulp.dest("build/img"));
 });
 
+gulp.task("html", function() {
+  return gulp.src("source/*.html")
+    .pipe(posthtml([
+      include()
+    ]))
+    .pipe(gulp.dest("build/"));
+});
+
 gulp.task("build", function(done) {
-  run("clean", "copy", "style", "images", done);
+  run("clean", "copy", "style", "sprite", "images", "html", done);
 });
 
 gulp.task("serve", ["build"], function() {
@@ -64,7 +91,8 @@ gulp.task("serve", ["build"], function() {
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("source/*.html", ["copy"]);
+  gulp.watch("source/*.html", ["html"]);
   gulp.watch("source/js/*.js", ["copy"]).on("change", server.reload);
-  gulp.watch("build/*.html").on("change", server.reload);
+  gulp.watch("source/img/*.svg", ["sprite"]).on("change", server.reload);
+  gulp.watch("build/*.html", ).on("change", server.reload);
 });

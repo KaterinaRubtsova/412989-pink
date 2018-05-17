@@ -3,19 +3,19 @@
   position: absolute;
   z-index: 100;
   padding-top: 40px;
-  padding-bottom: 50px;
+  padding-bottom: 2px;
   background-color: #ffffff;
-  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .popup--fail {
-  top: 1170px;
+  top: 1169px;
 }
 
 .popup--success {
   padding-top: 30px;
   padding-bottom: 0;
-  top: 1680px;
+  top: 1670px;
 }
 
 .popup__title {
@@ -23,19 +23,24 @@
   margin-bottom: 25px;
   font-size: 18px;
   line-height: 26px;
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
 }
 
 .popup__text {
   margin: 0;
-  margin-bottom: 37px;
+  margin-bottom: 10px;
   padding: 0 20px;
   font-size: 14px;
   line-height: 24px;
-  font-weight: bold;
+  font-weight: 300;
   color: #283645;
   text-align: center;
+}
+
+.popup--success .popup__text {
+  margin-bottom: 40px;
+  padding: 0 19px;
 }
 
 .popup__button {
@@ -46,7 +51,7 @@
   padding: 15px 75px;
   font-size: 18px;
   line-height: 26px;
-  font-weight: bold;
+  font-weight: 700;
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
@@ -71,20 +76,22 @@
 }
 
 .popup__button-wrapper {
-  padding-top: 45px;
+  padding-top: 50px;
   padding-bottom: 50px;
   background-color: #f2f2f2;
-  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .popup__button-wrapper--fail {
+  padding-top: 30px;
+  padding-bottom: 45px;
   background-color: transparent;
 }
 
 .popup-open {
   display: block;
 }
-
+// для планшета для планшета для планшета для планшета для планшета для планшета
 @media (min-width: $tablet-width) {
   .popup {
     left: 50%;
@@ -102,7 +109,7 @@
     transform: translateX(-50%);
     top: 850px;
     min-width: 460px;
-    min-height: 360px;
+    min-height: 317px;
     padding: 0;
     padding-top: 50px;
     border-radius: 5px;
@@ -113,23 +120,32 @@
     transform: translateX(-50%);
     top: 1380px;
     min-width: 460px;
-    height: 360px;
+    min-height: 400px;
     padding: 0;
     padding-top: 50px;
     border-radius: 5px;
   }
 
   .popup__title {
-    min-width: 220px;
+    padding: 0 40px;
     margin: 0 auto;
     font-size: 30px;
     line-height: 30px;
   }
 
   .popup__text {
-    min-width: 300px;
+    padding: 0 40px;
     margin: 40px auto;
     font-size: 18px;
+  }
+
+  .popup--success .popup__text {
+    padding: 0 52px;
+  }
+
+  .popup__button-wrapper {
+    padding-top: 60px;
+    padding-bottom: 64px;
   }
 }
 
@@ -137,8 +153,21 @@
   .popup {
     min-width: 782px;
   }
+  .popup--fail {
+    top: 828px;
+  }
 
+  .popup--success {
+    top: 1227px;
+  }
+  .popup__button-wrapper {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
   .popup__button-wrapper--fail {
     background-color: #f2f2f2;
+  }
+  .popup--success .popup__button {
+    min-width: 462px;
   }
 }

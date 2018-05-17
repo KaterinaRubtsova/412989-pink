@@ -14,22 +14,17 @@
   }
 }
 
-.map-triangle {
+.map::after { // почему не работает?
+  content: "";
   position: absolute;
-  width: 100%;
-  height: auto;
-  top: -1px;
+  background-image: url("../img/bg-triangle-white-footer.svg");
+  //width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  z-index: 1000;
+  top: 0;
   left: 0;
-  right: 0;
-  z-index: 2000;
-}
-
-.map-marker {
-  position: relative;
-  width: 35px;
-  height: 35px;
-  top: 115px;
-  left: 144px;
+  right: 50%;
 }
 
 @media (min-width: $tablet-width) {
@@ -48,10 +43,8 @@
     }
   }
 
-  .map-triangle {
-    top: -3px;
-    left: 0;
-    right: 0;
+  .map::after {
+    top: -1px;
   }
 
   .map-marker {
@@ -75,9 +68,9 @@
     }
   }
 
-  .map-triangle {
-    left: 0;
-    right: 0;
+  .map::after {
+    top: -1px;
+    left: 20%;
   }
 
   .map-marker {
