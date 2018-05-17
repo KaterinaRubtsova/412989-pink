@@ -46,18 +46,20 @@ gulp.task("style", function() {
 
 gulp.task("sprite", function() {
   return gulp.src("source/img/logo-pink-*.svg")
-  .pipe(cheerio({
-  run: function ($) {
-  $('[fill]').removeAttr('fill');
-  },
-  parserOptions: { xmlMode: true }
-  }))
-  .pipe(svgstore({
-  inlineSvg: true
-  }))
-  .pipe(rename("sprite.svg"))
-  .pipe(gulp.dest("build/img"));
-  });
+    .pipe(cheerio({
+      run: function ($) {
+        $('[fill]').removeAttr('fill');
+      },
+      parserOptions: {
+        xmlMode: true
+      }
+    }))
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("build/img"));
+});
 
 gulp.task("images", function() {
   return gulp.src("source/img/**/*.{jpg,png,svg}")
@@ -94,5 +96,5 @@ gulp.task("serve", ["build"], function() {
   gulp.watch("source/*.html", ["html"]);
   gulp.watch("source/js/*.js", ["copy"]).on("change", server.reload);
   gulp.watch("source/img/*.svg", ["sprite"]).on("change", server.reload);
-  gulp.watch("build/*.html", ).on("change", server.reload);
+  gulp.watch("build/*.html").on("change", server.reload);
 });
