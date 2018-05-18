@@ -241,11 +241,13 @@
   .user-photo {
     padding-bottom: 0;
     margin: 0 auto 52px;
+    width: 300px;
   }
 
   .user-photo.user-photo--panoramic {
     padding-bottom: 0;
     margin-bottom: 45px;
+    width: auto;
   }
 
   .user-photo__panoramic-wrapper img {
