@@ -308,6 +308,9 @@
   .form-list {
     margin: 0 0 30px;
   }
+  .form-list--name {
+    margin: 0 0 25px;
+  }
 
   .name-fields {
     padding: 17px 0;
@@ -316,7 +319,7 @@
 
   .name-fields + input {
     min-width: 523px;
-    padding: 14px 17px;
+    padding: 12px 17px 16px;
     margin: 0 0 52px;
   }
 
@@ -356,7 +359,7 @@
   .fieldset-wrapper--applications {
     min-width: 300px;
     order: 2;
-    margin-bottom: 70px;
+    margin-bottom: 65px;
   }
 
   .form-blocks--applications {
@@ -365,10 +368,12 @@
 
   .form-blocks__intro--applications {
     display: block;
-    width: 500px;
+    width: 318px;
     margin: 0 auto;
-    margin-top: -13px;
-    padding-bottom: 20px;
+    margin-top: -10px;
+    padding-bottom: 23px;
+    padding-left: 25px;
+    padding-right: 25px;
     background-color: #ffffff;
   }
 
@@ -389,22 +394,23 @@
 
   .fieldset-wrapper--contacts {
     padding-right: 3px;
-    margin-bottom: 60px;
+    margin-bottom: 65px;
     order: 3;
   }
 
   .form-blocks__intro--contacts {
     display: block;
-    width: 250px;
+    width: 198px;
     text-align: center;
     margin: 0 auto;
-    margin-top: -14px;
+    margin-top: -11px;
+    padding: 0 30px;
     background-color: #ffffff;
   }
 
   .form-list--contacts {
     list-style: none;
-    margin: 40px 0 24px;
+    margin: 41px 0 18px;
     padding: 0;
     padding-left: 60px;
     padding-right: 56px;
@@ -419,6 +425,10 @@
     flex-direction: column-reverse;
   }
 
+  .data-fields {
+    padding: 12px 18px 8px;
+  }
+
   .data-fields + input {
     min-width: 200px;
     box-sizing: border-box;
@@ -427,7 +437,7 @@
   }
 
   .form-list__item--tel {
-    margin-bottom: 20px;
+    margin-bottom: 23px;
   }
 
   .form-list__item--tel::after {
@@ -465,15 +475,24 @@
 
   .form-blocks__intro--achievements {
     display: block;
-    width: 400px;
+    width: 373px;
     text-align: center;
     margin: 0 auto;
     margin-top: -9px;
+    padding: 0 30px;
     background-color: #ffffff;
   }
 
   .form-list--achievements {
-    margin: 50px 40px;
+    margin: 47px 38px 0;
+  }
+
+  .form-list__item--achievements {
+    margin-bottom: 54px;
+  }
+
+  .form-list__item--achievements:nth-child(6) {
+    margin-bottom: 55px;
   }
 
   .form-list__item--achievements label {
@@ -487,10 +506,11 @@
 
   .form-blocks__intro--emotions {
     display: block;
-    width: 400px;
+    width: 185px;
     text-align: center;
     margin: 0 auto;
     margin-top: -10px;
+    padding: 0 38px;
     background-color: #ffffff;
   }
 
@@ -504,6 +524,8 @@
     min-height: 190px;
     margin-top: 40px;
     margin-left: 60px;
+    margin-bottom: 46px;
+    padding: 12px;
     box-sizing: border-box;
     outline: none;
     border: 2px solid #e5e5e5;
@@ -522,7 +544,7 @@
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
-    padding: 30px 20px 0;
+    padding: 26px 20px 0;
     order: 6;
     margin-bottom: 30px;
   }
@@ -566,18 +588,19 @@
   }
 
   .name-fields {
-    padding: 13px 0;
+    padding: 18px 0;
     margin-right: 18px;
   }
 
   .name-fields + input {
     min-width: 340px;
-    padding: 12px 20px;
-    margin: 0 0 55px;
+    padding: 14px 20px 15px;
+    margin: 0 0 52px;
   }
 
   .form-list__item--name:nth-child(2) .name-fields + input {
     min-width: 380px;
+    margin-bottom: 48px;
   }
 
   .form-list__item--name:nth-child(3) .name-fields + input {
@@ -586,16 +609,15 @@
 
   .form-blocks__intro--applications {
     width: 318px;
-    margin-top: -37px;
-    margin-left: 62px;
+    margin-top: -31px;
     padding-bottom: 20px;
     background-color: #ffffff;
   }
 
   .fieldset-wrapper--applications {
     padding: 0;
-    margin-left: 55px;
-    margin-bottom: 61px;
+    margin-left: 57px;
+    margin-bottom: 66px;
     order: 2;
   }
 
@@ -611,9 +633,14 @@
     margin-right: 150px;
   }
 
+  .form-list__item--applications {
+    margin-left: -2px;
+    margin-bottom: 35px;
+  }
+
   .fieldset-wrapper--contacts {
     min-width: 932px;
-    margin: 0 7px 62px 7px;
+    margin: 0 7px 66px 7px;
     padding-right: 0;
     order: 3;
   }
@@ -627,11 +654,15 @@
 
   .form-blocks__intro--contacts {
     text-align: center;
-    margin: -8px 345px 0;
+    margin-top: -10px;
+  }
+
+  .data-fields {
+    padding: 12px 20px 1px;
   }
 
   .data-fields + input {
-    padding: 10px 25px 12px;
+    padding: 12px 20px;
   }
 
   .form-list__item--tel {
@@ -647,14 +678,24 @@
     margin-right: 63px;
   }
 
+  .form-list__item--tel::after {
+    width: 58px;
+    height: 58px;
+  }
+
+  .form-list__item--email::after {
+    width: 58px;
+    height: 58px;
+  }
+
   .fieldset-wrapper--achievements {
     margin: 0 7px 74px 7px;
     order: 4;
   }
 
   .form-blocks__intro--achievements {
-    width: 374px;
     margin-top: -10px;
+    padding: 0 34px;
   }
 
   .form-list--achievements {
@@ -665,7 +706,7 @@
     justify-content: space-between;
     margin: 0;
     padding-top: 49px;
-    padding-left: 37px;
+    padding-left: 40px;
     list-style: none;
   }
 
@@ -679,7 +720,7 @@
 
   .form-list__item--shark-achiev {
     order: 1;
-    margin-right: 28px;
+    margin-right: 25px;
   }
 
   .form-list__item--chak-achiev {
@@ -692,17 +733,17 @@
 
   .form-list__item--tower-achiev {
     order: 3;
-    margin-right: -10px;
+    margin-right: -12px;
   }
 
   .form-list__item--hotel-achiev {
     order: 6;
-    margin-right: -10px;
+    margin-right: -12px;
   }
 
   .form-list__item--sunburn-achiev {
     order: 4;
-    margin-right: 30px;
+    margin-right: 25px;
   }
 
   .form-blocks--emotions {
@@ -711,14 +752,14 @@
   }
 
   .fieldset-wrapper--emotions {
-    margin: 0 7px 34px 7px;
+    margin: 0 7px 27px 7px;
     order: 5;
     width: 100%;
-    height: 200px;
+    height: 209px;
   }
 
   .form-blocks__intro--emotions {
-    margin-top: -15px;
+    margin-top: -13px;
   }
 
   .form-blocks__intro--emotions + textarea {
@@ -738,6 +779,9 @@
     padding: 18px 10px 0 0;
   }
 
+  .form__notification {
+    margin: 41px 0 40px;
+  }
   .form__notifications-desktop {
     display: inline;
   }
