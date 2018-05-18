@@ -24,7 +24,7 @@
 .introduction__header {
   display: block;
   min-width: 175px;
-  margin: 96px 10px 52px;
+  margin: 96px 63px 52px;
   padding: 0;
   font-size: 24px;
   font-weight: 300;
@@ -33,12 +33,20 @@
   text-align: center;
 }
 
+.page-header__info-header--form .introduction__header {
+  margin: 96px 7px 52px;
+}
+
 @media (min-width: $tablet-width) {
   .introduction__header {
-    margin: 180px 20px 48px;
+    margin: 180px 127px 48px;
     padding: 0;
     font-size: 50px;
     line-height: 60px;
+  }
+
+  .page-header__info-header--form .introduction__header {
+    margin: 180px 11px 48px;
   }
 
   .page-header__info-header {
@@ -59,6 +67,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .container--introduction {
+    margin: 0 auto;
+  }
+
   .introduction__header {
     margin: 174px 300px 52px;
     padding: 0;
